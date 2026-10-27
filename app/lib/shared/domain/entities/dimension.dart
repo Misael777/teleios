@@ -1,0 +1,54 @@
+/// Las 4 dimensiones fijas de análisis. Sembradas en el primer arranque; no editables.
+class Dimension {
+  const Dimension({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.colorHex,
+    required this.sortOrder,
+  });
+
+  final String id;
+  final String name;
+  final String description;
+  final String colorHex;
+  final int sortOrder;
+
+  static const caracterDios = 'caracter_dios';
+  static const contextoHistorico = 'contexto_historico';
+  static const vidaPractica = 'vida_practica';
+  static const estructuraPensamiento = 'estructura_pensamiento';
+
+  static const all = <Dimension>[
+    Dimension(
+      id: caracterDios,
+      name: 'Carácter de Dios',
+      description: 'Atributos de Dios revelados en el texto.',
+      colorHex: '#7E57C2',
+      sortOrder: 0,
+    ),
+    Dimension(
+      id: contextoHistorico,
+      name: 'Contexto Histórico',
+      description: 'Época, cultura, imperio y circunstancias del texto.',
+      colorHex: '#A1745A',
+      sortOrder: 1,
+    ),
+    Dimension(
+      id: vidaPractica,
+      name: 'Vida Práctica',
+      description: 'Aplicación concreta a mis acciones y relaciones.',
+      colorHex: '#2E9D5B',
+      sortOrder: 2,
+    ),
+    Dimension(
+      id: estructuraPensamiento,
+      name: 'Estructura del Pensamiento',
+      description: 'Argumento del texto, conceptos teológicos y conexiones.',
+      colorHex: '#1E7FD8',
+      sortOrder: 3,
+    ),
+  ];
+
+  static Dimension byId(String id) => all.firstWhere((d) => d.id == id);
+}

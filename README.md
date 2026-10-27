@@ -4,7 +4,7 @@
 
 **TELEIOS** es una plataforma multiplataforma (**iOS, Android, Desktop, Web**) desarrollada en **Flutter**, diseñada para la **ingeniería espiritual, el análisis psicoteológico y la analítica cognitiva**. Bajo una arquitectura *Local-First*, permite estructurar estudios bíblicos con rigor teológico, registrar la praxis diaria mediante bitácoras emocionales, dictar oraciones por voz y mapear dinámicamente la estructura de la personalidad a través de un **Grafo de Fuerza Dirigida**.
 
-A diferencia de las aplicaciones que dependen de costosos y lentos LLMs generativos, TELEIOS integra el paradigma de **Modelos System One (Jev / LocalJev)**, permitiendo clasificaciones tipadas, ultra rápidas y probabilísticas directamente en el dispositivo del usuario — garantizando **$0 de costo de infraestructura en IA** y **privacidad absoluta**.
+A diferencia de las aplicaciones que dependen de costosos y lentos LLMs generativos, TELEIOS adopta el paradigma de **clasificación tipada estilo System One** (Choice / Score / Noul) ejecutado **en el dispositivo del usuario** — con **$0 de costo de infraestructura en IA** y sin que el contenido privado salga del teléfono.
 
 ---
 
@@ -24,7 +24,7 @@ A diferencia de las aplicaciones que dependen de costosos y lentos LLMs generati
 ## 🧩 Los Cuatro Pilares
 
 ### 📖 Estudio — Ciencias Bíblicas
-- Infraestructura teológica local (manuscritos, variantes, Strong) en **Isar Database**.
+- Infraestructura teológica local (manuscritos, variantes, Strong) en **SQLite (Drift)** · texto base Reina-Valera 1909 (dominio público).
 - Formulario cronológico estructurado (época, imperio, región) que alimenta una **línea de tiempo interactiva**.
 - **4 dimensiones fijas:** Carácter de Dios · Contexto Histórico · Vida Práctica · Estructura del Pensamiento.
 - **Sugeridor híbrido:** la IA propone tópicos; **el usuario valida, corrige o crea los suyos**.
@@ -47,7 +47,7 @@ A diferencia de las aplicaciones que dependen de costosos y lentos LLMs generati
 
 ---
 
-## 🤖 Motor de IA: System One (Jev-Architecture)
+## 🤖 Motor de IA: Clasificación tipada (estilo System One)
 
 TELEIOS **no genera texto**; **clasifica estados cognitivos** mediante primitivas tipadas:
 
@@ -57,23 +57,30 @@ TELEIOS **no genera texto**; **clasifica estados cognitivos** mediante primitiva
 | **Score** | Evaluación de intensidad emocional, coherencia y paz (1-10) |
 | **Noul** | Decisión binaria probabilística (alineación con fundamento) |
 
-**Estrategia multiplataforma:**
-- **Desktop:** Ollama local (`http://localhost:11434`) — `llama3.2:3b` o `qwen2.5:7b`.
-- **Mobile:** LocalJev / Open-Jev on-device vía `llama.cpp` + `dart:ffi` (GGUF Q4, < 1.5 GB RAM) · Ollama Bridge por Wi-Fi LAN.
+**Proveedores (en orden de preferencia):**
+0. **Léxico + historial del usuario** — todas las plataformas, offline, explicable.
+1. **Embeddings multilingües ONNX** on-device — descarga opcional.
+2. **Ollama local** en Desktop (`http://localhost:11434`) — `llama3.2:3b` o `qwen2.5:7b`.
+3. **Jev API** (TypeSafe AI, en la nube, de pago) — *opt-in* y solo para contenido comunitario público.
+
+> El usuario siempre valida las sugerencias; los puntajes de intensidad, coherencia y paz los pone él. Ver [ADR-002](./docs/adr/002-estrategia-ia.md).
 
 ---
 
 ## 🔗 El Circuito de Correlación
-[ESTUDIO] [PRAXIS] [ORACIÓN]
-Devocional Bitácora ABC Voz transcrita
-│ │ │
-└──────┬──────────────┴──────────┬───────────┘
-▼ ▼
-[TÓPICOS COMPARTIDOS] ───► [GRAFO DE PERSONALIDAD]
-│ │
-▼ ▼
-[ÍNDICE DE EFECTIVIDAD] [DASHBOARD CLÍNICO]
-(Causa y Efecto Teológico) (Personal + Comunitario)
+
+```
+   [ESTUDIO]            [PRAXIS]             [ORACIÓN]
+   Devocional         Bitácora A-B-C       Voz transcrita
+       │                    │                    │
+       └──────────┬─────────┴──────────┬─────────┘
+                  ▼                    ▼
+       [TÓPICOS COMPARTIDOS] ───► [GRAFO DE PERSONALIDAD]
+                  │                    │
+                  ▼                    ▼
+       [ÍNDICE DE EFECTIVIDAD]   [DASHBOARD DE EJES]
+       (correlación estudio↔vida) (Personal + Comunitario)
+```
 
 
 ---
@@ -83,31 +90,42 @@ Devocional Bitácora ABC Voz transcrita
 | Capa | Tecnología |
 |------|------------|
 | **Framework** | Flutter (Multiplatform) |
-| **Gestión de Estado** | `flutter_bloc` / `riverpod` |
-| **Base de Datos Local** | Isar Database |
-| **Backend Comunitario** | Supabase (Edge Functions + K-Anonimato) |
+| **Gestión de Estado** | `flutter_riverpod` |
+| **Base de Datos Local** | Drift (SQLite) cifrado con SQLite3MultipleCiphers |
+| **Backup Personal** | Google Drive `appDataFolder` (cifrado AES-256-GCM en cliente) |
+| **Backend Comunitario** | Supabase Free (Auth, Postgres + RLS + `ltree`, Storage) |
+| **Imágenes (overflow)** | Cloudflare R2 (10 GB gratis, egress $0) |
 | **Grafo de Personalidad** | `graphview` |
-| **Gráficos Clínicos** | `fl_chart` |
-| **IA On-Device** | Jev / LocalJev · `llama.cpp` vía `dart:ffi` |
-| **IA Desktop** | Ollama (`/v1/chat/completions`) |
+| **Gráficos** | `fl_chart` + `CustomPainter` |
+| **IA On-Device** | Léxico local · ONNX Runtime (embeddings) |
+| **IA Desktop** | Ollama (opcional) |
 
 ---
 
 ## 🚀 Estado del Proyecto
 
-MVP 1 en desarrollo activo. Consulta [`PLAN-DE-TRABAJO.md`](./PLAN-DE-TRABAJO.md) para el roadmap detallado y [`ARCHITECTURE.md`](./ARCHITECTURE.md) para la visión técnica.
+✅ **Sprints 0-4 completados** — módulo Estudio funcional (devocionales, Biblia RV1909, línea de tiempo, sugeridor local, incubación), base cifrada, bloqueo biométrico. 81 tests en verde. Consulta [`PLAN-DE-TRABAJO.md`](./PLAN-DE-TRABAJO.md) para el roadmap detallado y [`ARCHITECTURE.md`](./ARCHITECTURE.md) para la visión técnica y [`docs/ANALISIS-TECNICO.md`](./docs/ANALISIS-TECNICO.md) para el análisis y las decisiones.
 
 ---
 
 ## 📦 Instalación Rápida
 
 ```bash
-git clone https://github.com/tu-usuario/teleios-system-one.git
-cd teleios-system-one
+git clone <url-del-repo> teleios
+cd teleios/app
 flutter pub get
-flutter run -d <dispositivo>
+flutter run -d windows --dart-define-from-file=config/dev.json   # o -d <android>
 
+# Tests y análisis
+flutter test
+flutter analyze
+
+# Si cambias tablas de Drift
+dart run build_runner build
+
+# Opcional (Desktop) — IA local con Ollama
 # 1. Instalar Ollama: https://ollama.com
 # 2. Descargar modelo optimizado
 ollama run llama3.2:3b
 # TELEIOS se conecta automáticamente a http://localhost:11434
+```
