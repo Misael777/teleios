@@ -141,19 +141,12 @@ class _PassageCard extends ConsumerWidget {
           TextSpan(
             children: [
               for (final v in list.where((v) => v.text.isNotEmpty)) ...[
-                TextSpan(
-                  text: '${v.verse} ',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Theme.of(context).colorScheme.primary,
-                    fontSize: 12,
-                  ),
-                ),
+                TextSpan(text: '${v.verse} ', style: context.scripture.verseNumber),
                 TextSpan(text: '${v.text} '),
               ],
             ],
           ),
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(height: 1.5),
+          style: context.scripture.body,
         ),
       ),
     );

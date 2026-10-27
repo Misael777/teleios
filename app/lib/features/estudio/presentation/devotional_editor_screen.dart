@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../core/utils/formatters.dart';
 import '../../../core/utils/text_normalizer.dart';
 import '../../../infrastructure/ai/topic_suggester.dart';
@@ -365,7 +366,6 @@ class _PassagePreview extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final verses = ref.watch(passageTextProvider(passage));
-    final theme = Theme.of(context);
     return verses.when(
       loading: () => const LinearProgressIndicator(),
       error: (e, _) => const SizedBox.shrink(),
@@ -375,7 +375,7 @@ class _PassagePreview extends ConsumerWidget {
           list.where((v) => v.text.isNotEmpty).map((v) => '${v.verse} ${v.text}').join(' '),
           maxLines: passage.isWholeChapter ? 4 : 10,
           overflow: TextOverflow.ellipsis,
-          style: theme.textTheme.bodyMedium?.copyWith(fontStyle: FontStyle.italic),
+          style: context.scripture.body.copyWith(fontSize: 17, fontStyle: FontStyle.italic),
         ),
       ),
     );

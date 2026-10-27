@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/theme/app_theme.dart';
 import '../../../shared/domain/catalogs/bible_books.dart';
 import '../../../shared/domain/entities/passage_ref.dart';
 import '../../../shared/providers.dart';
@@ -248,7 +249,10 @@ class _VerseSelector extends ConsumerWidget {
                     selectedTileColor: theme.colorScheme.primaryContainer.withValues(alpha: 0.4),
                     leading: Text('${v.verse}', style: theme.textTheme.labelLarge),
                     minLeadingWidth: 24,
-                    title: Text(v.text.isEmpty ? '(unido al versículo anterior en RV1909)' : v.text),
+                    title: Text(
+                      v.text.isEmpty ? '(unido al versículo anterior en RV1909)' : v.text,
+                      style: context.scripture.body.copyWith(fontSize: 17),
+                    ),
                     onTap: () => onTap(v.verse),
                   );
                 },

@@ -29,19 +29,39 @@ class DimensionChip extends StatelessWidget {
     final color = context.dimensionColor(dimensionId);
     final dashed = status == TopicStatus.incubacion;
     final side = BorderSide(color: color, width: dashed ? 1 : 1.5, style: BorderStyle.solid);
-    final chip = InputChip(
+    final avatar = dashed ? Icon(Icons.hourglass_top, size: 16, color: color) : null;
+    final background = color.withValues(alpha: dashed ? 0.04 : 0.12);
+    final labelStyle = TextStyle(color: Theme.of(context).colorScheme.onSurface, fontWeight: FontWeight.w500);
+    final tooltip = '${Dimension.byId(dimensionId).name} · ${status.label}';
+
+    // Sin acciones se usa Chip: un InputChip sin callbacks se pinta como deshabilitado.
+    if (onDeleted == null && onPressed == null) {
+      return Tooltip(
+        message: tooltip,
+        child: Chip(
+          label: Text(label),
+          labelStyle: labelStyle,
+          avatar: avatar,
+          visualDensity: dense ? VisualDensity.compact : null,
+          materialTapTargetSize: dense ? MaterialTapTargetSize.shrinkWrap : null,
+          backgroundColor: background,
+          side: side,
+        ),
+      );
+    }
+    return InputChip(
       label: Text(label),
-      avatar: dashed ? Icon(Icons.hourglass_top, size: 16, color: color) : null,
+      labelStyle: labelStyle,
+      avatar: avatar,
       visualDensity: dense ? VisualDensity.compact : null,
       materialTapTargetSize: dense ? MaterialTapTargetSize.shrinkWrap : null,
-      backgroundColor: color.withValues(alpha: dashed ? 0.04 : 0.12),
+      backgroundColor: background,
       side: side,
       onDeleted: onDeleted,
       deleteButtonTooltipMessage: 'Quitar',
       onPressed: onPressed,
-      tooltip: '${Dimension.byId(dimensionId).name} · ${status.label}',
+      tooltip: tooltip,
     );
-    return chip;
   }
 }
 

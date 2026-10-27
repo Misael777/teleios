@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../theme/teleios_logo.dart';
+
 /// Navegación principal: barra inferior en móvil, riel lateral en pantallas anchas.
 class HomeShell extends StatelessWidget {
   const HomeShell({super.key, required this.shell});
@@ -27,6 +29,7 @@ class HomeShell extends StatelessWidget {
               selectedIndex: shell.currentIndex,
               onDestinationSelected: _go,
               labelType: NavigationRailLabelType.all,
+              leading: const Padding(padding: EdgeInsets.symmetric(vertical: 16), child: TeleiosMark(size: 44)),
               destinations: [
                 for (final d in _destinations)
                   NavigationRailDestination(icon: Icon(d.icon), selectedIcon: Icon(d.selected), label: Text(d.label)),

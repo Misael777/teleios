@@ -6,6 +6,7 @@ import 'package:share_plus/share_plus.dart';
 import '../../core/config/env.dart';
 import '../../core/preferences/app_settings.dart';
 import '../../core/security/app_lock.dart';
+import '../../core/theme/teleios_logo.dart';
 import '../../shared/providers.dart';
 import '../../shared/widgets/common_widgets.dart';
 import 'data_export_service.dart';
@@ -73,10 +74,15 @@ class SettingsScreen extends ConsumerWidget {
             onTap: () => _wipe(context, ref),
           ),
           const _Header('Acerca de'),
-          const ListTile(
-            leading: Icon(Icons.info_outline),
-            title: Text('TELEIOS'),
-            subtitle: Text('Entorno: ${Env.name}'),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            child: Column(
+              children: [
+                const TeleiosLogo(markSize: 72),
+                const SizedBox(height: 12),
+                Text('Entorno: ${Env.name}', style: theme.textTheme.bodySmall),
+              ],
+            ),
           ),
           const ListTile(
             leading: Icon(Icons.menu_book_outlined),

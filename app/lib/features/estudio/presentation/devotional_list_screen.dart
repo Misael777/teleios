@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/theme/teleios_logo.dart';
 import '../../../core/utils/formatters.dart';
 import '../../../shared/domain/catalogs/bible_books.dart';
 import '../../../shared/domain/entities/dimension.dart';
@@ -24,7 +25,7 @@ class DevotionalListScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Estudio'),
+        title: const Row(children: [TeleiosMark(size: 30), SizedBox(width: 12), Text('Estudio')]),
         actions: [
           IconButton(
             tooltip: 'Biblia RV1909',

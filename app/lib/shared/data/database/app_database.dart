@@ -45,6 +45,8 @@ class AppDatabase extends _$AppDatabase implements TransactionRunner {
     },
     beforeOpen: (details) async {
       await customStatement('PRAGMA foreign_keys = ON');
+      // Mantiene los catálogos del sistema al día tras actualizar la app (idempotente).
+      if (!details.wasCreated) await seedCatalogs();
     },
   );
 

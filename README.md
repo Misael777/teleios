@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/brand/icono.png" width="120" alt="TELEIOS"></p>
+
 # TELEIOS 🏛️📊
 
 > *"Sed, pues, vosotros perfectos, como vuestro Padre que está en los cielos es perfecto."* — Mateo 5:48
@@ -129,6 +131,10 @@ dart run build_runner build
 ollama run llama3.2:3b
 # TELEIOS se conecta automáticamente a http://localhost:11434
 ```
+
+## 🎨 Marca
+
+Paleta, tipografías e íconos: [`docs/brand/BRAND.md`](./docs/brand/BRAND.md).
 
 ## 📤 Empaquetar ejecutables
 

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:local_auth/local_auth.dart';
 
 import '../preferences/app_settings.dart';
+import '../theme/teleios_logo.dart';
 
 /// Autenticación del sistema (huella, rostro, PIN del dispositivo, Windows Hello).
 abstract interface class DeviceAuthenticator {
@@ -146,10 +147,22 @@ class _LockScreen extends ConsumerWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.lock_outline, size: 64, color: theme.colorScheme.primary),
-              const SizedBox(height: 16),
-              Text('TELEIOS está bloqueado', style: theme.textTheme.titleLarge),
+              const TeleiosMark(size: 112),
               const SizedBox(height: 24),
+              const TeleiosWordmark(scale: 0.8),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.lock_outline, size: 16, color: theme.colorScheme.onSurfaceVariant),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Tu diario está protegido',
+                    style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 28),
               FilledButton.icon(
                 onPressed: () => ref.read(appLockProvider.notifier).unlock(),
                 icon: const Icon(Icons.fingerprint),

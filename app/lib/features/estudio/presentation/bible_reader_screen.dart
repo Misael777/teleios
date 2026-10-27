@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../core/router/app_router.dart';
+import '../../../core/theme/app_theme.dart';
 import '../../../shared/domain/catalogs/bible_books.dart';
 import '../../../shared/domain/entities/passage_ref.dart';
 import '../../../shared/providers.dart';
@@ -229,14 +230,11 @@ class _ChapterViewState extends ConsumerState<_ChapterView> {
         child: Text.rich(
           TextSpan(
             children: [
-              TextSpan(
-                text: '${v.verse}  ',
-                style: TextStyle(fontWeight: FontWeight.bold, color: theme.colorScheme.primary, fontSize: 12),
-              ),
+              TextSpan(text: '${v.verse}  ', style: context.scripture.verseNumber),
               TextSpan(text: v.text),
             ],
           ),
-          style: theme.textTheme.bodyLarge?.copyWith(height: 1.5),
+          style: context.scripture.body,
         ),
       ),
     );

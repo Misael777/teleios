@@ -1,0 +1,28 @@
+# Íconos de la app. Regenerar con:  dart run flutter_launcher_icons
+# Fuentes en assets/brand/ (generadas por tool/build_brand_assets.py).
+flutter_launcher_icons:
+  image_path: assets/brand/icon-1024.png
+
+  android: true
+  min_sdk_android: 24
+  adaptive_icon_background: "#0E1320"
+  adaptive_icon_foreground: assets/brand/icon-foreground-1024.png
+  adaptive_icon_monochrome: assets/brand/icon-monochrome-1024.png
+  # La imagen ya respeta la zona segura (66/108 dp): sin margen extra.
+  adaptive_icon_foreground_inset: 0
+
+  ios: true
+  remove_alpha_ios: true
+  background_color_ios: "#0E1320"
+
+  web:
+    generate: true
+    background_color: "#0E1320"
+    theme_color: "#0E1320"
+
+  windows:
+    generate: true
+    icon_size: 256
+
+  macos:
+    generate: true

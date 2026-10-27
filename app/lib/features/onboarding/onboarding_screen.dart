@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/preferences/app_settings.dart';
 import '../../core/security/app_lock.dart';
+import '../../core/theme/teleios_logo.dart';
 
 /// Propósito → privacidad → consentimiento explícito de datos sensibles.
 class OnboardingScreen extends ConsumerStatefulWidget {
@@ -51,14 +52,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     controller: _pages,
                     onPageChanged: (p) => setState(() => _page = p),
                     children: [
-                      const _InfoPage(
-                        icon: Icons.account_balance,
-                        title: 'Bienvenido a TELEIOS',
-                        body:
-                            'Un diario para estudiar la Escritura con rigor y observar, '
-                            'con honestidad, cómo lo que aprendes se refleja en tu vida.\n\n'
-                            '«Examinemos nuestros caminos, y busquemos.» — Lamentaciones 3:40',
-                      ),
+                      const _BrandPage(),
                       const _InfoPage(
                         icon: Icons.shield_outlined,
                         title: 'Tu diario es tuyo',
@@ -114,6 +108,29 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Primera impresión: el logo completo con el lema de Mateo 5:48.
+class _BrandPage extends StatelessWidget {
+  const _BrandPage();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(32, 40, 32, 24),
+      children: [
+        const TeleiosLogo(markSize: 128, showMotto: true),
+        const SizedBox(height: 32),
+        Text(
+          'Un diario para estudiar la Escritura con rigor y observar, con honestidad, '
+          'cómo lo que aprendes se refleja en tu vida.',
+          textAlign: TextAlign.center,
+          style: theme.textTheme.bodyLarge?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+        ),
+      ],
     );
   }
 }
