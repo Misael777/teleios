@@ -129,3 +129,18 @@ dart run build_runner build
 ollama run llama3.2:3b
 # TELEIOS se conecta automáticamente a http://localhost:11434
 ```
+
+## 📤 Empaquetar ejecutables
+
+Desde la raíz del repo, en Windows (resultado en `dist\`, ignorado por git):
+
+| Script | Para qué | Genera |
+|--------|----------|--------|
+| `build-debug.bat` | Probar en tus equipos (requiere Visual Studio en la PC) | `.zip` Windows + `.apk` debug |
+| `build-release.bat` | Instalar en cualquier PC / teléfono | `.zip` Windows portable + `.apk` firmado |
+
+Opciones: `rapido` (omite análisis y tests) e `instalar` (instala el APK por USB con `adb`).
+
+> 🔑 La primera ejecución de `build-release.bat` crea la llave de firma Android en `app\android\keys\` y `app\android\key.properties`. **Respáldalas fuera del repo**: sin ellas no se puede actualizar la app ya instalada.
+>
+> 🔢 Antes de cada nuevo release sube `version:` en `app/pubspec.yaml` (p. ej. `0.1.0+1` → `0.1.1+2`); Android exige que el número tras `+` aumente.

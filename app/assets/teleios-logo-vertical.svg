@@ -1,0 +1,113 @@
+<svg width="440" height="620" viewBox="0 0 440 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D48A"/>
+      <stop offset="50%" stop-color="#C9A961"/>
+      <stop offset="100%" stop-color="#8C6B2E"/>
+    </linearGradient>
+    <filter id="glow3" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ═══════════ ÍCONO ═══════════ -->
+  <g transform="translate(110, 20)">
+    <g transform="rotate(45 110 110)">
+      <circle cx="110" cy="110" r="88" fill="none" stroke="url(#gold3)" stroke-width="2.2"/>
+      <circle cx="110" cy="110" r="80" fill="none" stroke="url(#gold3)" stroke-width="0.5" opacity="0.35"/>
+
+      <line x1="110" y1="46" x2="110" y2="174" stroke="url(#gold3)" stroke-width="2"/>
+      <line x1="46"  y1="110" x2="174" y2="110" stroke="url(#gold3)" stroke-width="2"/>
+
+      <line x1="110" y1="110" x2="65"  y2="65"  stroke="url(#gold3)" stroke-width="0.9" opacity="0.4"/>
+      <line x1="110" y1="110" x2="155" y2="65"  stroke="url(#gold3)" stroke-width="0.9" opacity="0.4"/>
+      <line x1="110" y1="110" x2="65"  y2="155" stroke="url(#gold3)" stroke-width="0.9" opacity="0.4"/>
+      <line x1="110" y1="110" x2="155" y2="155" stroke="url(#gold3)" stroke-width="0.9" opacity="0.4"/>
+
+      <circle cx="110" cy="46"  r="7" fill="url(#gold3)"/>
+      <circle cx="110" cy="174" r="7" fill="url(#gold3)"/>
+      <circle cx="46"  cy="110" r="7" fill="url(#gold3)"/>
+      <circle cx="174" cy="110" r="7" fill="url(#gold3)"/>
+
+      <circle cx="65"  cy="65"  r="4.5" fill="url(#gold3)" opacity="0.75"/>
+      <circle cx="155" cy="65"  r="4.5" fill="url(#gold3)" opacity="0.75"/>
+      <circle cx="65"  cy="155" r="4.5" fill="url(#gold3)" opacity="0.75"/>
+      <circle cx="155" cy="155" r="4.5" fill="url(#gold3)" opacity="0.75"/>
+
+      <circle cx="110" cy="110" r="26" fill="#C9A961" opacity="0.15"/>
+
+      <g filter="url(#glow3)">
+        <line x1="110" y1="88" x2="110" y2="132"
+              stroke="url(#gold3)" stroke-width="6" stroke-linecap="round"/>
+        <line x1="88" y1="110" x2="132" y2="110"
+              stroke="url(#gold3)" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <circle cx="110" cy="110" r="2.5" fill="#FFF8E1"/>
+    </g>
+  </g>
+
+  <!-- ═══════════ WORDMARK LATINO ═══════════ -->
+  <text x="220" y="330"
+        text-anchor="middle"
+        font-family="'Inter','Manrope','Helvetica Neue',Arial,sans-serif"
+        font-size="56" font-weight="700" letter-spacing="10" fill="#F5EFE0">
+    TELEIOS
+  </text>
+
+  <!-- ═══════════ WORDMARK GRIEGO ═══════════ -->
+  <text x="220" y="362"
+        text-anchor="middle"
+        font-family="'GFS Didot','Gentium Plus','Linux Libertine','Palatino Linotype','Times New Roman',serif"
+        font-size="20" font-weight="400" letter-spacing="9"
+        fill="url(#gold3)" opacity="0.9">
+    ΤΕΛΕΙΟΣ
+  </text>
+
+  <!-- ═══════════ VERSÍCULO GRIEGO — línea 1 ═══════════ -->
+  <text x="220" y="412"
+        text-anchor="middle"
+        font-family="'GFS Didot','Gentium Plus','Linux Libertine','Palatino Linotype','Times New Roman',serif"
+        font-size="15" font-style="italic" font-weight="400"
+        fill="url(#gold3)" opacity="0.9">
+    Ἔσεσθε οὖν ὑμεῖς τέλειοι
+  </text>
+
+  <!-- ═══════════ VERSÍCULO GRIEGO — línea 2 ═══════════ -->
+  <text x="220" y="434"
+        text-anchor="middle"
+        font-family="'GFS Didot','Gentium Plus','Linux Libertine','Palatino Linotype','Times New Roman',serif"
+        font-size="15" font-style="italic" font-weight="400"
+        fill="url(#gold3)" opacity="0.9">
+    ὡς ὁ πατὴρ ὑμῶν ὁ οὐράνιος τέλειός ἐστιν
+  </text>
+
+  <!-- ═══════════ TRADUCCIÓN ESPAÑOLA ═══════════ -->
+  <text x="220" y="472"
+        text-anchor="middle"
+        font-family="'Georgia','Crimson Pro','Times New Roman',serif"
+        font-size="13" font-style="italic" font-weight="400"
+        fill="#C9A961" opacity="0.7">
+    «Sed, pues, vosotros perfectos,
+  </text>
+
+  <text x="220" y="490"
+        text-anchor="middle"
+        font-family="'Georgia','Crimson Pro','Times New Roman',serif"
+        font-size="13" font-style="italic" font-weight="400"
+        fill="#C9A961" opacity="0.7">
+    como vuestro Padre que está en los cielos es perfecto»
+  </text>
+
+  <!-- ═══════════ REFERENCIA BILINGÜE ═══════════ -->
+  <text x="220" y="520"
+        text-anchor="middle"
+        font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+        font-size="10" font-weight="600" letter-spacing="3"
+        fill="#C9A961" opacity="0.7">
+    ΚΑΤΑ ΜΑΤΘΑΙΟΝ 5:48  ·  MATEO 5:48
+  </text>
+</svg>
