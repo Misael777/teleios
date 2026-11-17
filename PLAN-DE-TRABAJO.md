@@ -140,88 +140,89 @@ La DoD pedía textos en `app_es.arb`. Se decidió **posponer l10n**: la app es s
 
 ---
 
-## 📝 SPRINT 5 — Bitácora de Praxis A-B-C
+## 📝 SPRINT 5 — Bitácora de Praxis A-B-C ✅ 2026-10-27
 
-**Objetivo:** capturar la vida real con el modelo completo.
+- [x] Flujo guiado en 4 pasos (Stepper): **A** circunstancia + emociones + intensidad → **B** filtro + fundamento + tópicos → **C** acción, paz y coherencia → fotos.
+- [x] Rama "falla" (impulso): detonantes del catálogo + "Otro" propio.
+- [x] Rama "cosmovisión": la creencia se crea en Incubación y se vincula; o se elige una ya incubada.
+- [x] Sugerencias de tópicos: primero los **estudiados en los últimos 14 días**, más el sugeridor léxico sobre el texto.
+- [x] Fotos privadas: se reducen a 1600 px, **se borran sus metadatos EXIF (GPS, cámara)** y se guardan **cifradas** (AES-GCM).
+- [x] **Registro rápido** (< 30 s): circunstancia, emoción, intensidad, filtro y paz. La coherencia queda vacía (no se inventa) y el detalle invita a completarla.
+- [x] Emociones primarias → secundarias desplegables, con emociones propias.
+- [x] **Migración de esquema v1 → v2** (coherencia opcional y tabla de adjuntos) con test que valida el esquema migrado contra una instalación nueva. Cierra la tarea pendiente del S1.
+- [x] Reglas: un tópico nuevo creado en la bitácora nace **en incubación**, salvo que se cite un pasaje.
+- [x] Tests: guardado, reglas de tópicos, rollback de archivos si falla la transacción, borrado en cascada y cifrado de adjuntos.
 
-- [ ] Flujo guiado de 4 pasos (stepper): **A** circunstancia → emociones (chips multiselección) + intensidad → **B** filtro (Bíblico / Cosmovisión / Impulso) + fundamento → **C** acción + coherencia + paz.
-- [ ] Rama "falla": detonantes (ira, orgullo, miedo, cansancio…).
-- [ ] Rama "cosmovisión": crea/actualiza nodo en Incubación automáticamente.
-- [ ] Vincular a tópicos: sugerir primero los **estudiados en los últimos 14 días**.
-- [ ] Adjuntar foto privada opcional (compresión a WebP, guardada en directorio privado de la app).
-- [ ] Captura rápida (< 30 s): modo "registro express" con solo circunstancia + emoción + paz.
-- [ ] Tests del use case de correlación praxis ↔ tópico.
-
-**Entregable:** registro una falla por impaciencia vinculada a "Paciencia" en menos de 1 minuto.
-
----
-
-## 🎙️ SPRINT 6 — Altar: Oración por Voz
-
-**Objetivo:** dictar oraciones sin que salgan del teléfono.
-
-- [ ] `speech_to_text` forzando reconocimiento **on-device** (Android 13+ `onDevice`, iOS `requiresOnDeviceRecognition`); si no está disponible → aviso claro + modo escritura.
-- [ ] Deshabilitar voz en Web (el navegador envía audio a la nube).
-- [ ] UI de grabación con waveform animado (`CustomPainter` alimentado por nivel de sonido).
-- [ ] Transcripción editable antes de guardar; **no se guarda el audio** por defecto.
-- [ ] Intención (Agradecimiento / Petición / Lamentación) sugerida por `LexicalClassifier`, confirmada por el usuario.
-- [ ] Tópicos de la oración → puentes a Bitácora (`TopicLink` origen = oración).
-
-**Entregable:** dicto una oración en modo avión, se transcribe y queda vinculada a mis tópicos.
+**Entregable:** ✅ registro una falla por impaciencia vinculada a "Paciencia" (test de flujo con registro rápido incluido).
 
 ---
 
-## 📈 SPRINT 7 — Motor Analítico + Dashboards I
+## 🎙️ SPRINT 6 — Altar: Oración por Voz ✅ 2026-10-27
 
-**Objetivo:** convertir los registros en insight, con estadística honesta.
+- [x] `SpeechService` (interfaz) + `DeviceSpeechService` con `speech_to_text` en modo **on-device** (`onDevice: true`, locale en español).
+- [x] Si el dispositivo no ofrece dictado sin conexión → el micrófono se desactiva y se explica por qué (no se envía la voz a servidores).
+- [x] Voz **deshabilitada en Web** por diseño.
+- [x] Onda animada (`CustomPainter`) con niveles normalizados por plataforma.
+- [x] Transcripción editable; **el audio nunca se guarda**.
+- [x] Intención sugerida por un clasificador léxico (agradecimiento / petición / lamentación) con su explicación; el usuario confirma.
+- [x] Tópicos de la oración (nacen en incubación) y **vínculo a registros de la bitácora de los últimos 7 días**.
+- [x] Permisos: Android `RECORD_AUDIO` + consulta de `RecognitionService`; iOS micrófono y reconocimiento de voz.
+- [x] Tests con un servicio de voz falso: dictado → intención sugerida → guardado; y el caso sin dictado sin conexión.
 
-- [ ] Servicios de dominio puros (100% testeados):
-  - `CoherenceCalculator` (promedios por tópico/dimensión/período).
-  - `IetCalculator` — `IET = Σ(coh·paz) / (100·n)` ∈ [0,1].
-  - `CorrelationService` — Spearman estudio ↔ coherencia, con n mínimo = 8 y etiqueta de confianza.
-  - `LagTimeAnalyzer` — días entre estudiar un tópico y aplicarlo.
-  - `BlindSpotDetector` — ≥ 3 fallas por un detonante sin estudio relacionado en 20 días.
-- [ ] Dashboards con `fl_chart`: radar de dimensiones, dispersión estudio↔coherencia, heatmap tipo GitHub, tendencias de paz.
-- [ ] Tarjeta de "Puntos ciegos" con sugerencia de estudio (lenguaje no condenatorio).
-- [ ] Lenguaje de UI: "correlación", nunca "demuestra" o "causa".
-
-**Entregable:** pantalla Ejes con 4 gráficos alimentados por mis datos reales de 3+ semanas.
-
----
-
-## 🕸️ SPRINT 8 — Grafo de Personalidad + Release 0.1
-
-**Objetivo:** la visualización insignia y la primera versión publicable.
-
-- [ ] Grafo de fuerza dirigida (`graphview` Fruchterman-Reingold, o `CustomPainter` propio si el rendimiento no alcanza con > 150 nodos).
-  - Nodos: dimensión → tópico → emoción. Estilos: validado (sólido), incubación (punteado), sombra (alerta).
-  - Color de arista por paz promedio (rojo → verde); pulso para emociones de alta intensidad.
-  - Filtros: encender/apagar dimensiones, rango de fechas.
-- [ ] Diagrama de aluvión (Sankey) Circunstancia → Emoción → Filtro → Paz.
-- [ ] Rendimiento: grafo a 60 fps con 200 nodos en gama media (profiling).
-- [ ] Build firmado Android (AAB) + Desktop (MSIX/DMG). iOS vía Codemagic (si se publica).
-- [ ] Google Play **Internal testing**; política de privacidad en GitHub Pages; formulario Data Safety.
-
-**Entregable 🚀 Release 0.1 Personal** instalada por 3-5 testers de confianza.
+**Entregable:** ✅ dicto una oración y queda transcrita, clasificada y vinculada (probado con voz simulada).
+- [ ] **Probar el dictado real en un teléfono Android**: no fue posible en este entorno.
 
 ---
 
-## 💾 SPRINT 9 — Backup Cifrado (Release 0.2)
+## 📈 SPRINT 7 — Motor Analítico + Dashboards ✅ 2026-10-27
 
-**Objetivo:** que nadie pierda años de diario por perder el teléfono.
+- [x] Servicios de dominio puros, todos con tests:
+  - `Statistics`: media, mediana, rangos con empates, Pearson, **Spearman**, **IET** normalizado.
+  - `topicStats`: estudios, praxis, fallas, coherencia media (solo registros evaluados), paz, IET y **desfase** (mediana de días entre estudiar y vivir).
+  - `studyVsCoherence`: correlación con **n ≥ 8**; con menos muestra se rotula "datos insuficientes".
+  - `blindSpots`: 3 o más fallas por un detonante en 7 días sin estudiar sus "remedios" en 20 días.
+  - `shadowCandidates` + `MarkTopicAsShadow` (pendiente del S1): **la app propone y el usuario confirma**.
+- [x] Dashboards (`fl_chart`): KPIs, radar de dimensiones, heatmap de 20 semanas, paz semanal, dispersión estudio ↔ coherencia con ρ y n, ranking por IET con desfase.
+- [x] Selector de período (30 días / 90 días / 1 año / todo). Equivale al filtro por fechas que estaba pendiente.
+- [x] El lenguaje siempre habla de **correlación**, con la aclaración "no es causa y efecto".
 
-- [ ] Servicio `BackupService` (ver ADR-004):
-  1. `VACUUM INTO` → snapshot consistente.
-  2. Zip con adjuntos privados + `manifest.json` (versión de esquema, fecha, hash).
-  3. Cifrado AES-256-GCM, llave derivada con **Argon2id** de la *passphrase de backup* (paquete `cryptography`).
-- [ ] Configuración: passphrase + **código de recuperación** de 24 palabras (mostrado una sola vez).
-- [ ] Destino A — **Google Drive `appDataFolder`** (`google_sign_in` + `googleapis` drive v3, scope `drive.appdata`). Rotación: conservar 5.
-- [ ] Destino B — **Archivo** vía hoja de compartir (iCloud Drive, Files, correo, USB).
-- [ ] Backup automático semanal (`workmanager` en Android / `BGTaskScheduler` iOS) solo con Wi-Fi.
-- [ ] Restore en dispositivo nuevo con migración de esquema si el backup es antiguo.
-- [ ] Test E2E: backup → borrar app → reinstalar → restaurar → datos idénticos (hash).
+---
 
-**Entregable 🚀 Release 0.2:** restauro mi diario completo en otro teléfono.
+## 🕸️ SPRINT 8 — Grafo de Personalidad + Aluvión ✅ 2026-10-27 · Release 0.1 ⏳
+
+- [x] Grafo **propio** de fuerza dirigida (Fruchterman-Reingold), **determinista** (semilla fija) y calculado en otro isolate.
+  - ⚖️ *Cambio:* sin `graphview`. El layout propio es testeable, pinta las aristas por paz y fija las 4 dimensiones en los puntos cardinales para que el mapa sea estable entre visitas.
+  - Nodos: dimensión → tópico (sólido, punteado si está en incubación, borde rojo si es sombra) → emoción (pulsa si la intensidad promedio es 8 o más).
+  - Aristas tópico ↔ emoción coloreadas por la paz promedio (rojo → verde). Zoom, centrado, toque para ver el detalle y filtro por dimensión.
+- [x] Aluvión **Emoción primaria → Filtro → Paz** (baja / media / alta) con conservación de flujo verificada por test.
+- [x] Política de privacidad: [`docs/PRIVACIDAD.md`](./docs/PRIVACIDAD.md), lista para publicar con GitHub Pages.
+- [x] Builds firmadas: `build-release.bat` (Windows portable + APK firmado).
+- [ ] Prueba de rendimiento con 200 nodos en un teléfono de gama media.
+- [ ] **Play Console** (internal testing) y formulario *Data Safety*: requieren tu cuenta (USD 25).
+
+---
+
+## 💾 SPRINT 9 — Backup Cifrado ✅ 2026-10-27 (Release 0.2)
+
+- [x] Formato `.teleios`: cabecera autenticada + AES-256-GCM. La llave de datos va envuelta por la **contraseña (Argon2id, en otro isolate)** y por el **código de recuperación** (Base32, 256 bits). Ver ADR-004 revisado.
+  - ⚖️ *Cambio:* exportación lógica (JSON + adjuntos) en vez de `VACUUM INTO`. El backup no depende de la llave del dispositivo y sobrevive a cambios de esquema.
+- [x] Configurar, cambiar la contraseña y regenerar el código de recuperación (se muestra **una vez** y hay que confirmar que se guardó).
+- [x] Destino **archivo**: compartir en móvil, "Guardar como" en escritorio.
+- [x] Destino **Google Drive** `appDataFolder` (scope `drive.appdata`, conserva 5): conectar, respaldar, listar, restaurar y desconectar.
+- [x] **Respaldo automático semanal** al abrir o volver a la app.
+  - ⚖️ *Cambio:* sin `workmanager`, para no depender de tareas en segundo plano.
+- [x] Restaurar: rechaza backups de versiones más nuevas y **no toca nada si la contraseña es incorrecta**. Conserva las llaves para los respaldos siguientes.
+- [x] Test E2E: respaldo → borrar todo → restaurar deja los **datos idénticos** (todas las tablas y las fotos). Restaurar en "otro dispositivo" funciona solo con el código de recuperación.
+- [ ] **Credenciales OAuth de Google**: requieren tu cuenta de Google Cloud. Guía en [`docs/GOOGLE-DRIVE-SETUP.md`](./docs/GOOGLE-DRIVE-SETUP.md). Mientras tanto, el respaldo a archivo funciona y se puede guardar en Drive desde la hoja de compartir.
+
+### 📊 Estado de calidad al cierre del S9
+
+| Métrica | Valor |
+|---------|-------|
+| Tests | **151 en verde** (dominio, datos, migración v1 → v2, cifrado, backup E2E, analítica, grafo, aluvión, widgets) |
+| `flutter analyze` | 0 issues |
+| Bugs encontrados por los tests y las capturas | 7 (Hero duplicado, isolate que capturaba el widget, controlador creado en `dispose`, etiquetas de gráficos encimadas, entre otros). Todos corregidos |
+| Pendiente de probar en dispositivo | dictado real, Google Drive real (requiere OAuth), cámara |
 
 ---
 
@@ -331,3 +332,16 @@ La DoD pedía textos en `app_es.arb`. Se decidió **posponer l10n**: la app es s
 | 2026-10-27 | Sin `freezed`/`riverpod_generator`; sin `flutter_quill`; l10n pospuesto | Menos dependencias y codegen; agregar cuando haga falta |
 | 2026-10-27 | Nuevo estado `refutado` para tópicos | Conservar el proceso de discernimiento («examinadlo todo») |
 | 2026-10-27 | `MarkAsShadow` y filtro por fechas → S7 | Dependen de datos de praxis / heatmap |
+| 2026-10-27 | Sprints 5-9 completados (Release 0.2) | Ver estado de calidad en el S9 |
+| 2026-10-27 | Grafo propio en vez de `graphview` | Determinista, testeable, aristas por paz |
+| 2026-10-27 | Backup lógico (JSON+ZIP) en vez de `VACUUM INTO`; automático al abrir en vez de `workmanager` | Independiente de la llave del dispositivo y del esquema; sin permisos de segundo plano |
+| 2026-10-27 | Esquema v2: coherencia opcional + adjuntos cifrados | Registro rápido honesto; privacidad de fotos |
+| 2026-10-29 | Reflexión guiada en 5 secciones (exégesis, hermenéutica, teología, homilética opcional, aplicación) con batería de preguntas; la pregunta clave de cada sección es obligatoria | Pedido del usuario: guiar y obligar a desarrollar la reflexión. Se guarda en `content` con un encabezado por pregunta; las reflexiones anteriores se reubican solas |
+| 2026-10-29 | Versículos vinculados escribiendo `{` en la reflexión | Se guardan como texto legible `{Juan 3:16}`; en el detalle se tocan para leer el pasaje |
+| 2026-10-29 | Esquema v3: portada del devocional (título y versículo lema) + portada de la app (logo, ΤΕΛΕΙΟΣ, Mateo 5:48) | Presentación profesional; la portada al abrir se puede desactivar en Ajustes |
+| 2026-10-29 | Épocas anteriores a Abraham: Creación y antediluvianos, Diluvio y Babel | Faltaban Génesis 1-11; Génesis se ubica por capítulo |
+| 2026-10-29 | Red de pasajes en la línea de tiempo: riel de versículos vinculados ubicados en su época, hilos de cada devocional a cada versículo con el color de la sección donde se citó, filtro por sección y selección con ficha | Pedido del usuario: ver la interconexión de pasajes y de qué sección (exégesis, homilética…) nace cada vínculo. Sin cambio de esquema: se deriva de las citas `{…}` |
+| 2026-10-30 | Plan de coherencia medida (`docs/PLAN-COHERENCIA.md`): Sprints 11-17 en dos líneas paralelas, app (O4 → O2 → O1) y laboratorio `ml/` (System One local multi-cabeza + clusterizador de grafo con signo, destilación maestro → alumno en la GPU local) | La coherencia pasa de declararse a medirse con evidencia; la negación se trata como restricción, no como parecido; el diario nunca sale del teléfono |
+| 2026-10-31 | Sprints 11-15 de coherencia medida (app 0.4.0+8, esquema v4): creencias, evidencia canónica con referencias cruzadas de OpenBible, vínculos desde/contra, gráficos 1-8, etiquetado compartido, juez local ONNX (System One) con tokenizador en Dart, prototipos de pensamiento | Resultados y límites en `docs/PLAN-COHERENCIA.md` §12. Ningún juez cumple aún el 90 % en pares mínimos (alumno int8: 72/84): el modelo solo sugiere |
+| 2026-10-31 | Laboratorio `ml/`: línea base, generador sintético, grafo con signo (0 % de opuestos mezclados, 7/7 antagonistas), System One multi-cabeza calibrado y exportación del paquete | La GPU local alcanza; el diario nunca entra al laboratorio |
+| 2026-10-31 | Corrección: los streams `customSelect('SELECT 1', readsFrom: …)` de devocionales, bitácora, altar y Ejes compartían un único stream | Drift reutiliza streams por SQL e ignora `readsFrom`: solo se vigilaban las tablas del primero que se registraba. Ahora cada repositorio usa un SQL propio |

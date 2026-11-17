@@ -35,7 +35,7 @@ jobs:
           git diff --exit-code -- lib/
 
       - name: Formato (excluye código generado)
-        run: dart format --output=none --set-exit-if-changed $(find lib test -name '*.dart' ! -name '*.g.dart')
+        run: dart format --output=none --set-exit-if-changed $(find lib test -name '*.dart' ! -name '*.g.dart' ! -path 'test/generated_migrations/*')
 
       - run: flutter analyze
 

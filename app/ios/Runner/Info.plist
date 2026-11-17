@@ -8,7 +8,15 @@
 		<string>$(DEVELOPMENT_LANGUAGE)</string>
 		<key>CFBundleDisplayName</key>
 		<string>TELEIOS</string>
-		<key>NSFaceIDUsageDescription</key>
+		<key>NSMicrophoneUsageDescription</key>
+	<string>TELEIOS usa el micrófono para dictar tus oraciones. El audio no se guarda.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>TELEIOS transcribe tus oraciones en el dispositivo.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Para adjuntar fotos privadas a tu bitácora.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Para tomar fotos privadas para tu bitácora.</string>
+	<key>NSFaceIDUsageDescription</key>
 		<string>TELEIOS usa Face ID para proteger tu diario.</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>

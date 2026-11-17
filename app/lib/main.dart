@@ -1,3 +1,4 @@
+import 'package:convert/convert.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +13,7 @@ import 'core/security/database_key_store.dart';
 import 'core/theme/app_theme.dart';
 import 'core/utils/app_logger.dart';
 import 'shared/data/database/platform_storage.dart';
+import 'shared/domain/repositories/attachment_store.dart';
 import 'shared/providers.dart';
 
 Future<void> main() async {
@@ -23,6 +25,10 @@ Future<void> main() async {
     final key = await DatabaseKeyStore().readOrCreate();
     final db = await openAppDatabase(hexKey: key, fileName: Env.databaseFileName);
     final bible = await openBibleRepository(() => rootBundle.load('assets/bible/rv1909.sqlite.gz'));
+    final attachments = EncryptedAttachmentStore(
+      await openRawAttachmentStore(),
+      await EncryptedAttachmentStore.deriveKey(hex.decode(key)),
+    );
     AppLogger.info('TELEIOS iniciado (${Env.name})');
 
     runApp(
@@ -31,6 +37,7 @@ Future<void> main() async {
           sharedPreferencesProvider.overrideWithValue(prefs),
           appDatabaseProvider.overrideWithValue(db),
           bibleRepositoryProvider.overrideWithValue(bible),
+          attachmentStoreProvider.overrideWithValue(attachments),
         ],
         child: const TeleiosApp(),
       ),

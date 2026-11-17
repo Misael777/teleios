@@ -6,6 +6,7 @@ class Dimension {
     required this.description,
     required this.colorHex,
     required this.sortOrder,
+    required this.shortName,
   });
 
   final String id;
@@ -13,6 +14,9 @@ class Dimension {
   final String description;
   final String colorHex;
   final int sortOrder;
+
+  /// Nombre corto para gráficos estrechos.
+  final String shortName;
 
   static const caracterDios = 'caracter_dios';
   static const contextoHistorico = 'contexto_historico';
@@ -23,6 +27,7 @@ class Dimension {
     Dimension(
       id: caracterDios,
       name: 'Carácter de Dios',
+      shortName: 'Carácter de Dios',
       description: 'Atributos de Dios revelados en el texto.',
       colorHex: '#5B45A8',
       sortOrder: 0,
@@ -30,6 +35,7 @@ class Dimension {
     Dimension(
       id: contextoHistorico,
       name: 'Contexto Histórico',
+      shortName: 'Contexto',
       description: 'Época, cultura, imperio y circunstancias del texto.',
       colorHex: '#9A5636',
       sortOrder: 1,
@@ -37,6 +43,7 @@ class Dimension {
     Dimension(
       id: vidaPractica,
       name: 'Vida Práctica',
+      shortName: 'Vida Práctica',
       description: 'Aplicación concreta a mis acciones y relaciones.',
       colorHex: '#2F7D4E',
       sortOrder: 2,
@@ -44,6 +51,7 @@ class Dimension {
     Dimension(
       id: estructuraPensamiento,
       name: 'Estructura del Pensamiento',
+      shortName: 'Pensamiento',
       description: 'Argumento del texto, conceptos teológicos y conexiones.',
       colorHex: '#2B64B5',
       sortOrder: 3,

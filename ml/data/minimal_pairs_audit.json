@@ -1,0 +1,18 @@
+{
+  "fecha": "2026-11-03",
+  "revisor": "Claude (pendiente de confirmación del usuario)",
+  "regla": "El test no se edita. Los pares listados se reportan aparte (métrica 'auditada'); el usuario puede confirmar o revertir cada uno.",
+  "excluir": {
+    "mp074c": "ERROR DE ETIQUETA: 'Cristo cargó el castigo que yo merecía' no contradice 'Merezco ser castigado'; también afirma el merecimiento.",
+    "mp047c": "'será peor' frente a 'puede ser mejor': predicción frente a posibilidad; no es contradicción estricta.",
+    "mp064c": "'Ser vulnerable es peligroso' (genérico) frente a 'puede ser seguro con las personas correctas': compatibles.",
+    "mp026c": "'A veces enfrento más de lo que puedo soportar SOLO' es compatible con 'Dios no me da más de lo que puedo soportar'.",
+    "mp086c": "'Nunca seré suficiente' frente a 'En Cristo soy suficiente': el alcance distinto (por mí / en Cristo) los hace compatibles.",
+    "mp062c": "'Si mi familia está mal, tengo la culpa' frente a 'No todo lo malo es culpa mía': condicional frente a cuantificador; no es contradicción estricta.",
+    "mp062b": "'Si mi familia está mal, tengo la culpa' no implica 'Todo lo malo en mi casa es culpa mía' (implicación inversa).",
+    "mp050b": "'nunca me lo perdonarán' frente a 'no se olvida jamás': perdonar ≠ olvidar.",
+    "mp030b": "'debo devolver el golpe' frente a 'merece que le responda igual': deber ≠ merecer; ofender ≠ herir.",
+    "mp029b": "'feliz a toda costa' frente a 'lo primero que Dios busca': prioridad ≠ incondicionalidad; paráfrasis demasiado suelta.",
+    "mp099b": "'Todo depende de mí' frente a 'Nada sale bien si yo no lo hago': relacionadas, pero no es implicación estricta."
+  }
+}

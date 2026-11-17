@@ -52,4 +52,13 @@ class FakeBible implements BibleRepository {
 
   @override
   Future<List<BibleSearchHit>> search(String query, {int limit = 50}) async => const [];
+
+  @override
+  Future<List<CrossReference>> crossReferences(PassageRef ref, {int limit = 40}) async => [
+    if (ref.bookCode == 'GAL') ...[
+      const CrossReference(PassageRef(bookCode: 'JOH', chapter: 15, verseStart: 5), 60),
+      const CrossReference(PassageRef(bookCode: 'EPH', chapter: 5, verseStart: 9), 45),
+      const CrossReference(PassageRef(bookCode: 'ROM', chapter: 14, verseStart: 17), 20),
+    ],
+  ];
 }

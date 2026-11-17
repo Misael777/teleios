@@ -1,5 +1,6 @@
 import 'package:drift/drift.dart';
 
+import '../../../features/coherencia/domain/belief.dart';
 import '../../domain/catalogs/emotion_catalog.dart';
 import '../../domain/entities/dimension.dart';
 import '../../domain/entities/praxis_entry.dart';
@@ -26,22 +27,60 @@ part 'app_database.g.dart';
     Prayers,
     PrayerTopics,
     PrayerPraxisLinks,
+    Attachments,
+    Beliefs,
+    BeliefTopics,
+    BeliefEvidenceTable,
+    ActionBeliefs,
+    SharedLabels,
+    ThoughtPatterns,
+    JudgeFeedback,
   ],
 )
 class AppDatabase extends _$AppDatabase implements TransactionRunner {
   AppDatabase(super.executor);
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 4;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
     onCreate: (m) async {
       await m.createAll();
-      await m.createIndex(Index('devotionals_date', 'CREATE INDEX devotionals_date ON devotionals (date)'));
-      await m.createIndex(Index('devotionals_book', 'CREATE INDEX devotionals_book ON devotionals (book_code)'));
-      await m.createIndex(Index('praxis_date', 'CREATE INDEX praxis_date ON praxis_entries (date)'));
       await seedCatalogs();
+    },
+    onUpgrade: (m, from, to) async {
+      if (from < 2) {
+        // v2: coherencia opcional (registro rápido) + adjuntos privados.
+        await m.alterTable(TableMigration(praxisEntries));
+        await m.createTable(attachments);
+        await m.createIndex(attachmentsOwner);
+        // En v1 los índices se creaban a mano (fuera del esquema): se aseguran aquí.
+        await customStatement('CREATE INDEX IF NOT EXISTS devotionals_date ON devotionals (date)');
+        await customStatement('CREATE INDEX IF NOT EXISTS devotionals_book ON devotionals (book_code)');
+        await customStatement('CREATE INDEX IF NOT EXISTS praxis_date ON praxis_entries (date)');
+      }
+      if (from < 3) {
+        // v3: portada del devocional (título y versículo lema).
+        await m.addColumn(devotionals, devotionals.title);
+        await m.addColumn(devotionals, devotionals.keyVerse);
+      }
+      if (from < 4) {
+        // v4: coherencia medida (creencias, evidencia, vínculos, etiquetado, patrones, juez).
+        for (final TableInfo<Table, Object?> table in [
+          beliefs,
+          beliefTopics,
+          beliefEvidenceTable,
+          actionBeliefs,
+          sharedLabels,
+          thoughtPatterns,
+          judgeFeedback,
+        ]) {
+          await m.createTable(table);
+        }
+        await m.createIndex(beliefEvidenceBelief);
+        await m.createIndex(actionBeliefsBelief);
+      }
     },
     beforeOpen: (details) async {
       await customStatement('PRAGMA foreign_keys = ON');

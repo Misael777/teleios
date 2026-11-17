@@ -1,0 +1,75 @@
+# id	familia	temas (;)	principio (una formulación por línea; varias líneas por id)
+amor_benigno	REL	el amor;la paciencia;la bondad	El amor es sufrido, es benigno; no busca lo suyo, no se irrita.
+amor_benigno	REL	el amor;la paciencia;la bondad	Amar es tener paciencia y ser amable con los demás.
+amar_enemigos	REL	el amor;los enemigos;la oración	Amad a vuestros enemigos, bendecid a los que os maldicen y orad por los que os persiguen.
+amar_enemigos	REL	el amor;los enemigos;la oración	Hay que tratar bien incluso a quien nos hace daño y orar por esa persona.
+perdonar	REL	el perdón;el amor;la reconciliación	Perdonad, y seréis perdonados; soportándoos unos a otros y perdonándoos si alguno tuviere queja.
+perdonar	REL	el perdón;el amor;la reconciliación	Debo perdonar a quien me ofende, como Dios me perdonó a mí.
+no_ira	REL	el enojo;la ira;la paciencia	Airaos, y no pequéis; no se ponga el sol sobre vuestro enojo.
+no_ira	REL	el enojo;la ira;la paciencia	El enojo no debe llevarme a herir a nadie ni a guardar rencor.
+no_venganza	REL	la venganza;el perdón;la justicia	No paguéis a nadie mal por mal; no os venguéis vosotros mismos.
+no_venganza	REL	la venganza;el perdón;la justicia	No me toca vengarme: devuelvo bien aunque me hayan hecho mal.
+no_juzgar	REL	el juicio;la crítica;la misericordia	No juzguéis, para que no seáis juzgados; ¿por qué miras la paja en el ojo de tu hermano?
+no_juzgar	REL	el juicio;la crítica;la misericordia	No debo condenar ni despreciar a los demás por sus fallas.
+reconciliarse	REL	la reconciliación;el perdón;la paz	Si traes tu presente al altar y te acuerdas que tu hermano tiene algo contra ti, ve primero a reconciliarte.
+reconciliarse	REL	la reconciliación;el perdón;la paz	Cuando hay un conflicto, debo buscar a la persona para hacer las paces.
+palabra_edifica	PAL	las palabras;la lengua;el respeto	Ninguna palabra torpe salga de vuestra boca, sino la que sea buena para edificar.
+palabra_edifica	PAL	las palabras;la lengua;el respeto	Mis palabras deben construir y animar, no ofender ni humillar.
+no_chisme	PAL	el chisme;la lengua;la amistad	El chismoso aparta a los mejores amigos; el que cubre la falta busca amistad.
+no_chisme	PAL	el chisme;la lengua;la amistad	No debo hablar mal de otros a sus espaldas ni divulgar sus faltas.
+decir_verdad	VER	la verdad;la honestidad;la mentira	Dejada la mentira, hablad verdad cada uno con su prójimo.
+decir_verdad	VER	la verdad;la honestidad;la mentira	Debo decir la verdad aunque me cueste o me perjudique.
+fiel_en_poco	VER	la honestidad;la integridad;el trabajo	El que es fiel en lo muy poco, también en lo más es fiel.
+fiel_en_poco	VER	la honestidad;la integridad;el trabajo	Debo ser honesto incluso en las cosas pequeñas que nadie ve.
+cumplir_palabra	VER	la palabra dada;la fidelidad;la honestidad	Sea vuestro hablar: Sí, sí; No, no.
+cumplir_palabra	VER	la palabra dada;la fidelidad;la honestidad	Debo cumplir lo que prometo y ser una persona de palabra.
+generosidad	DIN	la generosidad;el dinero;dar	Más bienaventurada cosa es dar que recibir; Dios ama al dador alegre.
+generosidad	DIN	la generosidad;el dinero;dar	Compartir lo que tengo con alegría agrada a Dios.
+contentamiento	DIN	el contentamiento;el dinero;la codicia	Sean las costumbres vuestras sin avaricia, contentos de lo presente.
+contentamiento	DIN	el contentamiento;el dinero;la codicia	Debo estar contento con lo que tengo y no vivir deseando más.
+no_tesoros	DIN	el dinero;las riquezas;la mayordomía	No os hagáis tesoros en la tierra, donde la polilla y el orín corrompen.
+no_tesoros	DIN	el dinero;las riquezas;la mayordomía	Mi corazón no debe estar puesto en acumular cosas ni dinero.
+no_deudas	DIN	las deudas;el dinero;la responsabilidad	No debáis a nadie nada, sino amaros unos a otros.
+no_deudas	DIN	las deudas;el dinero;la responsabilidad	Debo pagar lo que debo y no endeudarme sin necesidad.
+ayudar_pobre	PRO	los pobres;la misericordia;la generosidad	A Jehová presta el que da al pobre, y él le dará su paga.
+ayudar_pobre	PRO	los pobres;la misericordia;la generosidad	Debo ayudar a los que tienen necesidad y no ignorarlos.
+no_afanarse	CON	la ansiedad;la preocupación;la confianza en Dios	No os afanéis por el día de mañana, que el día de mañana traerá su fatiga.
+no_afanarse	CON	la ansiedad;la preocupación;la confianza en Dios	No debo vivir angustiado por el futuro, sino confiar en Dios.
+orar_en_angustia	CON	la oración;la ansiedad;la confianza en Dios	Por nada estéis afanosos, sino sean notorias vuestras peticiones delante de Dios en toda oración.
+orar_en_angustia	CON	la oración;la ansiedad;la confianza en Dios	Cuando me angustio, debo llevarle a Dios mis preocupaciones en oración.
+no_temer	CON	el miedo;la fe;la confianza en Dios	No temas, que yo soy contigo; no desmayes, que yo soy tu Dios.
+no_temer	CON	el miedo;la fe;la confianza en Dios	El miedo no debe gobernar mis decisiones, porque Dios está conmigo.
+esperar_en_dios	CON	la espera;la paciencia;la fe	Guarda silencio ante Jehová, y espera en él.
+esperar_en_dios	CON	la espera;la paciencia;la fe	Debo esperar los tiempos de Dios sin forzar las cosas a mi manera.
+humildad	HUM	la humildad;el orgullo;los demás	Nada hagáis por contienda o por vanagloria; antes bien en humildad, estimándoos inferiores los unos a los otros.
+humildad	HUM	la humildad;el orgullo;los demás	No debo creerme más que los demás ni buscar que me admiren.
+servir	HUM	el servicio;la humildad;el amor	El que quisiere ser el primero, será el siervo de todos.
+servir	HUM	el servicio;la humildad;el amor	Debo servir a los demás sin esperar reconocimiento.
+confesar_error	HUM	el error;la humildad;el arrepentimiento	Confesaos vuestras faltas unos a otros, y rogad los unos por los otros.
+confesar_error	HUM	el error;la humildad;el arrepentimiento	Cuando me equivoco, debo reconocerlo y pedir perdón.
+pureza	PUR	la pureza;la sexualidad;la tentación	Huid de la fornicación; glorificad, pues, a Dios en vuestro cuerpo.
+pureza	PUR	la pureza;la sexualidad;la tentación	Debo cuidar mi cuerpo y mi sexualidad para honrar a Dios.
+mirada_limpia	PUR	la pureza;la mirada;la tentación	Cualquiera que mira a una mujer para codiciarla, ya adulteró con ella en su corazón.
+mirada_limpia	PUR	la pureza;la mirada;la tentación	Debo cuidar lo que miro y lo que dejo entrar en mi mente.
+templanza	PUR	el dominio propio;el alcohol;los vicios	No os embriaguéis de vino, en lo cual hay disolución; antes sed llenos del Espíritu.
+templanza	PUR	el dominio propio;el alcohol;los vicios	Debo tener dominio propio y no dejarme dominar por vicios.
+honrar_padres	FAM	los padres;la familia;el respeto	Honra a tu padre y a tu madre, que es el primer mandamiento con promesa.
+honrar_padres	FAM	los padres;la familia;el respeto	Debo respetar y cuidar a mis padres.
+fidelidad_conyugal	FAM	el matrimonio;la fidelidad;la familia	Lo que Dios juntó, no lo aparte el hombre; honroso sea en todos el matrimonio.
+fidelidad_conyugal	FAM	el matrimonio;la fidelidad;la familia	Debo ser fiel a mi esposo o esposa en cuerpo y en corazón.
+amar_conyuge	FAM	el matrimonio;el amor;la familia	Maridos, amad a vuestras mujeres, y no seáis desapacibles con ellas.
+amar_conyuge	FAM	el matrimonio;el amor;la familia	Debo tratar a mi pareja con amor, ternura y respeto.
+criar_sin_provocar	FAM	los hijos;la crianza;la familia	Padres, no provoquéis a ira a vuestros hijos, sino criadlos en disciplina y amonestación del Señor.
+criar_sin_provocar	FAM	los hijos;la crianza;la familia	Debo corregir a mis hijos con amor, sin humillarlos ni hacerlos enojar.
+trabajo_de_corazon	TRA	el trabajo;la diligencia;la responsabilidad	Todo lo que hagáis, hacedlo de ánimo, como al Señor, y no a los hombres.
+trabajo_de_corazon	TRA	el trabajo;la diligencia;la responsabilidad	Debo trabajar bien y con esfuerzo, aunque nadie me esté mirando.
+respetar_autoridad	TRA	la autoridad;el respeto;el trabajo	Toda alma se someta a las potestades superiores.
+respetar_autoridad	TRA	la autoridad;el respeto;el trabajo	Debo respetar a mis autoridades y jefes, salvo que me pidan hacer el mal.
+hospitalidad	PRO	la hospitalidad;el prójimo;la generosidad	Hospedaos los unos a los otros sin murmuraciones.
+hospitalidad	PRO	la hospitalidad;el prójimo;la generosidad	Debo abrir mi casa y recibir a otros con gusto.
+visitar_enfermo	PRO	los enfermos;el prójimo;la misericordia	Estuve enfermo, y me visitasteis; en cárcel, y vinisteis a mí.
+visitar_enfermo	PRO	los enfermos;el prójimo;la misericordia	Debo acompañar y cuidar a los que están enfermos o solos.
+defender_debil	PRO	la justicia;los débiles;el prójimo	Defended al pobre y al huérfano; haced justicia al afligido y al menesteroso.
+defender_debil	PRO	la justicia;los débiles;el prójimo	Debo defender a quien sufre abuso o injusticia.
+gratitud	CON	la gratitud;la fe;la alegría	Dad gracias en todo, porque esta es la voluntad de Dios.
+gratitud	CON	la gratitud;la fe;la alegría	Debo agradecer a Dios en toda circunstancia, aun en lo difícil.

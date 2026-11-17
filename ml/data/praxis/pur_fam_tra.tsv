@@ -1,0 +1,90 @@
+# principio	etiqueta	dificultad	contextos	reacción
+pureza	E	D	pareja	Mi enamorada me propuso quedarnos a dormir juntos. Le dije que la amo, pero que quiero esperar al matrimonio.
+pureza	E	D	trabajo	Una compañera casada me coqueteó en la fiesta de la empresa. Me alejé y me fui temprano.
+pureza	E	D	redes	Me llegó un mensaje con contenido sexual de una desconocida. Lo borré y bloqueé el contacto.
+pureza	E	M	amigos	Mis amigos fueron a un local de striptease. Les dije que no y me volví a mi casa.
+pureza	E	D	pareja	estuvimos a punto en el auto pero paramos y oramos y la llevé a su casa
+pureza	C	D	pareja	Me acosté con mi novia aunque decidimos esperar al matrimonio.
+pureza	C	D	trabajo	Tengo una relación a escondidas con una compañera casada.
+pureza	C	M	amigos	En el viaje de egresados me metí con una persona que acababa de conocer.
+pureza	C	D	redes	le mandé fotos íntimas a alguien que conocí ayer por una aplicación
+pureza	N	M	dinero	Cancelé una suscripción que no usaba.
+mirada_limpia	E	D	redes	Me apareció una foto provocativa en el inicio. No me quedé mirando, la oculté y seguí con lo mío.
+mirada_limpia	E	D	calle	Pasó una mujer muy atractiva y me di cuenta de que la estaba mirando con deseo. Bajé la vista y oré.
+mirada_limpia	E	D	pareja	Instalé un filtro en el computador y le di la clave a mi esposa para rendir cuentas.
+mirada_limpia	E	M	amigos	Mis amigos pusieron una película con escenas sexuales y les pedí cambiarla.
+mirada_limpia	E	D	redes	dejé de seguir a todas las cuentas que me hacían caer y le conté a mi líder
+mirada_limpia	C	D	redes	Anoche estuve tres horas viendo pornografía.
+mirada_limpia	C	D	trabajo	Me paso la jornada mirando a la recepcionista y fantaseando con ella.
+mirada_limpia	C	M	calle	Le sacaba fotos a escondidas a las mujeres en el metro.
+mirada_limpia	C	D	pareja	aunque estoy casado guardo fotos de mi ex en una carpeta escondida y las miro de noche
+mirada_limpia	N	F	salud	Fui al oculista para revisarme la vista.
+templanza	E	D	amigos	En el asado todos insistían con otra cerveza. Dije que ya era suficiente y pasé a la bebida.
+templanza	E	D	salud	Llevo un año sin fumar. Hoy me ofrecieron un cigarro en la oficina y lo rechacé.
+templanza	E	D	familia	En la fiesta de año nuevo tomé una copa para brindar y no más, aunque mis tíos se emborracharon.
+templanza	E	M	redes	Me di cuenta de que pasaba seis horas en el celular. Le puse límite de tiempo a las aplicaciones.
+templanza	E	D	dinero	me gustaba apostar en el fútbol y borré la aplicación y le pedí a mi señora que me controle la tarjeta
+templanza	C	D	amigos	Salí con los amigos y me emborraché hasta no acordarme de cómo llegué a la casa.
+templanza	C	D	familia	Le prometí a mi esposa no tomar más y el viernes llegué borracho otra vez.
+templanza	C	M	salud	Me dijeron que bajara el azúcar y me comí una torta entera de la ansiedad.
+templanza	C	D	dinero	Me gasté el sueldo entero en el casino en una noche.
+templanza	C	D	redes	no dormí por jugar videojuegos hasta las seis y falté al trabajo
+templanza	N	M	estudio	Asistí a una charla sobre historia del arte.
+honrar_padres	E	D	familia	Mi mamá ya no puede vivir sola. La trajimos a vivir con nosotros y la cuido cada día.
+honrar_padres	E	D	familia	Aunque mi papá fue duro conmigo, lo llamo cada domingo y le agradezco lo que sí me dio.
+honrar_padres	E	M	familia	Le pedí consejo a mi papá antes de cambiarme de trabajo y escuché lo que me dijo.
+honrar_padres	E	D	dinero	Con mi primer sueldo le pagué la deuda de luz a mis viejos.
+honrar_padres	E	D	familia	mi mamá me retó delante de mi pareja y aunque me dolió le contesté con respeto
+honrar_padres	C	D	familia	Mi mamá me llama y no le contesto porque me aburren sus historias.
+honrar_padres	C	D	familia	Le grité a mi papá que es un viejo inútil.
+honrar_padres	C	M	familia	Dejé a mis padres en un hogar y no los he visitado en un año.
+honrar_padres	C	D	dinero	Le saqué plata de la pensión a mi abuela sin que se diera cuenta.
+honrar_padres	C	D	familia	me da vergüenza mi viejo porque es campesino y no lo invité a mi graduación
+honrar_padres	N	M	trabajo	Hoy actualicé mi currículum.
+fidelidad_conyugal	E	D	trabajo	Mi exnovia me escribió para tomar algo a solas. Le respondí que estoy casado y se lo conté a mi esposa.
+fidelidad_conyugal	E	D	redes	Un compañero de la universidad me empezó a escribir con cariño. Le puse límites y dejé de responderle.
+fidelidad_conyugal	E	M	pareja	En el viaje de trabajo cené solo en el hotel y llamé a mi esposa antes de dormir.
+fidelidad_conyugal	E	D	trabajo	mi jefa me insinuó algo y yo le dije clarito que respeto a mi señora y pedí cambio de área
+fidelidad_conyugal	C	D	pareja	Tengo una relación paralela desde hace un año y mi esposa no sabe.
+fidelidad_conyugal	C	D	redes	Me escribo todas las noches con una mujer por una aplicación de citas aunque estoy casado.
+fidelidad_conyugal	C	M	trabajo	Me saqué el anillo antes de entrar a la fiesta de la empresa para coquetear tranquilo.
+fidelidad_conyugal	C	D	pareja	le dije a mi amante que me voy a separar pronto y a mi señora que la amo
+fidelidad_conyugal	N	M	salud	Me hice una limpieza dental.
+amar_conyuge	E	D	pareja	Mi esposa estaba triste por su trabajo. Dejé lo que hacía, la escuché sin dar consejos y la abracé.
+amar_conyuge	E	D	pareja	Mi marido perdió el trabajo. Le dije que confío en él y que lo vamos a enfrentar juntos.
+amar_conyuge	E	M	pareja	Le preparé el desayuno a mi esposa y le dejé una nota de amor.
+amar_conyuge	E	D	pareja	estaba cansadísimo pero igual acompañé a mi señora al control médico y le tomé la mano todo el rato
+amar_conyuge	E	D	familia	Mi mamá criticó a mi esposa. Le pedí con respeto que no lo hiciera y defendí a mi esposa.
+amar_conyuge	C	D	pareja	Mi esposa me contaba su problema y la ignoré mirando el celular.
+amar_conyuge	C	D	pareja	Me burlé del cuerpo de mi esposa delante de nuestros amigos.
+amar_conyuge	C	M	pareja	Le grité a mi marido porque se olvidó de comprar el pan.
+amar_conyuge	C	D	pareja	cuando mi señora me pide ayuda le digo que esas son cosas de mujeres
+amar_conyuge	C	D	dinero	Le controlo cada peso a mi esposa y no le dejo gastar sin pedirme permiso.
+amar_conyuge	N	M	estudio	Leí un artículo sobre astronomía.
+criar_sin_provocar	E	D	hijos	Mi hijo rompió la ventana jugando a la pelota. Le expliqué con calma que tendría que pagarla con su mesada.
+criar_sin_provocar	E	D	hijos	Mi hija adolescente me gritó. Esperé a que se calmara y le pregunté qué le pasaba de verdad.
+criar_sin_provocar	E	M	hijos	Mi hijo mintió sobre las notas. Lo corregí con firmeza, pero sin insultarlo, y oramos juntos.
+criar_sin_provocar	E	D	hijos	el chico llegó tarde a la casa y en vez de humillarlo delante de sus hermanos lo llamé aparte para conversar
+criar_sin_provocar	C	D	hijos	Mi hijo se equivocó y le dije delante de sus amigos que es un inútil igual que su padre.
+criar_sin_provocar	C	D	hijos	Comparo todo el tiempo a mi hija con su hermana mayor para que se esfuerce.
+criar_sin_provocar	C	M	hijos	Le prometo castigos que nunca cumplo y le grito por todo.
+criar_sin_provocar	C	D	hijos	al cabro chico le pegué con la correa por botar la leche
+criar_sin_provocar	N	M	salud	Me inscribí en el gimnasio.
+trabajo_de_corazon	E	D	trabajo	Me tocó limpiar el área que nadie revisa. La dejé impecable como si el jefe fuera a mirarla.
+trabajo_de_corazon	E	D	trabajo	Aunque me pagan poco, atendí a cada cliente con esmero y una sonrisa.
+trabajo_de_corazon	E	M	estudio	Hice el trabajo grupal completo y bien, aunque los otros no aportaron.
+trabajo_de_corazon	E	D	trabajo	soy maestro de obra y aunque el cliente no se iba a dar cuenta puse el fierro que correspondía
+trabajo_de_corazon	C	D	trabajo	Cuando el jefe no está, me paso la tarde viendo series en el computador.
+trabajo_de_corazon	C	D	trabajo	Hice el trabajo a la rápida y mal porque total nadie lo revisa.
+trabajo_de_corazon	C	M	estudio	Copié el informe de internet y lo entregué como mío.
+trabajo_de_corazon	C	D	trabajo	me hago el enfermo cada lunes para no ir a la pega
+trabajo_de_corazon	N	M	familia	Hoy fuimos al parque con los niños.
+respetar_autoridad	E	D	trabajo	No estoy de acuerdo con la decisión del jefe. Le di mi opinión con respeto y después la cumplí.
+respetar_autoridad	E	D	calle	Me detuvo un carabinero por exceso de velocidad. Reconocí la falta y pagué la multa sin discutir.
+respetar_autoridad	E	M	estudio	El director me llamó la atención. Lo escuché sin interrumpir y le pedí disculpas.
+respetar_autoridad	E	D	trabajo	mi supervisor me pidió algo que no me gustaba pero era justo y lo hice sin reclamar
+respetar_autoridad	C	D	trabajo	Le dije a mi jefe que no pensaba hacer lo que me pidió y le di un portazo.
+respetar_autoridad	C	D	calle	Le insulté al inspector que me cursó la multa.
+respetar_autoridad	C	M	estudio	Me burlé de la profesora delante del curso.
+respetar_autoridad	C	D	dinero	no declaro mis ingresos en impuestos porque el gobierno igual roba
+respetar_autoridad	N	M	salud	Hoy comí ensalada en el almuerzo.

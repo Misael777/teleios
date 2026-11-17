@@ -1,0 +1,61 @@
+# Test de registros: NUNCA se usa para entrenar (seeds_check.py lo excluye).
+# Formato: dificultad | etiqueta | premisa | hipótesis   (TAB o " | ")
+# Una línea "# registro: X" agrupa los pares siguientes por registro social.
+# v1 escrito por Claude imitando registros: mide robustez al registro, no independencia del autor.
+# Agrega tus propios pares al final con "# registro: propio".
+
+# registro: formal
+D | C | Tengo la firme convicción de que, si no superviso personalmente cada proceso, el resultado será deficiente. | Considero que el equipo puede obtener buenos resultados sin mi supervisión directa.
+D | E | Reconozco que mi valía profesional no se mide por la aprobación de mis superiores. | La opinión de mis jefes no determina cuánto valgo como profesional.
+M | N | He experimentado episodios recurrentes de ansiedad en el ámbito laboral. | Mi ansiedad se debe a la carga de trabajo.
+D | C | En ningún momento del trimestre logré cumplir mis metas de ahorro. | En agosto alcancé la meta de ahorro que me había propuesto.
+D | E | @PRO.16.3 | Encomendar mis proyectos a Dios contribuye a que mis planes se afirmen.
+D | E | Opté por no responder al correo ofensivo y encomendé el asunto en oración. | Actué con dominio propio frente a la ofensa.
+
+# registro: coloquial urbano
+D | E | Si no estoy encima de todo, todo se va al diablo. | Cuando dejo de estar pendiente, las cosas se arruinan.
+D | C | Mi viejo nunca me dijo que estaba orgulloso de mí. | Mi papá me dijo el otro día que estaba orgulloso de mí.
+M | N | Ando con la cabeza a mil por las cuentas del mes. | Este mes no me alcanza para pagar el alquiler.
+D | C | Ya fue, no le guardo rencor a mi ex. | Todavía tengo rencor contra mi ex.
+D | E | No es que no quiera ir a la iglesia, es que me da roche. | Quiero ir a la iglesia, pero me da vergüenza.
+D | C | Me fui de la casa de mi vieja sin despedirme, re enojado. | Me despedí tranquilo de mi mamá antes de irme.
+
+# registro: popular, poca escolaridad
+D | E | Si yo no ando viendo todo, todo me sale mal pues. | Cuando no estoy pendiente de todo, me va mal.
+D | C | Diosito siempre me a ayudado cuando no tengo pa la comida. | Dios nunca me ayudó cuando me faltó la comida.
+M | N | Mi hijo el mayor ya no me abla desde que se fue a trabajar. | Mi hijo mayor está enojado conmigo.
+D | E | Nadie de mi familia me visito cuando estube enfermo. | Mi hermana no me visitó cuando estuve enfermo.
+D | C | Yo solito saque adelante a mis hijos, nadien me dio la mano. | Mi compadre me ayudó a sacar adelante a mis hijos.
+D | E | @PSA.37.25 | Dios no abandona al justo ni deja a sus hijos sin pan.
+
+# registro: rural / tradicional
+D | E | Uno siembra con fe y lo demás lo pone el de arriba. | Hago mi parte con fe y confío en que Dios hace el resto.
+D | C | Si uno no está pendiente de todito, las cosas se le van de las manos. | Aunque uno no esté pendiente de todo, las cosas pueden salir bien.
+M | N | Este año la helada se llevó casi toda la papa. | Este año perdimos toda la cosecha.
+D | C | Desde que murió mi compañero no he vuelto a pisar la capilla. | Voy a la capilla cada domingo desde que murió mi esposo.
+D | E | No le pido a Dios riquezas, solo que no me falte para mis animales y mis hijos. | Le pido a Dios lo necesario y no riquezas.
+D | N | Mi taita decía que el que no trabaja no come. | Mi papá era muy trabajador.
+
+# registro: joven / redes
+D | E | literal si no controlo todo se arruina todo xd | Tengo la sensación de que sin mi control las cosas se echan a perder.
+D | C | no me importa lo que digan de mí en el grupo, ya fue | Me afecta muchísimo lo que dicen de mí en el grupo.
+M | N | otra vez me dejaron en visto | Mi amiga está molesta conmigo.
+D | C | cero ganas de orar últimamente, ni una vez esta semana | Esta semana oré casi todos los días.
+D | E | no es que dios no me escuche, es que yo no le hablo | Dios sí me escucha; el problema es que yo no oro.
+D | C | me la pasé toda la noche stalkeando a mi ex en vez de dormir | Anoche me dormí temprano sin pensar en mi ex.
+
+# registro: dictado por voz (sin puntuación)
+D | E | hoy me levanté con ganas de dejar todo osea el trabajo la iglesia todo pero igual fui | Hoy fui a trabajar aunque tenía ganas de dejarlo todo.
+D | C | no le grité a mi hija hoy ni una vez gracias a Dios estuve tranquilo | Hoy le grité a mi hija.
+M | N | estuve pensando en lo que dijo el pastor del perdón todo el día | Ya perdoné a mi hermano.
+D | E | ya no me pongo a contar cuánto doy en la ofrenda solo doy | Dejé de llevar la cuenta de lo que ofrendo.
+D | C | siempre siempre que hay plata me la gasto al toque | A veces ahorro la plata en vez de gastarla.
+D | E | @1PE.5.7 | Dios cuida de mí, por eso puedo dejarle mis preocupaciones.
+
+# registro: lenguaje de iglesia
+D | E | Hermano, estoy declarando que el Señor ya me dio la victoria sobre este vicio. | Creo que Dios me da la victoria sobre mi vicio.
+D | C | Bendecido y prosperado, no me ha faltado nada en este año. | Este año me faltó dinero para lo básico.
+M | N | El pastor dijo que esta temporada es de cosecha para la congregación. | Este año me va a ir bien económicamente.
+D | C | Ya entregué esta carga al altar y no la vuelvo a recoger. | Sigo cargando esa preocupación sin entregársela a Dios.
+D | E | La hermana Rosa oró por mí y sentí paz, aunque el diagnóstico sigue igual. | Sentí paz aunque mi situación médica no cambió.
+D | C | Me congrego fielmente; nunca falto al culto del domingo. | El domingo pasado no fui al culto.

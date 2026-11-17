@@ -1,0 +1,1160 @@
+{
+ "version": "shared-v1",
+ "items": [
+  {
+   "id": "p00v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios provee lo necesario a quien confía en él.",
+   "b": "Mi Dios, pues, suplirá todo lo que os falta conforme á sus riquezas en gloria en Cristo Jesús. (PHI 4:19)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p00v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios provee lo necesario a quien confía en él.",
+   "b": "Y poderoso es Dios para hacer que abunde en vosotros toda gracia; á fin de que, teniendo siempre en todas las cosas todo lo que basta, abundéis para toda buena obra: (2CO 9:8)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p00v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios provee lo necesario a quien confía en él.",
+   "b": "Porque sol y escudo es Jehová Dios: gracia y gloria dará Jehová: no quitará el bien á los que en integridad andan. (PSA 84:11)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p01v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La salvación es por gracia, no por obras.",
+   "b": "Porque por gracia sois salvos por la fe; y esto no de vosotros, [pues es] don de Dios: (EPH 2:8)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p01v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La salvación es por gracia, no por obras.",
+   "b": "La justicia de Dios por la fe de Jesucristo, para todos los que creen en él; porque no hay diferencia; (ROM 3:22)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p01v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La salvación es por gracia, no por obras.",
+   "b": "Aun estando nosotros muertos en pecados, nos dió vida juntamente con Cristo; por gracia sois salvos; (EPH 2:5)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p02v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios disciplina a los que ama.",
+   "b": "Porque el Señor al que ama castiga, y azota á cualquiera que recibe por hijo. (HEB 12:6)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p02v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios disciplina a los que ama.",
+   "b": "Yo reprendo y castigo á todos los que amo: sé pues celoso, y arrepiéntete. (REV 3:19)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p02v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios disciplina a los que ama.",
+   "b": "Porque al que ama castiga, como el padre al hijo á quien quiere. (PRO 3:12)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p03v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos perdonar como Dios nos perdonó.",
+   "b": "Sufriéndoos los unos á los otros, y perdonándoos los unos á los otros si alguno tuviere queja del otro: de la manera que Cristo os perdonó, así también hacedlo vosotros. (COL 3:13)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p03v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos perdonar como Dios nos perdonó.",
+   "b": "Antes sed los unos con los otros benignos, misericordiosos, perdonándoos los unos á los otros, como también Dios os perdonó en Cristo. (EPH 4:32)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p03v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos perdonar como Dios nos perdonó.",
+   "b": "Y cuando estuviereis orando, perdonad, si tenéis algo contra alguno, para que vuestro Padre que está en los cielos os perdone también á vosotros vuestras ofensas. (MAR 11:25)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p04v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La ansiedad se combate presentando todo a Dios en oración.",
+   "b": "Por nada estéis afanosos; sino sean notorias vuestras peticiones delante de Dios en toda oración y ruego, con hacimiento de gracias. (PHI 4:6)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p04v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La ansiedad se combate presentando todo a Dios en oración.",
+   "b": "Fíate de Jehová de todo tu corazón, y no estribes en tu prudencia. (PRO 3:5)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p04v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La ansiedad se combate presentando todo a Dios en oración.",
+   "b": "Echando toda vuestra solicitud en él, porque él tiene cuidado de vosotros. (1PE 5:7)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p05v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios obra todas las cosas para bien de los que le aman.",
+   "b": "Y sabemos que á los que á Dios aman, todas las cosas les ayudan á bien, [es á saber], á los que conforme al propósito son llamados. (ROM 8:28)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p05v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios obra todas las cosas para bien de los que le aman.",
+   "b": "Mas el Dios de toda gracia, que nos ha llamado á su gloria eterna por Jesucristo, después que hubiereis un poco de tiempo padecido, él mismo os perfeccione, confirme, corrobore y establezca. (1PE 5:10)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p05v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios obra todas las cosas para bien de los que le aman.",
+   "b": "Bienaventurado el varón que sufre la tentación; porque cuando fuere probado, recibirá la corona de vida, que Dios ha prometido á los que le aman. (JAM 1:12)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p06v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El creyente fiel prosperará económicamente.",
+   "b": "Amado, yo deseo que tú seas prosperado en todas cosas, y que tengas salud, así como tu alma está en prosperidad. (3JO 1:2)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p06v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El creyente fiel prosperará económicamente.",
+   "b": "Como todas las cosas que pertenecen á la vida y á la piedad nos sean dadas de su divina potencia, por el conocimiento de aquel que nos ha llamado por su gloria y virtud: (2PE 1:3)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p06v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El creyente fiel prosperará económicamente.",
+   "b": "Mas creced en la gracia y conocimiento de nuestro Señor y Salvador Jesucristo. A él [sea] gloria ahora y hasta el día de la eternidad. Amén. (2PE 3:18)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p07v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Las pruebas producen paciencia y madurez.",
+   "b": "Sabiendo que la prueba de vuestra fe obra paciencia. (JAM 1:3)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p07v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Las pruebas producen paciencia y madurez.",
+   "b": "Y no sólo esto, mas aun nos gloriamos en las tribulaciones, sabiendo que la tribulación produce paciencia; (ROM 5:3)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p07v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Las pruebas producen paciencia y madurez.",
+   "b": "Porque la paciencia os es necesaria; para que, habiendo hecho la voluntad de Dios, obtengáis la promesa. (HEB 10:36)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p08v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios no deja de amar a sus hijos cuando fallan.",
+   "b": "Por lo cual estoy cierto que ni la muerte, ni la vida, ni ángeles, ni principados, ni potestades, ni lo presente, ni lo por venir, (ROM 8:38)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p08v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios no deja de amar a sus hijos cuando fallan.",
+   "b": "Y yo les doy vida eterna: y no perecerán para siempre, ni nadie las arrebatará de mi mano. (JOH 10:28)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p08v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios no deja de amar a sus hijos cuando fallan.",
+   "b": "Que si vivimos, para el Señor vivimos; y si morimos, para el Señor morimos. Así que, ó que vivamos, ó que muramos, del Señor somos. (ROM 14:8)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p09v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La fe sin obras está muerta.",
+   "b": "Así también la fe, si no tuviere obras, es muerta en sí misma. (JAM 2:17)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p09v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La fe sin obras está muerta.",
+   "b": "Porque como el cuerpo sin espíritu está muerto, así también la fe sin obras es muerta. (JAM 2:26)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p09v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La fe sin obras está muerta.",
+   "b": "Vosotros también, poniendo toda diligencia por esto mismo, mostrad en vuestra fe virtud, y en la virtud ciencia; (2PE 1:5)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p10v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El enojo en sí mismo es pecado.",
+   "b": "Airaos, y no pequéis; no se ponga el sol sobre vuestro enojo; (EPH 4:26)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p10v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El enojo en sí mismo es pecado.",
+   "b": "Por esto, mis amados hermanos, todo hombre sea pronto para oir, tardío para hablar, tardío para airarse: (JAM 1:19)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p10v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El enojo en sí mismo es pecado.",
+   "b": "Temblad, y no pequéis: conversad en vuestro corazón sobre vuestra cama, y desistid. (Selah.) (PSA 4:4)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p11v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios escucha la oración del justo.",
+   "b": "Confesaos vuestras faltas unos á otros, y rogad los unos por los otros, para que seáis sanos; la oración del justo, obrando eficazmente, puede mucho. (JAM 5:16)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p11v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios escucha la oración del justo.",
+   "b": "Entonces me invocaréis, é iréis y oraréis á mí, y yo os oiré: (JER 29:12)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p11v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios escucha la oración del justo.",
+   "b": "Lejos está Jehová de los impíos: mas él oye la oración de los justos. (PRO 15:29)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p12v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El descanso es un mandato de Dios.",
+   "b": "Acordarte has del día del reposo, para santificarlo: (EXO 20:8)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p12v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El descanso es un mandato de Dios.",
+   "b": "Guardad mis sábados, y tened en reverencia mi santuario: Yo Jehová. (LEV 26:2)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p12v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El descanso es un mandato de Dios.",
+   "b": "Cada uno temerá á su madre y á su padre, y mis sábados guardaréis: Yo Jehová vuestro Dios. (LEV 19:3)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p13v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La enfermedad es consecuencia del pecado personal.",
+   "b": "Y preguntáronle sus discípulos, diciendo: Rabbí, ¿quién pecó, éste ó sus padres, para que naciese ciego? (JOH 9:2)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p13v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La enfermedad es consecuencia del pecado personal.",
+   "b": "Y respondiendo Jesús, les dijo: ¿Pensáis que estos Galileos, porque han padecido tales cosas, hayan sido más pecadores que todos los Galileos? (LUK 13:2)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p13v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "La enfermedad es consecuencia del pecado personal.",
+   "b": "Respondieron, y dijéronle: En pecados eres nacido todo, ¿y tú nos enseñas? Y echáronle fuera. (JOH 9:34)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p14v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dar con generosidad trae bendición.",
+   "b": "Esto empero [digo]: El que siembra escasamente, también segará escasamente; y el que siembra en bendiciones, en bendiciones también segará. (2CO 9:6)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p14v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dar con generosidad trae bendición.",
+   "b": "Hay quienes reparten, y les es añadido más: y hay quienes son escasos más de lo que es justo, mas vienen á pobreza. (PRO 11:24)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p14v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dar con generosidad trae bendición.",
+   "b": "Dad, y se os dará; medida buena, apretada, remecida, y rebosando darán en vuestro seno: porque con la misma medida que midiereis, os será vuelto á medir. (LUK 6:38)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p15v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Hay que someterse a las autoridades.",
+   "b": "TODA alma se someta á las potestades superiores; porque no hay potestad sino de Dios; y las que son, de Dios son ordenadas. (ROM 13:1)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p15v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Hay que someterse a las autoridades.",
+   "b": "AMONÉSTALES que se sujeten á los príncipes y potestades, que obedezcan, que estén prontos á toda buena obra. (TIT 3:1)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p15v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Hay que someterse a las autoridades.",
+   "b": "Sed pues sujetos á toda ordenación humana por respeto á Dios: ya sea al rey, como á superior; (1PE 2:13)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p16v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El temor a Dios es el principio de la sabiduría.",
+   "b": "El temor de Jehová es el principio de la sabiduría; y la ciencia de los santos es inteligencia. (PRO 9:10)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p16v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El temor a Dios es el principio de la sabiduría.",
+   "b": "El principio de la sabiduría es el temor de Jehová: buen entendimiento tienen cuantos ponen aquéllos por obra: su loor permanece para siempre. (PSA 111:10)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p16v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "El temor a Dios es el principio de la sabiduría.",
+   "b": "Y dijo al hombre: He aquí que el temor del Señor es la sabiduría, y el apartarse del mal la inteligencia. (JOB 28:28)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p17v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Ningún creyente debería sentir tristeza.",
+   "b": "Y lloró Jesús. (JOH 11:35)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p17v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Ningún creyente debería sentir tristeza.",
+   "b": "Y como llegó cerca, viendo la ciudad, lloró sobre ella, (LUK 19:41)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p17v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Ningún creyente debería sentir tristeza.",
+   "b": "Porque no tenemos un Pontífice que no se pueda compadecer de nuestras flaquezas; mas tentado en todo según [nuestra] semejanza, [pero] sin pecado. (HEB 4:15)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p18v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios usa la debilidad para mostrar su poder.",
+   "b": "Y me ha dicho: Bástate mi gracia; porque mi potencia en la flaqueza se perfecciona. Por tanto, de buena gana me gloriaré más bien en mis flaquezas, porque habite en mí la potencia de Cristo. (2CO 12:9)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p18v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios usa la debilidad para mostrar su poder.",
+   "b": "Todo lo puedo en Cristo que me fortalece. (PHI 4:13)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p18v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Dios usa la debilidad para mostrar su poder.",
+   "b": "Por lo cual me gozo en las flaquezas, en afrentas, en necesidades, en persecuciones, en angustias por Cristo; porque cuando soy flaco, entonces soy poderoso. (2CO 12:10)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p19v0",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos llevar las cargas unos de otros.",
+   "b": "Sobrellevad los unos las cargas de los otros; y cumplid así la ley de Cristo. (GAL 6:2)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p19v1",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos llevar las cargas unos de otros.",
+   "b": "ASÍ que, los que somos más firmes debemos sobrellevar las flaquezas de los flacos, y no agradarnos á nosotros mismos. (ROM 15:1)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "p19v2",
+   "type": "nli",
+   "prompt": "¿Este versículo confirma, contradice o es neutral frente a la interpretación?",
+   "a": "Debemos llevar las cargas unos de otros.",
+   "b": "También os rogamos, hermanos, que amonestéis á los que andan desordenadamente, que consoléis á los de poco ánimo, que soportéis á los flacos, que seáis sufridos para con todos. (1TH 5:14)",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   }
+  },
+  {
+   "id": "s00",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien deja de diezmar por miedo a que no le alcance el mes.",
+   "b": "Dios provee lo necesario a quien confía en él.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s01",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien comparte su comida con un vecino aunque tiene poco.",
+   "b": "Dios provee lo necesario a quien confía en él.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s02",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien revisa diez veces el trabajo de su equipo y no delega nada.",
+   "b": "Dios gobierna lo que no puedo controlar.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s03",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien entrega a Dios en oración una decisión difícil y duerme tranquilo.",
+   "b": "Dios gobierna lo que no puedo controlar.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s04",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien se insulta a sí mismo después de equivocarse en una presentación.",
+   "b": "Mi valor está en ser hijo de Dios, no en mi desempeño.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s05",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien acepta una corrección en el trabajo sin sentirse menos.",
+   "b": "Mi valor está en ser hijo de Dios, no en mi desempeño.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s06",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien dice que sí a todos los pedidos de la iglesia aunque está agotado.",
+   "b": "No necesito agradar a todos; busco agradar a Dios.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s07",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien rechaza con amabilidad un compromiso extra para descansar.",
+   "b": "No necesito agradar a todos; busco agradar a Dios.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s08",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien culpa a su esposa de su mal humor durante toda la semana.",
+   "b": "Soy responsable de cómo respondo.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s09",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien pide perdón por haber gritado, sin excusarse.",
+   "b": "Soy responsable de cómo respondo.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s10",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien cree que su enfermedad es castigo y deja de ir a la iglesia.",
+   "b": "Las dificultades no significan que Dios me rechace.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s11",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien ora agradeciendo a Dios en medio de un diagnóstico difícil.",
+   "b": "Las dificultades no significan que Dios me rechace.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s12",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien perdona a un amigo que le falló y lo invita a cenar.",
+   "b": "Debemos perdonar como Dios nos perdonó.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s13",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien guarda rencor durante años por una ofensa pequeña.",
+   "b": "Debemos perdonar como Dios nos perdonó.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s14",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien sale a caminar por el parque un sábado.",
+   "b": "Debemos perdonar como Dios nos perdonó.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s15",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien organiza su escritorio antes de empezar el día.",
+   "b": "Dios provee lo necesario a quien confía en él.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s16",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien ayuda a un compañero cargado de trabajo sin que se lo pidan.",
+   "b": "Debemos llevar las cargas unos de otros.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s17",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien ignora a un amigo que atraviesa un duelo para no complicarse.",
+   "b": "Debemos llevar las cargas unos de otros.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s18",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien se toma el domingo para descansar y estar con su familia.",
+   "b": "El descanso es un mandato de Dios.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "s19",
+   "type": "escenario",
+   "prompt": "¿Cómo actúa esta persona respecto de la creencia?",
+   "a": "Alguien trabaja todos los días sin pausa porque siente que si para, todo fallará.",
+   "b": "El descanso es un mandato de Dios.",
+   "options": {
+    "desde": "Actúa desde esa creencia",
+    "neutral": "No se relaciona",
+    "contra": "Actúa contra ella"
+   }
+  },
+  {
+   "id": "g00",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Soltar el control de la iglesia no lo arruina, porque Dios cuida.",
+   "b": "Aunque no controle la iglesia, Dios sigue obrando.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "entailment"
+  },
+  {
+   "id": "g01",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Las dificultades en mis estudios no significan que Dios me rechace.",
+   "b": "No es cierto que las dificultades en mis estudios no significan que Dios me rechace.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "contradiction"
+  },
+  {
+   "id": "g02",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "No necesito agradar a todos en mi familia; busco agradar a Dios.",
+   "b": "Organizo mi familia los lunes por la mañana.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "neutral"
+  },
+  {
+   "id": "g03",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "En mi trabajo jamás logro hacer algo bien.",
+   "b": "Todo lo que intento en mi trabajo sale mal.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "entailment"
+  },
+  {
+   "id": "g04",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Dar mi dinero me llevará a la ruina.",
+   "b": "No es cierto que dar mi dinero me llevará a la ruina.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "contradiction"
+  },
+  {
+   "id": "g05",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Siempre arruino la iglesia.",
+   "b": "Leí un artículo sobre la iglesia.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "neutral"
+  },
+  {
+   "id": "g06",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Si comparto mi dinero, me quedaré sin nada.",
+   "b": "Dar mi dinero me llevará a la ruina.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "entailment"
+  },
+  {
+   "id": "g07",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Dios me está castigando con lo que pasa en la iglesia.",
+   "b": "No es cierto que dios me está castigando con lo que pasa en la iglesia.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "contradiction"
+  },
+  {
+   "id": "g08",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Si ayudo a otros con mi dinero, después me faltará a mí.",
+   "b": "Organizo mi dinero los lunes por la mañana.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "neutral"
+  },
+  {
+   "id": "g09",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Mi respuesta en la iglesia depende de mí, no de los demás.",
+   "b": "Aunque otros me provoquen en la iglesia, yo decido cómo actuar.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "entailment"
+  },
+  {
+   "id": "g10",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Soltar el control de mis estudios no lo arruina, porque Dios cuida.",
+   "b": "No es cierto que soltar el control de mis estudios no lo arruina, porque Dios cuida.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "contradiction"
+  },
+  {
+   "id": "g11",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Debería decir que sí a todo lo que me piden en mis estudios.",
+   "b": "Esta semana mis estudios tuvo cambios de horario.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "neutral"
+  },
+  {
+   "id": "g12",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Las dificultades en mis estudios no significan que Dios me rechace.",
+   "b": "Aun lo difícil en mis estudios Dios lo usa para mi bien.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "entailment"
+  },
+  {
+   "id": "g13",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Aunque falle en mi familia, mi valor está en ser hijo de Dios.",
+   "b": "No es cierto que aunque falle en mi familia, mi valor está en ser hijo de Dios.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "contradiction"
+  },
+  {
+   "id": "g14",
+   "type": "nli",
+   "prompt": "¿El segundo pensamiento confirma, contradice o es neutral frente al primero?",
+   "a": "Tengo que tener contentos a todos en mis estudios.",
+   "b": "Hoy hablé de mis estudios con un amigo.",
+   "options": {
+    "entailment": "La confirma",
+    "neutral": "No tiene que ver / neutral",
+    "contradiction": "La contradice"
+   },
+   "gold": "neutral"
+  }
+ ]
+}

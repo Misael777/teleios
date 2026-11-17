@@ -32,6 +32,7 @@ class IncubationScreen extends ConsumerWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: 'fab-incubacion',
         onPressed: () => _create(context, ref),
         icon: const Icon(Icons.add),
         label: const Text('Cosmovisión'),

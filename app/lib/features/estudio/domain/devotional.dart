@@ -1,6 +1,9 @@
 import '../../../shared/domain/entities/historical_context.dart';
 import '../../../shared/domain/entities/passage_ref.dart';
 import '../../../shared/domain/entities/topic.dart';
+import '../../../shared/domain/entities/topic_draft.dart';
+
+export '../../../shared/domain/entities/topic_draft.dart';
 
 /// Devocional guardado, con sus tópicos ya resueltos (modelo de lectura).
 class DevotionalEntry {
@@ -13,43 +16,24 @@ class DevotionalEntry {
     required this.topics,
     required this.createdAt,
     required this.updatedAt,
+    this.title,
+    this.keyVerse,
   });
 
   final String id;
   final DateTime date;
   final PassageRef passage;
   final String content;
+
+  /// Portada: título del estudio y versículo lema (opcionales).
+  final String? title;
+  final PassageRef? keyVerse;
   final HistoricalContext context;
   final List<Topic> topics;
   final DateTime createdAt;
   final DateTime updatedAt;
 
   Iterable<Topic> topicsOf(String dimensionId) => topics.where((t) => t.dimensionId == dimensionId);
-}
-
-/// Tópico elegido en el editor, existente o por crear.
-class TopicDraft {
-  const TopicDraft({
-    required this.name,
-    required this.dimensionId,
-    this.existingId,
-    this.origin = TopicOrigin.usuario,
-    this.confidence,
-  });
-
-  final String? existingId;
-  final String name;
-  final String dimensionId;
-  final TopicOrigin origin;
-  final double? confidence;
-
-  TopicDraft movedTo(String dimensionId) => TopicDraft(
-    name: name,
-    dimensionId: dimensionId,
-    // Al cambiar de dimensión se resuelve de nuevo por nombre.
-    origin: origin,
-    confidence: confidence,
-  );
 }
 
 /// Lo que el editor envía para crear o actualizar un devocional.
@@ -61,12 +45,16 @@ class DevotionalDraft {
     required this.content,
     this.context = const HistoricalContext(),
     this.topics = const [],
+    this.title,
+    this.keyVerse,
   });
 
   final String? id;
   final DateTime date;
   final PassageRef passage;
   final String content;
+  final String? title;
+  final PassageRef? keyVerse;
   final HistoricalContext context;
   final List<TopicDraft> topics;
 }

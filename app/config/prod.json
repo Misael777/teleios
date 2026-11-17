@@ -1,3 +1,7 @@
 {
-  "APP_ENV": "prod"
+  "APP_ENV": "prod",
+  "GOOGLE_SERVER_CLIENT_ID": "",
+  "GOOGLE_IOS_CLIENT_ID": "",
+  "MODEL_BUNDLE_URL": "",
+  "NLI_BUNDLE_URL": ""
 }

@@ -1,6 +1,5 @@
 import '../../../core/errors/failure.dart';
 import '../../../core/utils/ids.dart';
-import '../../../shared/domain/entities/topic.dart';
 import '../../../shared/domain/repositories/topic_repository.dart';
 import '../../../shared/domain/usecases/topic_usecases.dart';
 import 'devotional.dart';
@@ -17,16 +16,15 @@ class SaveDevotional {
     required TopicRepository topics,
     required TransactionRunner transaction,
   }) : _devotionals = devotionals,
-       _topics = topics,
        _transaction = transaction,
-       _createTopic = CreateTopic(topics);
+       _resolveTopic = ResolveTopicDraft(topics);
 
   final DevotionalRepository _devotionals;
-  final TopicRepository _topics;
   final TransactionRunner _transaction;
-  final CreateTopic _createTopic;
+  final ResolveTopicDraft _resolveTopic;
 
   static const maxContentLength = 20000;
+  static const maxTitleLength = 120;
 
   Future<String> call(DevotionalDraft draft) async {
     final content = draft.content.trim();
@@ -36,11 +34,15 @@ class SaveDevotional {
     if (content.length > maxContentLength) {
       throw const ValidationFailure('La reflexión supera el máximo de 20.000 caracteres.');
     }
+    final title = draft.title?.trim();
+    if ((title?.length ?? 0) > maxTitleLength) {
+      throw const ValidationFailure('El título supera los 120 caracteres.');
+    }
 
     return _transaction.run(() async {
       final links = <String, TopicLink>{};
       for (final draftTopic in draft.topics) {
-        final topic = await _resolve(draftTopic);
+        final topic = await _resolveTopic(draftTopic);
         links[topic.id] = (topicId: topic.id, origin: draftTopic.origin);
       }
       final id = draft.id ?? newId();
@@ -51,21 +53,10 @@ class SaveDevotional {
         content: content,
         context: draft.context,
         topics: links.values.toList(),
+        title: title == null || title.isEmpty ? null : title,
+        keyVerse: draft.keyVerse,
       );
       return id;
     });
-  }
-
-  Future<Topic> _resolve(TopicDraft draft) async {
-    if (draft.existingId != null) {
-      final existing = await _topics.findById(draft.existingId!);
-      if (existing != null && existing.dimensionId == draft.dimensionId) return existing;
-    }
-    return _createTopic(
-      name: draft.name,
-      dimensionId: draft.dimensionId,
-      origin: draft.origin,
-      confidence: draft.confidence,
-    );
   }
 }

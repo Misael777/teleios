@@ -1,0 +1,86 @@
+Juez MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 22087.95it/s]
+Embeddings intfloat/multilingual-e5-small
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2241.20it/s]
+Embeddings sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2876.07it/s]
+{
+  "criterion": 0.9,
+  "judges": {
+    "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7": {
+      "paraphrase_join": 0.87,
+      "opposite_separation": 0.86,
+      "other_neutral": 0.77,
+      "accuracy": 0.8333333333333334,
+      "by_category": {
+        "agente": 0.8461538461538461,
+        "antonimo": 0.88,
+        "cuantificador": 0.6875,
+        "mismas_palabras": 0.77,
+        "negacion": 0.9130434782608695,
+        "parafrasis": 0.87
+      },
+      "confusion": [
+        [
+          87,
+          11,
+          2
+        ],
+        [
+          2,
+          77,
+          21
+        ],
+        [
+          1,
+          13,
+          86
+        ]
+      ],
+      "passes": false
+    }
+  },
+  "embedders": {
+    "intfloat/multilingual-e5-small": {
+      "triplet_accuracy": 0.34,
+      "triplet_by_category": {
+        "agente": 0.7692307692307693,
+        "antonimo": 0.44,
+        "cuantificador": 0.5,
+        "negacion": 0.10869565217391304
+      },
+      "mean_cos": {
+        "misma_cadena": 0.9223992031812668,
+        "opuesto": 0.9396951305866241,
+        "otra_cadena": 0.9011691027879715
+      },
+      "oracle_threshold": {
+        "tau": 0.9299999999999999,
+        "paraphrase_join": 0.42,
+        "opposite_separation": 0.35
+      },
+      "passes": false
+    },
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": {
+      "triplet_accuracy": 0.64,
+      "triplet_by_category": {
+        "agente": 0.9230769230769231,
+        "antonimo": 0.72,
+        "cuantificador": 0.6875,
+        "negacion": 0.5
+      },
+      "mean_cos": {
+        "misma_cadena": 0.7361531788110733,
+        "opuesto": 0.6629456344246865,
+        "otra_cadena": 0.47434215269982816
+      },
+      "oracle_threshold": {
+        "tau": 0.7250000000000001,
+        "paraphrase_join": 0.61,
+        "opposite_separation": 0.62
+      },
+      "passes": false
+    }
+  }
+}

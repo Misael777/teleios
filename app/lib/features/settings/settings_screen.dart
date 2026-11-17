@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../../core/config/env.dart';
 import '../../core/preferences/app_settings.dart';
+import '../../core/router/app_router.dart';
 import '../../core/security/app_lock.dart';
 import '../../core/theme/teleios_logo.dart';
 import '../../shared/providers.dart';
@@ -37,6 +39,18 @@ class SettingsScreen extends ConsumerWidget {
               onSelectionChanged: (s) => ref.read(appSettingsProvider.notifier).setThemeMode(s.first),
             ),
           ),
+          SwitchListTile(
+            key: const Key('show-cover'),
+            value: settings.showCover,
+            onChanged: (v) => ref.read(appSettingsProvider.notifier).setShowCover(v),
+            title: const Text('Mostrar portada al abrir'),
+            subtitle: const Text('Logo, ΤΕΛΕΙΟΣ y el lema de Mateo 5:48'),
+          ),
+          ListTile(
+            leading: const Icon(Icons.auto_stories_outlined),
+            title: const Text('Ver portada'),
+            onTap: () => context.go(Routes.portada),
+          ),
           const _Header('Seguridad'),
           SwitchListTile(
             value: settings.lockEnabled,
@@ -61,6 +75,14 @@ class SettingsScreen extends ConsumerWidget {
             subtitle: Text('AES-256 (SQLite3MultipleCiphers). La llave vive en el almacén seguro del sistema.'),
           ),
           const _Header('Mis datos'),
+          ListTile(
+            key: const Key('open-backup'),
+            leading: const Icon(Icons.cloud_sync_outlined),
+            title: const Text('Respaldo cifrado'),
+            subtitle: const Text('Archivo o Google Drive, protegido con tu contraseña'),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => context.push(Routes.backup),
+          ),
           ListTile(
             leading: const Icon(Icons.download_outlined),
             title: const Text('Exportar mis datos (JSON)'),
@@ -126,7 +148,8 @@ class SettingsScreen extends ConsumerWidget {
   }
 
   Future<void> _wipe(BuildContext context, WidgetRef ref) async {
-    final controller = TextEditingController();
+    // Sin controlador a propósito: destruirlo mientras el diálogo anima su salida rompe el árbol.
+    var typed = '';
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (context) => StatefulBuilder(
@@ -137,21 +160,20 @@ class SettingsScreen extends ConsumerWidget {
             children: [
               const Text('Esta acción no se puede deshacer. Escribe BORRAR para confirmar.'),
               const SizedBox(height: 12),
-              TextField(controller: controller, autofocus: true, onChanged: (_) => setState(() {})),
+              TextField(autofocus: true, onChanged: (v) => setState(() => typed = v)),
             ],
           ),
           actions: [
             TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Cancelar')),
             FilledButton(
               style: FilledButton.styleFrom(backgroundColor: Theme.of(context).colorScheme.error),
-              onPressed: controller.text.trim() == 'BORRAR' ? () => Navigator.pop(context, true) : null,
+              onPressed: typed.trim() == 'BORRAR' ? () => Navigator.pop(context, true) : null,
               child: const Text('Borrar'),
             ),
           ],
         ),
       ),
     );
-    controller.dispose();
     if (confirmed != true) return;
     await ref.read(appDatabaseProvider).wipeUserData();
     // Vuelve al onboarding.

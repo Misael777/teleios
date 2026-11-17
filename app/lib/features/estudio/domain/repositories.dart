@@ -16,6 +16,8 @@ abstract interface class DevotionalRepository {
     required String content,
     required HistoricalContext context,
     required List<TopicLink> topics,
+    String? title,
+    PassageRef? keyVerse,
   });
 
   Future<void> delete(String id);
@@ -41,6 +43,14 @@ class BibleSearchHit {
   final String snippet;
 }
 
+/// Referencia cruzada de OpenBible.info (CC-BY) con los votos de su comunidad.
+class CrossReference {
+  const CrossReference(this.target, this.votes);
+
+  final PassageRef target;
+  final int votes;
+}
+
 /// Texto bíblico de solo lectura (RV1909, dominio público).
 abstract interface class BibleRepository {
   String get translation;
@@ -54,4 +64,7 @@ abstract interface class BibleRepository {
   Future<List<BibleVerse>> passage(PassageRef ref);
 
   Future<List<BibleSearchHit>> search(String query, {int limit = 50});
+
+  /// Referencias cruzadas de los versículos de [ref], de la más votada a la menos votada, sin duplicar destinos.
+  Future<List<CrossReference>> crossReferences(PassageRef ref, {int limit = 40});
 }

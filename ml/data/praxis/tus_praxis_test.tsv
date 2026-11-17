@@ -1,0 +1,130 @@
+# Test independiente (nunca entrena): tarea (A = acción ↔ principio, T = temática), etiqueta, registro, premisa, principio o tema.
+# Principios redactados distinto que en principios.tsv y escenarios nuevos.
+A	E	formal	Mi colega presentó mal mis cifras ante el directorio. Al terminar, le ofrecí revisar juntos los datos sin reprocharle nada.	La caridad es paciente y bondadosa, no guarda rencor.
+A	C	coloquial	El mozo se equivocó con mi pedido y le hablé fuerte delante de todo el restorán para que aprendiera.	La caridad es paciente y bondadosa, no guarda rencor.
+A	N	popular	Hoy pinté la reja de la casa de color verde.	La caridad es paciente y bondadosa, no guarda rencor.
+A	E	iglesia	El hermano que se burló de mi predicación quedó sin trabajo. Le conseguí una entrevista y oré por su familia.	Haced bien a los que os aborrecen.
+A	C	joven	el que me hacía bullying en el liceo me pidió ayuda con una tarea y le dije que se pudriera	Haced bien a los que os aborrecen.
+A	N	rural	Fui a la feria del pueblo a vender las papas de la cosecha.	Haced bien a los que os aborrecen.
+A	E	dictado	mi hermana me trató de egoísta en el cumpleaños de mi mamá y al otro día la llamé y le dije que todo estaba olvidado	Sed benignos, perdonándoos unos a otros.
+A	C	formal	Mi socio me pidió disculpas por el error contable. Le respondí que lo perdonaba, pero lo excluí de todas las decisiones desde entonces.	Sed benignos, perdonándoos unos a otros.
+A	C	popular	la comadre me pidió perdón por lo que dijo y yo le dije que se olvidara de mí para siempre	Sed benignos, perdonándoos unos a otros.
+A	N	coloquial	Me compré unas zapatillas para correr.	Sed benignos, perdonándoos unos a otros.
+A	E	coloquial	El árbitro cobró un penal injusto contra mi equipo. Me dio rabia, pero en vez de insultarlo me senté y respiré.	Que la ira no te domine ni te haga pecar.
+A	C	rural	El vecino soltó sus vacas en mi siembra y le fui a romper la cerca a machetazos.	Que la ira no te domine ni te haga pecar.
+A	E	joven	me rayaron la mochila y aunque sabía quién fue no hice nada para desquitarme	No devuelvas mal por mal.
+A	C	formal	La empresa de la competencia difundió un rumor sobre nosotros, así que inventamos uno peor sobre ellos.	No devuelvas mal por mal.
+A	E	iglesia	Llegó al culto un hombre que estuvo preso y me senté con él a compartir la Palabra sin preguntarle por su delito.	No condenes a tu prójimo; la misericordia triunfa sobre el juicio.
+A	C	popular	la nueva del pasaje es separada y yo les dije a todas que seguro es una cualquiera	No condenes a tu prójimo; la misericordia triunfa sobre el juicio.
+A	E	formal	Llevaba meses distanciado de mi socio. Lo invité a almorzar y le pedí perdón por mi parte del conflicto.	Busca la paz con tu hermano antes de presentar tu ofrenda.
+A	C	coloquial	Mi primo quiere arreglar las cosas pero yo le dije a toda la familia que no me lo pongan cerca.	Busca la paz con tu hermano antes de presentar tu ofrenda.
+A	E	popular	al cabro de la esquina que siempre lo retan le dije que es bueno para la pelota y que tiene futuro	Que vuestras palabras sean siempre con gracia y edifiquen al que oye.
+A	C	joven	subí una historia burlándome de cómo baila mi compañera	Que vuestras palabras sean siempre con gracia y edifiquen al que oye.
+A	N	rural	Este año sembré maíz en el potrero de abajo.	Que vuestras palabras sean siempre con gracia y edifiquen al que oye.
+A	E	iglesia	Una hermana me contó con detalle la caída de otro hermano. Le dije que mejor oráramos por él y no lo comentáramos.	El que anda en chismes descubre el secreto; el de espíritu fiel lo guarda.
+A	C	formal	En la cena de la empresa conté los problemas matrimoniales que me confió mi asistente.	El que anda en chismes descubre el secreto; el de espíritu fiel lo guarda.
+A	E	coloquial	El mecánico me preguntó si quería boleta o sin boleta más barato. Le pedí boleta.	No mintáis los unos a los otros.
+A	E	dictado	mi señora me preguntó si me gustó la comida y le dije con cariño que estaba salada pero que le agradecía el esfuerzo	No mintáis los unos a los otros.
+A	C	popular	le dije al jefe que se me murió la abuela para faltar y mi abuela está vivita	No mintáis los unos a los otros.
+A	C	formal	Para cerrar la venta le aseguré al cliente que el departamento no tenía humedad, sabiendo que sí tenía.	No mintáis los unos a los otros.
+A	N	joven	hoy me corté el pelo bien cortito	No mintáis los unos a los otros.
+A	E	rural	Me pagaron de más por los sacos de trigo y volví al pueblo a devolver la diferencia.	Quien es honrado en lo pequeño también lo será en lo grande.
+A	C	coloquial	En el estacionamiento le rayé el auto a otro y me fui sin dejar ningún aviso.	Quien es honrado en lo pequeño también lo será en lo grande.
+A	E	formal	Me comprometí a dictar la charla gratuita y luego me ofrecieron un evento pagado el mismo día. Mantuve mi compromiso.	Cumple lo que prometes.
+A	C	joven	le dije a mi polola que la iba a ir a buscar y me quedé jugando play y no le avisé	Cumple lo que prometes.
+A	E	popular	la señora de la feria no tenía para el remedio y le pasé lo que tenía en el bolsillo	Dios ama al que da con alegría.
+A	C	iglesia	En la campaña de alimentos para la cárcel dije que no tenía nada que dar, aunque mi despensa está llena.	Dios ama al que da con alegría.
+A	N	formal	Hoy actualicé el sistema operativo del computador.	Dios ama al que da con alegría.
+A	E	coloquial	Mi cuñado se compró un auto del año. Lo felicité de corazón y me fui contento en mi micro.	Aprende a estar satisfecho en cualquier situación.
+A	C	joven	vi el celular nuevo de mi amigo y me endeudé para comprarme uno mejor	Aprende a estar satisfecho en cualquier situación.
+A	E	dictado	me ofrecieron hacer horas extra todos los domingos y dije que no porque prefiero estar con mis hijos y en la iglesia	No pongas tu corazón en las riquezas.
+A	C	formal	Cancelé las vacaciones familiares por tercera vez para seguir ampliando mis inversiones.	No pongas tu corazón en las riquezas.
+A	E	rural	Le debía unos pesos al de la ferretería y antes de comprar cualquier cosa le fui a pagar.	El impío toma prestado y no paga.
+A	C	coloquial	Me cambié de casa sin pagar las últimas tres cuentas del arriendo.	El impío toma prestado y no paga.
+A	E	iglesia	En el invierno juntamos frazadas con los jóvenes y las repartimos a los que duermen bajo el puente.	El que tiene misericordia del pobre honra a Dios.
+A	C	popular	la señora que pide en la iglesia me da asco y le dije al portero que no la deje entrar	El que tiene misericordia del pobre honra a Dios.
+A	N	joven	hoy aprendí a hacer pan amasado	El que tiene misericordia del pobre honra a Dios.
+A	E	formal	Recibí la noticia de posibles recortes en la empresa. Hice mi trabajo, lo encomendé a Dios y no dejé que me quitara el sueño.	Echa sobre el Señor tu carga y él te sustentará.
+A	C	dictado	desde que me dijeron que a lo mejor me cambian de ciudad no duermo no como y estoy todo el día con el estómago apretado	Echa sobre el Señor tu carga y él te sustentará.
+A	E	coloquial	Antes de entrar a la notaría estaba con los nervios de punta, así que me paré en el pasillo a orar.	En el día de mi angustia te invocaré.
+A	C	formal	Cuando me llegó la carta del banco, lo primero que hice fue abrir una botella de whisky.	En el día de mi angustia te invocaré.
+A	E	joven	me daba terror cantar sola en el culto pero le pedí fuerzas a Dios y canté	Esfuérzate y sé valiente, porque Dios estará contigo.
+A	C	popular	no fui a declarar como testigo del accidente por puro miedo a meterme en problemas	Esfuérzate y sé valiente, porque Dios estará contigo.
+A	E	iglesia	Llevo años pidiendo un hijo. Hoy agradecí a Dios igual y le dije que esperaré su tiempo.	Espera en Jehová; esfuérzate y aliéntese tu corazón.
+A	C	coloquial	Como no me llamaban de ningún trabajo, empecé a vender cosas robadas.	Espera en Jehová; esfuérzate y aliéntese tu corazón.
+A	E	rural	Se perdió media cosecha con la helada, pero en la noche le di gracias a Dios por la otra mitad.	Dad gracias a Dios en todo.
+A	C	joven	me regalaron un viaje y me la pasé reclamando porque el hotel no tenía piscina	Dad gracias a Dios en todo.
+A	N	formal	Revisé el contrato de arriendo antes de firmarlo.	Dad gracias a Dios en todo.
+A	E	formal	Recibí el premio al mejor vendedor y lo dediqué públicamente al equipo de bodega.	Que nadie piense de sí mismo más de lo que debe pensar.
+A	C	coloquial	Le dije a mi hermano que él nunca va a llegar a ser lo que soy yo.	Que nadie piense de sí mismo más de lo que debe pensar.
+A	E	popular	en el velorio de la vecina me quedé hasta el final sirviendo el café a todos	El mayor entre vosotros sea vuestro servidor.
+A	C	formal	Como soy el director, exijo que mi secretaria me traiga el café y me lustre los zapatos.	El mayor entre vosotros sea vuestro servidor.
+A	E	dictado	le grité a mi hija por algo que no hizo y en la noche fui a su pieza y le pedí perdón	Confesad vuestras faltas unos a otros.
+A	C	joven	choqué el auto de mi papá y le dije que lo encontré así en la calle	Confesad vuestras faltas unos a otros.
+A	E	joven	en la fiesta una mina me invitó a su casa y le dije que no porque quiero guardarme	Glorificad a Dios en vuestro cuerpo.
+A	C	coloquial	Le fui infiel a mi novia en el carrete y le dije que no había pasado nada.	Glorificad a Dios en vuestro cuerpo.
+A	E	formal	Al ver que una página me llevaba a contenido indebido, cerré el navegador y salí a caminar.	Haz un pacto con tus ojos.
+A	C	dictado	anoche me quedé hasta tarde viendo videos que no debía y no es la primera vez	Haz un pacto con tus ojos.
+A	E	popular	en la junta de vecinos todos tomaban y yo me quedé con mi bebida nomás	Sed sobrios y velad.
+A	C	rural	Después de la trilla tomé chicha hasta caerme y no llegué a la casa.	Sed sobrios y velad.
+A	N	iglesia	Este domingo cantamos un himno nuevo en el culto.	Sed sobrios y velad.
+A	E	coloquial	Mi papá se puso pesado en el almuerzo, pero le respondí con respeto y después lo acompañé al médico.	Honra a tus padres.
+A	C	formal	Mi madre me pidió que la acompañara al control y le dije que no tengo tiempo para sus achaques.	Honra a tus padres.
+A	E	dictado	una compañera del trabajo me dijo que le gustaba y le dije que soy casado y que eso no va a pasar	El matrimonio sea honroso en todos y el lecho sin mancilla.
+A	C	coloquial	Le dije a mi esposa que iba a un curso el fin de semana y me fui con otra mujer a la costa.	El matrimonio sea honroso en todos y el lecho sin mancilla.
+A	E	rural	Mi señora llegó cansada del campo. Le calenté el agua para que se bañara y le hice la once.	Amad a vuestras esposas como Cristo amó a la iglesia.
+A	C	popular	mi mujer me pidió que la acompañara al médico y le dije que vaya sola que para eso tiene piernas	Amad a vuestras esposas como Cristo amó a la iglesia.
+A	E	formal	Mi hijo me desobedeció. Le expliqué la consecuencia con calma y la cumplí sin humillarlo.	No exasperéis a vuestros hijos.
+A	C	coloquial	A mi hijo le dije delante de los primos que es el más tonto de la familia.	No exasperéis a vuestros hijos.
+A	E	joven	en la práctica nadie revisaba los informes pero los hice igual de bien que si me evaluaran	Trabajad de corazón, como para el Señor.
+A	C	popular	en la pega me escondo en el baño con el celular cuando no está el capataz	Trabajad de corazón, como para el Señor.
+A	N	iglesia	Hoy memoricé el Salmo 23.	Trabajad de corazón, como para el Señor.
+A	E	coloquial	El guardia me pidió el carnet para entrar y se lo mostré sin alegar.	Sujetaos a las autoridades.
+A	C	formal	Evadí la revisión técnica del vehículo pagando a un funcionario.	Sujetaos a las autoridades.
+A	E	popular	llegó mi sobrino del sur sin dónde quedarse y le armé una cama en el living	No os olvidéis de la hospitalidad.
+A	C	coloquial	Unos hermanos de otra ciudad necesitaban alojamiento para el congreso y dije que mi casa estaba en arreglos, aunque no era cierto.	No os olvidéis de la hospitalidad.
+A	E	iglesia	El hermano que quedó viudo vive solo; voy los martes a tomar té con él.	Estuve enfermo y me visitasteis.
+A	C	joven	mi abuelo está en el hospital y no lo he ido a ver porque los hospitales me dan lata	Estuve enfermo y me visitasteis.
+A	E	formal	Un proveedor maltrataba a su ayudante adolescente. Intervine y le dije que eso no lo iba a permitir.	Abre tu boca por el mudo, en el juicio de todos los desvalidos.
+A	C	coloquial	Vi que en el colegio le pegaban a un niño nuevo y me di vuelta para no mirar.	Abre tu boca por el mudo, en el juicio de todos los desvalidos.
+A	N	rural	Arreglé el techo del gallinero.	Abre tu boca por el mudo, en el juicio de todos los desvalidos.
+T	E	coloquial	Me peleé con mi vecino y después le pedí disculpas.	el perdón
+T	E	formal	Rechacé el soborno del contratista.	la honestidad
+T	E	dictado	no me alcanzó la plata para el mes y tuve que pedir prestado	el dinero
+T	E	joven	mi polola y yo decidimos esperar al matrimonio	la pureza
+T	E	popular	mi viejo está enfermo y lo fui a cuidar	los padres
+T	E	rural	Le ayudé a la viuda de enfrente a cosechar su trigo.	la generosidad
+T	E	iglesia	Esta semana estuve angustiado, pero oré y sentí paz.	la ansiedad
+T	E	formal	Mi jefe me humilló y me dieron ganas de golpearlo.	la ira
+T	E	coloquial	Le dije a mi hija que estaba orgulloso de ella.	los hijos
+T	E	joven	me dio miedo pero hablé en la exposición	el miedo
+T	E	formal	El amor es sufrido y benigno, no busca lo suyo.	el amor
+T	E	iglesia	El que da al pobre presta a Jehová.	los pobres
+T	E	formal	No os afanéis por el día de mañana.	la preocupación
+T	E	coloquial	Le grité a mi esposa porque llegó tarde.	el matrimonio
+T	E	dictado	me enojé en el tráfico y le grité al de al lado	el enojo
+T	E	popular	le conté a todas lo que me dijo la vecina en secreto	el chisme
+T	E	formal	Defendí a la compañera que estaban acosando.	la justicia
+T	E	coloquial	Gasté el aguinaldo en una tele nueva.	dinero
+T	E	iglesia	Perdoné a mi padre por abandonarnos.	perdón
+T	E	joven	me compré algo caro para que me admiraran	el orgullo
+T	N	coloquial	Me peleé con mi vecino y después le pedí disculpas.	el dinero
+T	N	formal	Rechacé el soborno del contratista.	los hijos
+T	N	dictado	no me alcanzó la plata para el mes y tuve que pedir prestado	la pureza
+T	N	joven	mi polola y yo decidimos esperar al matrimonio	las deudas
+T	N	popular	mi viejo está enfermo y lo fui a cuidar	el chisme
+T	N	rural	Le ayudé a la viuda de enfrente a cosechar su trigo.	la ira
+T	N	iglesia	Esta semana estuve angustiado, pero oré y sentí paz.	el dinero
+T	N	formal	Mi jefe me humilló y me dieron ganas de golpearlo.	la pureza
+T	N	coloquial	Le dije a mi hija que estaba orgulloso de ella.	las deudas
+T	N	joven	me dio miedo pero hablé en la exposición	el matrimonio
+T	N	formal	El amor es sufrido y benigno, no busca lo suyo.	el dinero
+T	N	iglesia	El que da al pobre presta a Jehová.	la pureza
+T	N	formal	No os afanéis por el día de mañana.	el chisme
+T	N	coloquial	Le grité a mi esposa porque llegó tarde.	las deudas
+T	N	dictado	me enojé en el tráfico y le grité al de al lado	los padres
+T	N	popular	le conté a todas lo que me dijo la vecina en secreto	el dinero
+T	N	formal	Defendí a la compañera que estaban acosando.	la pureza
+T	N	coloquial	Gasté el aguinaldo en una tele nueva.	amor
+T	N	iglesia	Perdoné a mi padre por abandonarnos.	dinero
+T	N	joven	me compré algo caro para que me admiraran	los enfermos

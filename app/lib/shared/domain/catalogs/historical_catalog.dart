@@ -1,7 +1,8 @@
 /// Catálogos fijos del formulario cronológico y la línea de tiempo.
 ///
 /// Fechas aproximadas según la cronología conservadora tradicional (p. ej. datación
-/// temprana del Éxodo). Son orientativas; el usuario puede registrar su propio año.
+/// temprana del Éxodo; genealogías de Génesis 5 y 11 para lo anterior a Abraham). Son
+/// orientativas, sobre todo antes de Abraham; el usuario puede registrar su propio año.
 library;
 
 class CatalogItem {
@@ -34,6 +35,8 @@ class Milestone {
 
 abstract final class HistoricalCatalog {
   static const periods = <HistoricalPeriod>[
+    HistoricalPeriod('creacion', 'Creación y antediluvianos', -4000, -2350),
+    HistoricalPeriod('diluvio_babel', 'Diluvio y Babel', -2350, -2100),
     HistoricalPeriod('patriarcal', 'Patriarcas', -2100, -1800),
     HistoricalPeriod('egipto_exodo', 'Egipto y Éxodo', -1800, -1406),
     HistoricalPeriod('conquista_jueces', 'Conquista y Jueces', -1406, -1050),
@@ -79,6 +82,11 @@ abstract final class HistoricalCatalog {
   ];
 
   static const milestones = <Milestone>[
+    Milestone('Creación', -4000, 'creacion', 'GEN.1'),
+    Milestone('La caída', -4000, 'creacion', 'GEN.3'),
+    Milestone('Enoc camina con Dios', -3400, 'creacion', 'GEN.5'),
+    Milestone('El diluvio', -2350, 'diluvio_babel', 'GEN.7'),
+    Milestone('Torre de Babel', -2200, 'diluvio_babel', 'GEN.11'),
     Milestone('Llamado de Abraham', -2091, 'patriarcal', 'GEN.12'),
     Milestone('José en Egipto', -1898, 'patriarcal', 'GEN.37'),
     Milestone('Éxodo', -1446, 'egipto_exodo', 'EXO.12'),
@@ -106,6 +114,13 @@ abstract final class HistoricalCatalog {
     Milestone('Destrucción del templo', 70, 'iglesia_primitiva'),
     Milestone('Apocalipsis', 95, 'iglesia_primitiva', 'REV.1'),
   ];
+
+  /// Época de un capítulo cuando el libro abarca varias (Génesis 1-11 es anterior a Abraham).
+  static String? periodForChapter(String bookCode, int chapter) => switch ((bookCode, chapter)) {
+    ('GEN', <= 5) => 'creacion',
+    ('GEN', <= 11) => 'diluvio_babel',
+    _ => null,
+  };
 
   static HistoricalPeriod? period(String? id) => id == null ? null : periods.where((p) => p.id == id).firstOrNull;
 

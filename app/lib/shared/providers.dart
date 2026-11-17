@@ -1,5 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../features/bitacora/data/drift_praxis_repository.dart';
+import '../features/bitacora/domain/repositories.dart';
 import '../features/estudio/data/drift_devotional_repository.dart';
 import '../features/estudio/domain/repositories.dart';
 import '../features/estudio/domain/save_devotional.dart';
@@ -7,6 +9,7 @@ import '../infrastructure/ai/topic_suggester.dart';
 import 'data/database/app_database.dart';
 import 'data/repositories/drift_topic_repository.dart';
 import 'domain/entities/topic.dart';
+import 'domain/repositories/attachment_store.dart';
 import 'domain/repositories/topic_repository.dart';
 import 'domain/usecases/topic_usecases.dart';
 
@@ -51,3 +54,11 @@ final topicSuggesterProvider = Provider((ref) => const TopicSuggester());
 // ─── Lecturas reactivas ────────────────────────────────────────────────────
 
 final allTopicsProvider = StreamProvider<List<Topic>>((ref) => ref.watch(topicRepositoryProvider).watchAll());
+
+// ─── Adjuntos privados (cifrados) ─────────────────────────────────────────
+
+final attachmentStoreProvider = Provider<AttachmentStore>((ref) => throw UnimplementedError('Se inyecta en main()'));
+
+final attachmentRepositoryProvider = Provider<AttachmentRepository>(
+  (ref) => DriftAttachmentRepository(ref.watch(appDatabaseProvider)),
+);

@@ -94,6 +94,14 @@ class Topic {
     return _copy(status: TopicStatus.incubacion, updatedAt: at, clearPassage: true);
   }
 
+  /// incubación → sombra: falla recurrente sin estudio que la respalde (lo decide el análisis).
+  Topic markShadow({required DateTime at}) {
+    if (status != TopicStatus.incubacion) {
+      throw const ValidationFailure('Solo un tópico en incubación puede pasar a sombra.');
+    }
+    return _copy(status: TopicStatus.sombra, updatedAt: at);
+  }
+
   Topic moveTo(String dimensionId, {required DateTime at}) => _copy(dimensionId: dimensionId, updatedAt: at);
 
   Topic _copy({

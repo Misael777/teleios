@@ -106,7 +106,7 @@ TELEIOS **no genera texto**; **clasifica estados cognitivos** mediante primitiva
 
 ## 🚀 Estado del Proyecto
 
-✅ **Sprints 0-4 completados** — módulo Estudio funcional (devocionales, Biblia RV1909, línea de tiempo, sugeridor local, incubación), base cifrada, bloqueo biométrico. 81 tests en verde. Consulta [`PLAN-DE-TRABAJO.md`](./PLAN-DE-TRABAJO.md) para el roadmap detallado y [`ARCHITECTURE.md`](./ARCHITECTURE.md) para la visión técnica y [`docs/ANALISIS-TECNICO.md`](./docs/ANALISIS-TECNICO.md) para el análisis y las decisiones.
+✅ **Release 0.2 (Sprints 0-9)**: Estudio, Bitácora A-B-C, Altar por voz, Ejes (dashboards, grafo, aluvión) y respaldo cifrado. Todo local y cifrado; 151 tests en verde. Siguiente: comunidad con Supabase (Sprint 10). Consulta [`PLAN-DE-TRABAJO.md`](./PLAN-DE-TRABAJO.md) para el roadmap detallado y [`ARCHITECTURE.md`](./ARCHITECTURE.md) para la visión técnica y [`docs/ANALISIS-TECNICO.md`](./docs/ANALISIS-TECNICO.md) para el análisis y las decisiones.
 
 ---
 

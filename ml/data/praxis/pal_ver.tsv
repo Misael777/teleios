@@ -1,0 +1,63 @@
+# principio	etiqueta	dificultad	contextos	reacción
+palabra_edifica	E	D	trabajo	El practicante entregó un trabajo flojo. Le señalé lo que estaba bien y le expliqué con respeto cómo mejorar lo demás.
+palabra_edifica	E	D	hijos	Mi hijo sacó malas notas. Lo abracé y le dije que lo amo igual y que vamos a estudiar juntos.
+palabra_edifica	E	D	pareja	En medio de la discusión quise decirle algo hiriente a mi esposa, pero me callé y le dije que la amo aunque estemos enojados.
+palabra_edifica	E	M	amigos	Mi amiga estaba desanimada por su peso. Le dije lo valiosa que es y lo mucho que la admiro.
+palabra_edifica	E	D	redes	en el grupo todos se burlaban del profe y yo escribí que mejor lo apoyáramos que estaba pasando un mal momento
+palabra_edifica	E	M	iglesia	Al hermano que cantó desafinado le agradecí su entrega y le dije que su corazón se notaba.
+palabra_edifica	C	D	hijos	Mi hija me mostró su dibujo y le dije que era feo y que no perdiera el tiempo.
+palabra_edifica	C	D	pareja	Le dije a mi esposo que es un inútil y que me arrepiento de haberme casado con él.
+palabra_edifica	C	D	trabajo	En la reunión llamé estúpido a mi compañero por su propuesta.
+palabra_edifica	C	M	amigos	Me pasé la noche contando chistes groseros y burlándome del que tartamudea.
+palabra_edifica	C	D	calle	el del delivery se demoró y le dije de todo mal parido incompetente
+palabra_edifica	C	D	familia	A mi hermano que no consigue trabajo le dije delante de todos que es un fracasado.
+palabra_edifica	N	M	dinero	Abrí una cuenta de ahorros para la universidad de mi hija.
+palabra_edifica	N	F	salud	Tomé mucha agua hoy.
+no_chisme	E	D	trabajo	Las compañeras empezaron a hablar de la vida privada de la secretaria. Les dije que mejor no y me fui de la conversación.
+no_chisme	E	D	iglesia	Me contaron un secreto sobre el matrimonio del líder de jóvenes. No se lo conté a nadie y oré por ellos.
+no_chisme	E	D	familia	Mi tía quería que le contara por qué se separó mi prima. Le dije que eso le correspondía contarlo a ella.
+no_chisme	E	M	redes	Me llegó un audio con un rumor sobre una vecina. No lo reenvié y lo borré.
+no_chisme	E	D	amigos	sabía lo que hizo mi amigo en la fiesta y cuando me preguntaron dije que no era asunto mío
+no_chisme	C	D	iglesia	Le conté a medio grupo de oración el problema que me confió una hermana, como petición de oración.
+no_chisme	C	D	trabajo	Divulgué en el almuerzo que el jefe está en tratamiento psiquiátrico.
+no_chisme	C	D	vecinos	Le conté a todo el barrio que la vecina recibe visitas de un hombre cuando el marido no está.
+no_chisme	C	M	redes	Reenvié al grupo la foto de mi compañero borracho con un comentario burlón.
+no_chisme	C	D	familia	la verdad yo fui la que le contó a todos que mi cuñada está endeudada
+no_chisme	N	M	salud	Hoy hice media hora de bicicleta.
+no_chisme	N	M	dinero	Cambié de compañía de teléfono para pagar menos.
+decir_verdad	E	D	trabajo	Mi jefe me pidió mentir al cliente sobre la fecha de entrega y le dije que no podía.
+decir_verdad	E	D	estudio	El profesor me puso un punto de más por error. Fui a decírselo aunque bajara mi nota.
+decir_verdad	E	D	pareja	Gasté plata que no habíamos acordado. Se lo conté a mi esposa antes de que lo descubriera.
+decir_verdad	E	D	trabajo	Rompí una pieza de la máquina. Nadie me vio, pero avisé al supervisor que había sido yo.
+decir_verdad	E	M	familia	Mi mamá me preguntó si había fumado. Le dije que sí, aunque sabía que se iba a enojar.
+decir_verdad	E	D	calle	el cajero me dio vuelto de más y yo le dije que se había equivocado y se lo devolví
+decir_verdad	C	D	trabajo	Le dije al cliente que el producto llegaba mañana, sabiendo que tardaría un mes.
+decir_verdad	C	D	pareja	Mi esposa me preguntó dónde estuve y le inventé que me quedé en la oficina.
+decir_verdad	C	D	estudio	Le dije al profesor que estuve enfermo para que me diera más plazo, pero estuve de fiesta.
+decir_verdad	C	M	familia	Le dije a mi papá que había pagado la cuenta, pero me gasté la plata.
+decir_verdad	C	D	trabajo	Inflé las horas trabajadas en el informe para cobrar más.
+decir_verdad	C	D	amigos	le dije a mi amiga que me encantó su regalo y después lo revendí y le dije que lo perdí
+decir_verdad	N	M	salud	Hoy empecé una dieta sin azúcar.
+decir_verdad	N	F	iglesia	Fui al culto del domingo con mi familia.
+fiel_en_poco	E	D	trabajo	Podía llevarme unas hojas y lápices de la oficina como hacen todos, pero compré los míos.
+fiel_en_poco	E	D	calle	Encontré una billetera con dinero en el bus y la entregué completa en la estación.
+fiel_en_poco	E	D	trabajo	Terminé mi turno sin que nadie me controlara y no me fui antes de la hora.
+fiel_en_poco	E	M	dinero	En el supermercado no me cobraron un producto. Volví a la caja a pagarlo.
+fiel_en_poco	E	D	estudio	el examen era en casa sin vigilancia y no busqué las respuestas en internet
+fiel_en_poco	C	D	trabajo	Me llevo a la casa el papel higiénico y el café de la oficina porque total es de la empresa.
+fiel_en_poco	C	D	calle	Me colé en el metro sin pagar porque el torniquete estaba roto.
+fiel_en_poco	C	M	trabajo	Marqué la tarjeta de un compañero que llegó tarde.
+fiel_en_poco	C	D	estudio	En el examen online abrí otra pestaña y copié las respuestas.
+fiel_en_poco	C	D	dinero	la cajera me dio vuelto de más y me quedé calladito
+fiel_en_poco	N	M	familia	Hoy almorcé con mis padres.
+cumplir_palabra	E	D	amigos	Le prometí a mi amigo ayudarlo con la mudanza. Me salió un plan mejor, pero fui igual como había dicho.
+cumplir_palabra	E	D	hijos	Le dije a mi hijo que iría a su partido. Pedí permiso en el trabajo y llegué a tiempo.
+cumplir_palabra	E	D	trabajo	Me comprometí con un precio y después subieron los materiales. Igual respeté el precio acordado con el cliente.
+cumplir_palabra	E	M	dinero	Le había prometido devolver el préstamo el viernes y lo devolví ese día.
+cumplir_palabra	E	D	iglesia	me comprometí a dar la clase de niños y aunque estaba cansado fui igual
+cumplir_palabra	C	D	hijos	Le prometí a mi hija ir a su acto escolar y me fui al fútbol con mis amigos.
+cumplir_palabra	C	D	trabajo	Acepté hacer el proyecto para el viernes y ni lo empecé.
+cumplir_palabra	C	M	amigos	Quedé con mi amigo a las ocho y lo dejé plantado sin avisar.
+cumplir_palabra	C	D	iglesia	Dije que iba a servir en el ministerio de alabanza y llevo tres domingos faltando sin avisar.
+cumplir_palabra	C	D	dinero	le juré a mi primo que le pagaba en un mes y ya va un año y le sigo dando excusas
+cumplir_palabra	N	M	salud	Me vacuné contra la gripe.

@@ -9,8 +9,13 @@ import '../../../shared/domain/catalogs/historical_catalog.dart';
 import '../../../shared/domain/entities/dimension.dart';
 import '../../../shared/providers.dart';
 import '../../../shared/widgets/common_widgets.dart';
+import '../../coherencia/presentation/belief_editor.dart';
 import '../domain/devotional.dart';
+import '../domain/guided_reflection.dart';
 import 'estudio_providers.dart';
+import 'widgets/devotional_cover.dart';
+import 'widgets/scripture_text.dart';
+import 'widgets/section_style.dart';
 
 class DevotionalDetailScreen extends ConsumerWidget {
   const DevotionalDetailScreen({super.key, required this.id});
@@ -72,10 +77,9 @@ class DevotionalDetailScreen extends ConsumerWidget {
               child: ListView(
                 padding: const EdgeInsets.all(16),
                 children: [
-                  Text(Formatters.date(entry.date), style: Theme.of(context).textTheme.bodySmall),
-                  const SizedBox(height: 12),
+                  DevotionalCover(entry: entry),
                   _PassageCard(entry: entry),
-                  SectionCard(title: 'Reflexión', child: SelectableText(entry.content)),
+                  _ReflectionCard(reflection: GuidedReflection.parse(entry.content)),
                   SectionCard(
                     title: 'Tópicos',
                     child: Column(
@@ -112,6 +116,21 @@ class DevotionalDetailScreen extends ConsumerWidget {
                     ),
                   ),
                   if (!entry.context.isEmpty) _ContextCard(entry: entry),
+                  Card(
+                    child: ListTile(
+                      key: const Key('devotional-to-belief'),
+                      leading: const Icon(Icons.account_tree_outlined),
+                      title: const Text('Convertir en creencia'),
+                      subtitle: const Text(
+                        'Tu principio pasa a ser una creencia operativa: verás qué tanto lo sostiene la Escritura '
+                        'y cuánto lo vives.',
+                      ),
+                      onTap: () async {
+                        final belief = await showBeliefEditor(context, from: entry);
+                        if (belief != null && context.mounted) await context.push(Routes.creencia(belief.id));
+                      },
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -184,6 +203,101 @@ class _ContextCard extends StatelessWidget {
             ),
         ],
       ),
+    );
+  }
+}
+
+/// Un punto por cada sección desde la que se citó un versículo, en el color de la sección.
+class _SectionDots extends StatelessWidget {
+  const _SectionDots({required this.sectionIds});
+
+  final List<String?> sectionIds;
+
+  @override
+  Widget build(BuildContext context) => Tooltip(
+    message: sectionIds.map(SectionStyle.name).join(' · '),
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        for (final id in sectionIds)
+          Container(
+            width: 8,
+            height: 8,
+            margin: const EdgeInsets.symmetric(horizontal: 1),
+            decoration: BoxDecoration(color: SectionStyle.color(context, id), shape: BoxShape.circle),
+          ),
+      ],
+    ),
+  );
+}
+
+class _ReflectionCard extends StatelessWidget {
+  const _ReflectionCard({required this.reflection});
+
+  final GuidedReflection reflection;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final linked = reflection.linkedPassages;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (reflection.notes.isNotEmpty) SectionCard(title: 'Reflexión', child: ScriptureLinkedText(reflection.notes)),
+        for (final section in GuidedReflection.sections)
+          if (reflection.answeredIn(section) > 0)
+            SectionCard(
+              title: section.name,
+              subtitle: section.purpose,
+              trailing: Icon(SectionStyle.icon(section.id), color: SectionStyle.color(context, section.id)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  for (final (i, q) in section.questions.where((q) => reflection.answered(q.id)).indexed) ...[
+                    if (i > 0) const SizedBox(height: 16),
+                    Text(q.text, style: theme.textTheme.titleSmall?.copyWith(color: theme.colorScheme.primary)),
+                    const SizedBox(height: 4),
+                    ScriptureLinkedText(reflection.answer(q.id)),
+                  ],
+                ],
+              ),
+            ),
+        if (linked.isNotEmpty)
+          SectionCard(
+            title: 'Pasajes vinculados',
+            subtitle: 'El color indica la sección donde lo citaste. Toca uno para leerlo.',
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Wrap(
+                  spacing: 6,
+                  runSpacing: 6,
+                  children: [
+                    for (final l in linked)
+                      ActionChip(
+                        avatar: _SectionDots(
+                          sectionIds: [
+                            for (final c in reflection.citations)
+                              if (c.ref == l.ref) c.section?.id,
+                          ],
+                        ),
+                        label: Text(l.ref.label),
+                        onPressed: () => showPassageSheet(context, l.ref),
+                      ),
+                  ],
+                ),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: TextButton.icon(
+                    onPressed: () => context.go(Routes.lineaDeTiempo),
+                    icon: const Icon(Icons.timeline, size: 18),
+                    label: const Text('Ver la red en la línea de tiempo'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+      ],
     );
   }
 }

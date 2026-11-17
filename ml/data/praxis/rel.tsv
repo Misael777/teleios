@@ -1,0 +1,89 @@
+# principio	etiqueta (E encarna / C viola / N no aplica)	dificultad	contextos (;)	reacción (circunstancia. acción)
+amor_benigno	E	D	pareja	Mi esposa llegó tarde y me dejó esperando una hora. No le reclamé; le pregunté cómo le había ido y le serví la cena.
+amor_benigno	E	D	trabajo	Un compañero nuevo me preguntó lo mismo cinco veces. Se lo expliqué otra vez con calma y le hice una guía.
+amor_benigno	E	M	familia	Mi abuela repite las mismas historias. Hoy la escuché toda la tarde como si fuera la primera vez.
+amor_benigno	E	D	amigos	mi amigo me canceló otra vez a última hora y en vez de mandarle un audio enojado le dije tranqui hermano otro día
+amor_benigno	E	D	hijos	Mi hija derramó el jugo sobre mi laptop. Respiré, no le grité y la ayudé a limpiar mientras la abrazaba.
+amor_benigno	E	M	vecinos	El vecino puso música fuerte hasta tarde. Fui a hablarle con buena cara y le llevé unas galletas.
+amor_benigno	C	D	pareja	Mi esposa llegó tarde. Le grité y la humillé delante de los niños.
+amor_benigno	C	D	trabajo	La practicante se equivocó en un informe. Le dije delante de todos que no servía para nada.
+amor_benigno	C	M	familia	Mi mamá me llamó tres veces seguidas. Le contesté de mala gana y le colgué.
+amor_benigno	C	D	amigos	Mi amigo me pidió ayuda con la mudanza. Le dije que sí, pero no fui y apagué el celular.
+amor_benigno	C	D	calle	en el bus una señora me pidió el asiento y me hice el dormido todo el viaje
+amor_benigno	C	D	hijos	Mi hijo no entendía la tarea. Perdí la paciencia, le arranqué el cuaderno y le dije que era un burro.
+amor_benigno	N	M	trabajo	Hoy terminé el inventario de la bodega y lo entregué a tiempo.
+amor_benigno	N	M	salud	Fui al médico por un dolor de espalda y me recetaron reposo.
+amar_enemigos	E	D	trabajo	Mi compañero me ofendió en la reunión. Oré por él y lo traté con paciencia.
+amar_enemigos	E	D	vecinos	El vecino que me denunció a la municipalidad se quedó sin luz. Le pasé una extensión desde mi casa.
+amar_enemigos	E	D	familia	Mi cuñado habla pestes de mí. Igual lo invité a mi cumpleaños y le guardé el mejor pedazo de torta.
+amar_enemigos	E	D	iglesia	El hermano que me criticó en la congregación se enfermó; le llevé sopa y oramos juntos.
+amar_enemigos	E	D	redes	un tipo me insultó en los comentarios y en vez de responderle oré por él y lo bendije
+amar_enemigos	E	M	trabajo	Mi exjefe, que me despidió injustamente, me pidió una referencia. Se la di y hablé bien de su trabajo.
+amar_enemigos	C	D	trabajo	El compañero que me quitó el ascenso pidió ayuda con el sistema. Le di instrucciones equivocadas a propósito.
+amar_enemigos	C	D	vecinos	El vecino con el que peleo se cayó en la vereda. Me reí y entré a mi casa.
+amar_enemigos	C	D	redes	Le bloqueé y armé un grupo para burlarnos de la persona que me criticó.
+amar_enemigos	C	M	familia	Mi suegra me trata mal, así que yo tampoco la saludo y deseo que se vaya lejos.
+amar_enemigos	C	D	iglesia	Cuando el hermano que me ofendió dio su testimonio, me levanté y salí para que todos vieran que no lo soporto.
+amar_enemigos	C	D	calle	el que me chocó el carro se puso a llorar y yo le grité que ojalá le fuera peor
+amar_enemigos	N	M	dinero	Me llegó la factura de la luz. Gasté el ahorro en una tele nueva.
+amar_enemigos	N	F	estudio	Hoy estudié dos horas para el examen de matemáticas.
+perdonar	E	D	amigos	Me enteré de que mi amiga habló mal de mí y la perdoné.
+perdonar	E	D	familia	Mi papá nos abandonó cuando era niño. Hoy lo llamé y le dije que ya no le guardo rencor.
+perdonar	E	D	pareja	Mi esposo me pidió perdón por lo que dijo ayer. Lo perdoné de corazón y no se lo volví a sacar en cara.
+perdonar	E	M	trabajo	El colega que perdió mis archivos me pidió disculpas. Le dije que no pasaba nada y seguimos trabajando bien.
+perdonar	E	D	familia	Mi hermano me robó plata hace años. Hoy le escribí para decirle que lo perdono y que lo extraño.
+perdonar	E	D	iglesia	ya perdoné al pastor que me humilló en público y oré por su familia gloria a Dios
+perdonar	C	D	amigos	Mi amiga me pidió perdón llorando y le dije que nunca se lo voy a perdonar.
+perdonar	C	D	pareja	Dije que lo había perdonado, pero cada vez que discutimos le recuerdo lo que hizo hace diez años.
+perdonar	C	D	familia	Mi hermana quiere hacer las paces. Le borré el número para que no me encuentre nunca más.
+perdonar	C	M	trabajo	El jefe se disculpó por gritarme. Le sonreí, pero desde entonces le hago la vida imposible.
+perdonar	C	D	familia	mi viejo me pidió perdón en el hospital y le di la espalda nomás
+perdonar	C	D	vecinos	El vecino reconoció que rompió mi cerca y ofreció pagarla. Le dije que igual lo iba a demandar para que aprenda.
+perdonar	N	M	salud	Hoy salí a correr cinco kilómetros por la mañana.
+perdonar	N	M	dinero	Revisé el presupuesto del mes y separé lo del alquiler.
+no_ira	E	D	trabajo	Mi jefe me gritó delante de todos. Sentí rabia, pero respiré, no le contesté y esa misma tarde le pedí hablar en privado.
+no_ira	E	D	calle	Un taxista me cerró y casi chocamos. Me hirvió la sangre, pero no le toqué la bocina y seguí manejando.
+no_ira	E	D	pareja	Discutimos fuerte con mi esposa. Antes de dormir le pedí que habláramos para no acostarnos enojados.
+no_ira	E	D	hijos	Mi hijo me contestó feo. Me fui a la cocina a calmarme y después le hablé sin levantar la voz.
+no_ira	E	D	redes	me provocaron en el grupo de whatsapp y escribí una respuesta furiosa pero la borré antes de mandarla
+no_ira	E	M	familia	Me enojé con mi hermano por la herencia, pero esa misma noche lo llamé y arreglamos las cosas.
+no_ira	C	D	calle	Un auto me cerró el paso. Lo perseguí tres cuadras insultándolo y le pateé la puerta.
+no_ira	C	D	pareja	Me enojé con mi pareja y estuve una semana sin hablarle para castigarla.
+no_ira	C	D	trabajo	El cliente me reclamó y le tiré los papeles en la cara.
+no_ira	C	D	hijos	Mi hija rompió un plato y le di una cachetada.
+no_ira	C	D	familia	desde la pelea con mi tío hace dos años no le hablo y cuando lo veo me dan ganas de pegarle
+no_ira	C	M	amigos	Perdimos el partido y le rompí la camiseta a mi amigo de la rabia.
+no_ira	N	M	iglesia	El domingo ayudé a ordenar las sillas antes del culto.
+no_ira	N	F	estudio	Leí un capítulo del libro de historia.
+no_venganza	E	D	trabajo	El compañero que me acusó injustamente cometió un error grave. Pude delatarlo, pero lo ayudé a corregirlo en silencio.
+no_venganza	E	D	vecinos	El vecino me rayó el carro. Tenía ganas de rayarle el suyo, pero solo fui a hablarle y lo dejé en manos de Dios.
+no_venganza	E	D	redes	Una persona publicó mentiras sobre mí. No respondí con otra publicación; le escribí en privado con respeto.
+no_venganza	E	M	familia	Mi prima no me invitó a su boda. Igual le mandé un regalo y mis felicitaciones.
+no_venganza	E	D	estudio	el que me copió el examen y me echó la culpa se quedó sin grupo y yo lo metí en el mío
+no_venganza	C	D	trabajo	El colega que me quitó el cliente dejó su computadora abierta. Le borré la presentación.
+no_venganza	C	D	pareja	Mi ex me fue infiel, así que le conté sus secretos a toda su familia.
+no_venganza	C	D	vecinos	El vecino estacionó en mi entrada. Le desinflé las cuatro llantas.
+no_venganza	C	M	amigos	Mi amigo no me devolvió un favor. La próxima vez que me pidió ayuda le dije que no a propósito.
+no_venganza	C	D	redes	le hice capturas de lo que me escribió y las subí para que todos lo funaran
+no_venganza	N	M	salud	Empecé a tomar las vitaminas que me recetaron.
+no_juzgar	E	D	iglesia	Llegó a la iglesia una chica con tatuajes y ropa llamativa. Me senté a su lado y la hice sentir bienvenida.
+no_juzgar	E	D	familia	Mi primo salió de la cárcel. En la reunión familiar lo saludé con un abrazo y no mencioné su pasado.
+no_juzgar	E	D	trabajo	Escuché que la nueva compañera tiene mala fama. Decidí conocerla por mí mismo antes de opinar.
+no_juzgar	E	M	amigos	Mi amigo se divorció. No le pregunté quién tuvo la culpa; solo lo acompañé.
+no_juzgar	E	D	calle	vi a un muchacho pidiendo plata con olor a trago y en vez de decir que era un vago le pregunté su nombre y le compré comida
+no_juzgar	C	D	iglesia	Vi a la hermana fumando afuera y se lo conté al pastor para que la sacaran del ministerio.
+no_juzgar	C	D	familia	Mi sobrina quedó embarazada a los dieciséis. Le dije a toda la familia que era una perdida.
+no_juzgar	C	D	trabajo	Al compañero que llega en moto vieja lo trato como si fuera menos.
+no_juzgar	C	M	redes	Comenté en una foto que esa mujer seguro no era cristiana por cómo se vestía.
+no_juzgar	C	D	calle	el señor de la esquina es borracho y yo siempre les digo a mis hijos que no sean basura como él
+no_juzgar	N	M	dinero	Pagué la cuota del préstamo del auto.
+reconciliarse	E	D	familia	Hace años que no hablaba con mi hermano. Hoy fui a su casa a pedirle perdón por mi parte.
+reconciliarse	E	D	iglesia	Antes de participar de la santa cena, llamé a la hermana con la que discutí para arreglar las cosas.
+reconciliarse	E	D	amigos	Mi mejor amigo y yo dejamos de hablarnos por política. Le escribí para tomar un café y hacer las paces.
+reconciliarse	E	M	trabajo	Después de la discusión con el supervisor, fui a su oficina y le propuse empezar de nuevo.
+reconciliarse	E	D	vecinos	con la vecina estábamos peleadas por el perro y hoy le toqué la puerta con un queque para arreglar
+reconciliarse	C	D	familia	Mi hermana me invitó a almorzar para arreglar la pelea. Le dije que no y seguí sin hablarle.
+reconciliarse	C	D	iglesia	Tengo un conflicto con un hermano de la iglesia y me cambié de congregación para no tener que verlo.
+reconciliarse	C	M	amigos	Mi amigo me escribió para hablar de lo que pasó. Lo dejé en visto hace un mes.
+reconciliarse	C	D	pareja	Mi esposa quiere ir a consejería para arreglar el matrimonio y yo le dije que no pienso hacer nada.
+reconciliarse	N	F	salud	Hoy dormí ocho horas.

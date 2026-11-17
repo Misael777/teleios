@@ -22,7 +22,7 @@ import urllib.request
 import zipfile
 
 SOURCE_URL = "https://ebible.org/Scriptures/spaRV1909_vpl.zip"
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 1  # tool/add_crossrefs.py lo sube a 2 (referencias cruzadas)
 OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "bible", "rv1909.sqlite.gz")
 
 # Orden canónico protestante (66 libros). Debe coincidir con lib/shared/domain/bible_books.dart.

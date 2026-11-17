@@ -16,9 +16,11 @@ import '../../../shared/domain/entities/topic.dart';
 import '../../../shared/providers.dart';
 import '../../../shared/widgets/common_widgets.dart';
 import '../domain/devotional.dart';
+import '../domain/guided_reflection.dart';
 import 'estudio_providers.dart';
 import 'passage_picker.dart';
 import 'widgets/historical_context_form.dart';
+import 'widgets/scripture_text.dart';
 import 'widgets/topic_assignment_section.dart';
 
 class DevotionalEditorScreen extends ConsumerStatefulWidget {
@@ -32,7 +34,18 @@ class DevotionalEditorScreen extends ConsumerStatefulWidget {
 }
 
 class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen> {
-  final _content = TextEditingController();
+  final _answers = {for (final q in GuidedReflection.questions) q.id: ScriptureLinkController()};
+
+  /// Reflexión libre escrita antes de la guía: se conserva y se puede editar.
+  final _notes = ScriptureLinkController();
+  bool _hasNotes = false;
+
+  // Portada
+  final _title = TextEditingController();
+  PassageRef? _keyVerse;
+
+  /// Secciones con la batería completa a la vista ("Profundizar").
+  final Set<String> _expanded = {};
   DateTime _date = DateTime.now();
   PassageRef? _passage;
   HistoricalContext _context = const HistoricalContext();
@@ -51,6 +64,11 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
   void initState() {
     super.initState();
     _passage = widget.initialPassage;
+    for (final c in [..._answers.values, _notes]) {
+      c.onBrace = (offset) {
+        if (mounted) pickAndLinkPassage(context, c, braceOffset: offset);
+      };
+    }
     _load();
   }
 
@@ -61,7 +79,18 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
         _date = entry.date;
         _passage = entry.passage;
         _context = entry.context;
-        _content.text = entry.content;
+        final reflection = GuidedReflection.parse(entry.content);
+        _notes.text = reflection.notes;
+        _hasNotes = reflection.notes.isNotEmpty;
+        for (final q in GuidedReflection.questions) {
+          _answers[q.id]!.text = reflection.answer(q.id);
+        }
+        // Las preguntas de la batería ya respondidas quedan a la vista.
+        for (final s in GuidedReflection.sections) {
+          if (s.questions.any((q) => !q.key && reflection.answered(q.id))) _expanded.add(s.id);
+        }
+        _title.text = entry.title ?? '';
+        _keyVerse = entry.keyVerse;
         _topics = [
           for (final t in entry.topics) TopicDraft(name: t.name, dimensionId: t.dimensionId, existingId: t.id),
         ];
@@ -77,14 +106,22 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
   @override
   void dispose() {
     _debounce?.cancel();
-    _content.dispose();
+    _notes.dispose();
+    _title.dispose();
+    for (final c in _answers.values) {
+      c.dispose();
+    }
     super.dispose();
   }
 
   void _markDirty() => _dirty = true;
 
+  GuidedReflection get _reflection =>
+      GuidedReflection(answers: {for (final e in _answers.entries) e.key: e.value.text}, notes: _notes.text);
+
   void _onTextChanged(String _) {
     _markDirty();
+    setState(() {}); // contador de preguntas respondidas
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 600), _refreshSuggestions);
   }
@@ -103,7 +140,7 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
     final suggestions = ref
         .read(topicSuggesterProvider)
         .suggest(
-          text: _content.text,
+          text: _reflection.plainText,
           userTopics: userTopics,
           bookHistory: history,
           bookName: passage?.book.name,
@@ -115,7 +152,9 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
   void _prefillContext(PassageRef passage) {
     // Solo pre-llena lo vacío: nunca pisa lo que escribió el usuario.
     _context = _context.copyWith(
-      periodId: _context.periodId == null ? () => passage.book.periodId : null,
+      periodId: _context.periodId == null
+          ? () => HistoricalCatalog.periodForChapter(passage.bookCode, passage.chapter) ?? passage.book.periodId
+          : null,
       author: (_context.author ?? '').isEmpty ? () => passage.book.author : null,
     );
   }
@@ -188,6 +227,13 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
       showMessage(context, 'Elige el pasaje que estudiaste.');
       return;
     }
+    final reflection = _reflection;
+    // Las reflexiones anteriores a la guía (con notas libres) no se obligan a reescribirse.
+    if (reflection.notes.isEmpty && reflection.missing.isNotEmpty) {
+      final names = reflection.missing.map((q) => GuidedReflection.sectionOf(q.id).name).join(', ');
+      showMessage(context, 'Te falta responder la pregunta clave de: $names.');
+      return;
+    }
     setState(() => _saving = true);
     try {
       final id = await ref.read(saveDevotionalProvider)(
@@ -195,9 +241,11 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
           id: widget.devotionalId,
           date: _date,
           passage: passage,
-          content: _content.text,
+          content: reflection.encode(),
           context: _context,
           topics: _topics,
+          title: _title.text,
+          keyVerse: _keyVerse,
         ),
       );
       _dirty = false;
@@ -286,19 +334,9 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
                           ],
                         ),
                       ),
-                      SectionCard(
-                        title: 'Reflexión',
-                        subtitle: '¿Qué te enseña el texto? ¿Qué revela de Dios? ¿Qué vas a aplicar?',
-                        child: TextField(
-                          key: const Key('devotional-content'),
-                          controller: _content,
-                          minLines: 6,
-                          maxLines: null,
-                          textCapitalization: TextCapitalization.sentences,
-                          decoration: const InputDecoration(hintText: 'Escribe libremente…'),
-                          onChanged: _onTextChanged,
-                        ),
-                      ),
+                      _coverCard(),
+                      _reflectionSummary(),
+                      for (final section in GuidedReflection.sections) _sectionCard(section),
                       SectionCard(
                         title: 'Tópicos por dimensión',
                         subtitle: 'Toca ✨ para aceptar una sugerencia; toca un tópico para moverlo.',
@@ -344,6 +382,161 @@ class _DevotionalEditorScreenState extends ConsumerState<DevotionalEditorScreen>
                   ),
                 ),
               ),
+      ),
+    );
+  }
+
+  Widget _coverCard() => SectionCard(
+    title: 'Portada',
+    subtitle: 'Opcional: dale un título a tu estudio y elige su versículo lema.',
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        TextField(
+          key: const Key('devotional-title'),
+          controller: _title,
+          maxLength: 120,
+          textCapitalization: TextCapitalization.sentences,
+          decoration: const InputDecoration(labelText: 'Título', hintText: 'Ej.: Trabajar como para el Señor'),
+          onChanged: (_) => _markDirty(),
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: OutlinedButton.icon(
+                key: const Key('pick-key-verse'),
+                onPressed: () async {
+                  final picked = await showPassagePicker(context, initial: _keyVerse ?? _passage);
+                  if (picked != null) {
+                    setState(() {
+                      _keyVerse = picked;
+                      _markDirty();
+                    });
+                  }
+                },
+                icon: const Icon(Icons.format_quote),
+                label: Text(_keyVerse == null ? 'Versículo lema' : 'Lema: ${_keyVerse!.label}'),
+              ),
+            ),
+            if (_keyVerse != null)
+              IconButton(
+                tooltip: 'Quitar versículo lema',
+                icon: const Icon(Icons.close),
+                onPressed: () => setState(() {
+                  _keyVerse = null;
+                  _markDirty();
+                }),
+              ),
+          ],
+        ),
+      ],
+    ),
+  );
+
+  Widget _reflectionSummary() {
+    final reflection = _reflection;
+    final required = GuidedReflection.sections.where((s) => !s.optional).length;
+    final done = required - reflection.missing.length;
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, 8, 4, 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('Reflexión guiada', style: theme.textTheme.titleLarge),
+          const SizedBox(height: 4),
+          Text(
+            'Responde la pregunta clave de cada sección ($done de $required). '
+            'Escribe { para vincular un versículo.',
+            style: theme.textTheme.bodySmall,
+          ),
+          const SizedBox(height: 8),
+          LinearProgressIndicator(value: done / required),
+        ],
+      ),
+    );
+  }
+
+  Widget _questionField(ReflectionQuestion q, {required int number}) {
+    final theme = Theme.of(context);
+    final controller = _answers[q.id]!;
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text('$number. ${q.text}', style: q.key ? theme.textTheme.titleMedium : theme.textTheme.titleSmall),
+          const SizedBox(height: 8),
+          TextField(
+            key: Key('reflection-${q.id}'),
+            controller: controller,
+            minLines: q.key ? 3 : 2,
+            maxLines: null,
+            textCapitalization: TextCapitalization.sentences,
+            decoration: InputDecoration(
+              hintText: q.hint,
+              hintMaxLines: 3,
+              suffixIcon: IconButton(
+                tooltip: 'Vincular versículo',
+                icon: const Icon(Icons.add_link),
+                onPressed: () => pickAndLinkPassage(context, controller),
+              ),
+            ),
+            onChanged: _onTextChanged,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _sectionCard(ReflectionSection section) {
+    final reflection = _reflection;
+    final theme = Theme.of(context);
+    final expanded = _expanded.contains(section.id);
+    final extra = section.questions.where((q) => !q.key).toList();
+    final answered = reflection.answeredIn(section);
+    return SectionCard(
+      title: section.name,
+      subtitle: [
+        section.purpose,
+        [if (section.optional) 'Opcional', '$answered de ${section.questions.length} respondidas'].join(' · '),
+      ].join('\n'),
+      trailing: reflection.answered(section.keyQuestion.id)
+          ? Icon(Icons.check_circle, color: theme.colorScheme.primary)
+          : null,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _questionField(section.keyQuestion, number: 1),
+          if (expanded)
+            for (final (i, q) in extra.indexed) _questionField(q, number: i + 2),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton.icon(
+              key: Key('deepen-${section.id}'),
+              onPressed: () => setState(() => expanded ? _expanded.remove(section.id) : _expanded.add(section.id)),
+              icon: Icon(expanded ? Icons.expand_less : Icons.expand_more),
+              label: Text(expanded ? 'Menos preguntas' : 'Profundizar · ${extra.length} preguntas más'),
+            ),
+          ),
+          if (section.id == GuidedReflection.sections.first.id && _hasNotes) ...[
+            const SizedBox(height: 8),
+            Text('Reflexión anterior', style: theme.textTheme.titleSmall),
+            Text(
+              'La escribiste antes de la guía. Puedes repartirla en las preguntas o dejarla aquí.',
+              style: theme.textTheme.bodySmall,
+            ),
+            const SizedBox(height: 8),
+            TextField(
+              key: const Key('reflection-notes'),
+              controller: _notes,
+              minLines: 3,
+              maxLines: null,
+              textCapitalization: TextCapitalization.sentences,
+              onChanged: _onTextChanged,
+            ),
+          ],
+        ],
       ),
     );
   }

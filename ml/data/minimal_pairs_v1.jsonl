@@ -1,0 +1,300 @@
+{"id": "mp000b", "anchor": 0, "a": "Si no controlo todo, todo sale mal.", "b": "Cuando dejo algo fuera de mi control, termina en desastre.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp000c", "anchor": 0, "a": "Si no controlo todo, todo sale mal.", "b": "Aunque no controle todo, Dios obra para bien.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp000d", "anchor": 0, "a": "Si no controlo todo, todo sale mal.", "b": "Controlar mis finanzas es buena mayordomía.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp001b", "anchor": 1, "a": "Dios siempre suple lo que necesito.", "b": "Nunca me falta lo necesario porque Dios provee.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp001c", "anchor": 1, "a": "Dios siempre suple lo que necesito.", "b": "Dios no suple lo que necesito.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp001d", "anchor": 1, "a": "Dios siempre suple lo que necesito.", "b": "Siempre necesito que Dios me hable antes de dar.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp002b", "anchor": 2, "a": "Si me equivoco, Dios deja de amarme.", "b": "Mis errores hacen que Dios me ame menos.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp002c", "anchor": 2, "a": "Si me equivoco, Dios deja de amarme.", "b": "Aunque me equivoque, Dios no deja de amarme.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp002d", "anchor": 2, "a": "Si me equivoco, Dios deja de amarme.", "b": "Si me equivoco, debo pedir perdón a quien herí.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp003b", "anchor": 3, "a": "Todo lo que hago termina en fracaso.", "b": "Nada de lo que intento me sale bien.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp003c", "anchor": 3, "a": "Todo lo que hago termina en fracaso.", "b": "Algunas cosas que hago salen bien.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp003d", "anchor": 3, "a": "Todo lo que hago termina en fracaso.", "b": "Todo lo que hago lo hago para la gloria de Dios.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp004b", "anchor": 4, "a": "Mi valor depende de lo que otros piensan de mí.", "b": "Valgo según la opinión de los demás.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp004c", "anchor": 4, "a": "Mi valor depende de lo que otros piensan de mí.", "b": "Mi valor no depende de lo que otros piensan de mí.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp004d", "anchor": 4, "a": "Mi valor depende de lo que otros piensan de mí.", "b": "Me importa lo que otros piensan de mi testimonio.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp005b", "anchor": 5, "a": "Dios escucha mis oraciones.", "b": "Mis oraciones llegan a oídos de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp005c", "anchor": 5, "a": "Dios escucha mis oraciones.", "b": "Dios ignora mis oraciones.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp005d", "anchor": 5, "a": "Dios escucha mis oraciones.", "b": "Escucho a Dios cuando oro en silencio.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp006b", "anchor": 6, "a": "Perdonar me hace débil.", "b": "Quien perdona demuestra debilidad.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp006c", "anchor": 6, "a": "Perdonar me hace débil.", "b": "Perdonar me hace fuerte.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp006d", "anchor": 6, "a": "Perdonar me hace débil.", "b": "Pedir perdón me cuesta cuando estoy débil.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp007b", "anchor": 7, "a": "Debo ganarme la gracia con mis obras.", "b": "La gracia se obtiene haciendo méritos.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp007c", "anchor": 7, "a": "Debo ganarme la gracia con mis obras.", "b": "La gracia no se gana con obras.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp007d", "anchor": 7, "a": "Debo ganarme la gracia con mis obras.", "b": "Mis obras muestran la gracia que recibí.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp008b", "anchor": 8, "a": "Siempre que me enojo tengo razón.", "b": "Mi enojo está justificado en todos los casos.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp008c", "anchor": 8, "a": "Siempre que me enojo tengo razón.", "b": "A veces me enojo sin tener razón.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp008d", "anchor": 8, "a": "Siempre que me enojo tengo razón.", "b": "Siempre que me enojo, oro antes de hablar.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp009b", "anchor": 9, "a": "El sufrimiento significa que Dios me abandonó.", "b": "Si sufro es porque Dios me dejó solo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp009c", "anchor": 9, "a": "El sufrimiento significa que Dios me abandonó.", "b": "En el sufrimiento Dios sigue conmigo.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp009d", "anchor": 9, "a": "El sufrimiento significa que Dios me abandonó.", "b": "El sufrimiento de otros me mueve a ayudar.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp010b", "anchor": 10, "a": "Yo tengo que resolver todos mis problemas solo.", "b": "Nadie más que yo puede arreglar lo que me pasa.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp010c", "anchor": 10, "a": "Yo tengo que resolver todos mis problemas solo.", "b": "Dios y mi comunidad me ayudan a resolver mis problemas.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp010d", "anchor": 10, "a": "Yo tengo que resolver todos mis problemas solo.", "b": "Tengo que resolver este problema con mi jefe hoy.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp011b", "anchor": 11, "a": "Dar con generosidad me deja en escasez.", "b": "Si doy mucho, me quedaré sin nada.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp011c", "anchor": 11, "a": "Dar con generosidad me deja en escasez.", "b": "Dar con generosidad no me deja en escasez.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp011d", "anchor": 11, "a": "Dar con generosidad me deja en escasez.", "b": "Doy con generosidad cuando tengo abundancia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp012b", "anchor": 12, "a": "Nunca podré cambiar mis malos hábitos.", "b": "Mis malos hábitos no tienen remedio.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp012c", "anchor": 12, "a": "Nunca podré cambiar mis malos hábitos.", "b": "Con ayuda de Dios puedo cambiar mis malos hábitos.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp012d", "anchor": 12, "a": "Nunca podré cambiar mis malos hábitos.", "b": "Nunca cambio mis hábitos de oración en vacaciones.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp013b", "anchor": 13, "a": "Mis hijos son responsabilidad solo mía.", "b": "Solo yo respondo por lo que pase con mis hijos.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp013c", "anchor": 13, "a": "Mis hijos son responsabilidad solo mía.", "b": "Mis hijos están en manos de Dios, no solo en las mías.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp013d", "anchor": 13, "a": "Mis hijos son responsabilidad solo mía.", "b": "Mis hijos son mi mayor alegría.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp014b", "anchor": 14, "a": "Si oro con suficiente fe, Dios hará lo que pido.", "b": "Con bastante fe, Dios cumplirá exactamente mi petición.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp014c", "anchor": 14, "a": "Si oro con suficiente fe, Dios hará lo que pido.", "b": "Aunque ore con fe, Dios puede responder distinto a lo que pido.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp014d", "anchor": 14, "a": "Si oro con suficiente fe, Dios hará lo que pido.", "b": "Si oro con mi esposa, nuestra fe crece.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp015b", "anchor": 15, "a": "La gente siempre me decepciona.", "b": "Todos terminan fallándome.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp015c", "anchor": 15, "a": "La gente siempre me decepciona.", "b": "Algunas personas no me decepcionan.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp015d", "anchor": 15, "a": "La gente siempre me decepciona.", "b": "La gente de mi iglesia siempre me saluda.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp016b", "anchor": 16, "a": "Descansar es perder el tiempo.", "b": "Tomarme un descanso es tiempo desperdiciado.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp016c", "anchor": 16, "a": "Descansar es perder el tiempo.", "b": "Descansar es aprovechar bien el tiempo.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp016d", "anchor": 16, "a": "Descansar es perder el tiempo.", "b": "Pierdo el tiempo cuando no planeo mi descanso.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp017b", "anchor": 17, "a": "Dios está en control de mi futuro.", "b": "Mi futuro está en las manos de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp017c", "anchor": 17, "a": "Dios está en control de mi futuro.", "b": "Mi futuro depende solo de mí.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp017d", "anchor": 17, "a": "Dios está en control de mi futuro.", "b": "Controlo mi agenda para el futuro próximo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp018b", "anchor": 18, "a": "Tengo que ser perfecto para que me acepten.", "b": "Solo me aceptarán si no cometo errores.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp018c", "anchor": 18, "a": "Tengo que ser perfecto para que me acepten.", "b": "Me aceptan aunque no sea perfecto.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp018d", "anchor": 18, "a": "Tengo que ser perfecto para que me acepten.", "b": "Tengo que aceptar que nadie es perfecto.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp019b", "anchor": 19, "a": "La ansiedad me protege de lo malo.", "b": "Preocuparme evita que me pasen cosas malas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp019c", "anchor": 19, "a": "La ansiedad me protege de lo malo.", "b": "La ansiedad no me protege de lo malo.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp019d", "anchor": 19, "a": "La ansiedad me protege de lo malo.", "b": "Lo malo me causa ansiedad cuando estoy cansado.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp020b", "anchor": 20, "a": "Dios castiga cada pecado con desgracias.", "b": "Toda desgracia es el castigo de Dios por un pecado.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp020c", "anchor": 20, "a": "Dios castiga cada pecado con desgracias.", "b": "No toda desgracia es castigo por un pecado.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp020d", "anchor": 20, "a": "Dios castiga cada pecado con desgracias.", "b": "El pecado trae consecuencias en las relaciones.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp021b", "anchor": 21, "a": "Mi pasado define quién soy.", "b": "Soy lo que hice antes.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp021c", "anchor": 21, "a": "Mi pasado define quién soy.", "b": "Mi pasado no define quién soy.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp021d", "anchor": 21, "a": "Mi pasado define quién soy.", "b": "Mi pasado me enseñó a valorar a mi familia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp022b", "anchor": 22, "a": "Confiar en otros siempre termina en traición.", "b": "Cada vez que confío en alguien, me traiciona.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp022c", "anchor": 22, "a": "Confiar en otros siempre termina en traición.", "b": "Confiar en otros a veces termina bien.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp022d", "anchor": 22, "a": "Confiar en otros siempre termina en traición.", "b": "Confiar en Dios me ayuda a perdonar una traición.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp023b", "anchor": 23, "a": "Dios me ama incondicionalmente.", "b": "El amor de Dios por mí no tiene condiciones.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp023c", "anchor": 23, "a": "Dios me ama incondicionalmente.", "b": "Dios me ama solo si me porto bien.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp023d", "anchor": 23, "a": "Dios me ama incondicionalmente.", "b": "Mi madre me ama incondicionalmente.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp024b", "anchor": 24, "a": "Si me humillo, los demás se aprovecharán de mí.", "b": "Ser humilde hace que otros abusen de mí.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp024c", "anchor": 24, "a": "Si me humillo, los demás se aprovecharán de mí.", "b": "Humillarme no hace que los demás se aprovechen de mí.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp024d", "anchor": 24, "a": "Si me humillo, los demás se aprovecharán de mí.", "b": "Los demás se humillan cuando reconocen su error.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp025b", "anchor": 25, "a": "Mi trabajo es lo más importante de mi vida.", "b": "Nada en mi vida importa más que mi trabajo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp025c", "anchor": 25, "a": "Mi trabajo es lo más importante de mi vida.", "b": "Mi trabajo no es lo más importante de mi vida.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp025d", "anchor": 25, "a": "Mi trabajo es lo más importante de mi vida.", "b": "Mi trabajo es importante para sostener a mi familia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp026b", "anchor": 26, "a": "Dios nunca me daría más de lo que puedo soportar.", "b": "Lo que Dios permite siempre está dentro de mis fuerzas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp026c", "anchor": 26, "a": "Dios nunca me daría más de lo que puedo soportar.", "b": "A veces enfrento más de lo que puedo soportar solo.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp026d", "anchor": 26, "a": "Dios nunca me daría más de lo que puedo soportar.", "b": "Dios me da fuerzas para soportar a mi vecino.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp027b", "anchor": 27, "a": "Expresar tristeza es falta de fe.", "b": "Llorar demuestra que no confío en Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp027c", "anchor": 27, "a": "Expresar tristeza es falta de fe.", "b": "Expresar tristeza no es falta de fe.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp027d", "anchor": 27, "a": "Expresar tristeza es falta de fe.", "b": "La falta de sueño me pone triste.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp028b", "anchor": 28, "a": "Siempre llego tarde a todo.", "b": "Nunca soy puntual.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp028c", "anchor": 28, "a": "Siempre llego tarde a todo.", "b": "Casi siempre llego a tiempo.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp028d", "anchor": 28, "a": "Siempre llego tarde a todo.", "b": "Llegar tarde al trabajo me causa estrés.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp029b", "anchor": 29, "a": "Dios quiere que yo sea feliz a toda costa.", "b": "Mi felicidad es lo primero que Dios busca.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp029c", "anchor": 29, "a": "Dios quiere que yo sea feliz a toda costa.", "b": "Dios no busca mi felicidad a toda costa.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp029d", "anchor": 29, "a": "Dios quiere que yo sea feliz a toda costa.", "b": "Ser feliz con poco es un regalo de Dios.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp030b", "anchor": 30, "a": "Si alguien me ofende, debo devolverle el golpe.", "b": "Quien me hiere merece que le responda igual.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp030c", "anchor": 30, "a": "Si alguien me ofende, debo devolverle el golpe.", "b": "Si alguien me ofende, no debo devolverle el golpe.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp030d", "anchor": 30, "a": "Si alguien me ofende, debo devolverle el golpe.", "b": "Si alguien me ofende en público, me duele más.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp031b", "anchor": 31, "a": "Soy un fracaso como padre.", "b": "Fallé por completo en criar a mis hijos.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp031c", "anchor": 31, "a": "Soy un fracaso como padre.", "b": "No soy un fracaso como padre.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp031d", "anchor": 31, "a": "Soy un fracaso como padre.", "b": "Mi padre nunca me habló de fracasos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp032b", "anchor": 32, "a": "Leer la Biblia me da paz.", "b": "Encuentro paz cuando leo las Escrituras.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp032c", "anchor": 32, "a": "Leer la Biblia me da paz.", "b": "Leer la Biblia me quita la paz.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp032d", "anchor": 32, "a": "Leer la Biblia me da paz.", "b": "Leer noticias me roba la paz.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp033b", "anchor": 33, "a": "Dios está lejos de mí.", "b": "Siento que Dios no está cerca.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp033c", "anchor": 33, "a": "Dios está lejos de mí.", "b": "Dios está cerca de mí.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp033d", "anchor": 33, "a": "Dios está lejos de mí.", "b": "Mi familia está lejos de mí.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp034b", "anchor": 34, "a": "El dinero me dará seguridad.", "b": "Tener dinero es lo que me hará sentir seguro.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp034c", "anchor": 34, "a": "El dinero me dará seguridad.", "b": "El dinero no me dará seguridad.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp034d", "anchor": 34, "a": "El dinero me dará seguridad.", "b": "El dinero de la ofrenda se usa con transparencia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp035b", "anchor": 35, "a": "Todos en la iglesia me juzgan.", "b": "Cada persona de la congregación me critica.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp035c", "anchor": 35, "a": "Todos en la iglesia me juzgan.", "b": "Nadie en la iglesia me juzga.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp035d", "anchor": 35, "a": "Todos en la iglesia me juzgan.", "b": "En la iglesia todos cantamos juntos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp036b", "anchor": 36, "a": "Si Dios me ama, no permitirá que me enferme.", "b": "Una persona amada por Dios no se enferma.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp036c", "anchor": 36, "a": "Si Dios me ama, no permitirá que me enferme.", "b": "Dios me ama aunque permita que me enferme.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp036d", "anchor": 36, "a": "Si Dios me ama, no permitirá que me enferme.", "b": "Si me enfermo, mi iglesia ora por mí.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp037b", "anchor": 37, "a": "Tengo que complacer a todos.", "b": "Debo hacer felices a todas las personas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp037c", "anchor": 37, "a": "Tengo que complacer a todos.", "b": "No tengo que complacer a todos.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp037d", "anchor": 37, "a": "Tengo que complacer a todos.", "b": "Me complace ayudar a mis vecinos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp038b", "anchor": 38, "a": "Dios me guía en mis decisiones.", "b": "Mis decisiones cuentan con la guía de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp038c", "anchor": 38, "a": "Dios me guía en mis decisiones.", "b": "Tomo mis decisiones sin ninguna guía de Dios.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp038d", "anchor": 38, "a": "Dios me guía en mis decisiones.", "b": "Guío a mis hijos en sus decisiones.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp039b", "anchor": 39, "a": "Mis emociones siempre dicen la verdad.", "b": "Lo que siento es siempre lo que es real.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp039c", "anchor": 39, "a": "Mis emociones siempre dicen la verdad.", "b": "Mis emociones a veces me engañan.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp039d", "anchor": 39, "a": "Mis emociones siempre dicen la verdad.", "b": "Mis emociones cambian cuando estoy cansado.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp040b", "anchor": 40, "a": "Pedir ayuda es señal de debilidad.", "b": "Quien pide ayuda es débil.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp040c", "anchor": 40, "a": "Pedir ayuda es señal de debilidad.", "b": "Pedir ayuda es señal de sabiduría.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp040d", "anchor": 40, "a": "Pedir ayuda es señal de debilidad.", "b": "Pedir ayuda a Dios es lo primero que hago.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp041b", "anchor": 41, "a": "Si no doy el diezmo, Dios me castigará.", "b": "Dejar de diezmar trae castigo divino.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp041c", "anchor": 41, "a": "Si no doy el diezmo, Dios me castigará.", "b": "Si no doy el diezmo, Dios no me castigará con desgracias.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp041d", "anchor": 41, "a": "Si no doy el diezmo, Dios me castigará.", "b": "Si doy el diezmo, lo hago con alegría.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp042b", "anchor": 42, "a": "Mi cónyuge debe hacerme feliz.", "b": "La felicidad es responsabilidad de mi pareja.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp042c", "anchor": 42, "a": "Mi cónyuge debe hacerme feliz.", "b": "Mi cónyuge no es responsable de mi felicidad.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp042d", "anchor": 42, "a": "Mi cónyuge debe hacerme feliz.", "b": "Hacer feliz a mi cónyuge me llena de gozo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp043b", "anchor": 43, "a": "Dios no puede usar a alguien como yo.", "b": "Alguien como yo es inútil para Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp043c", "anchor": 43, "a": "Dios no puede usar a alguien como yo.", "b": "Dios puede usar a alguien como yo.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp043d", "anchor": 43, "a": "Dios no puede usar a alguien como yo.", "b": "Alguien como yo necesita descansar más.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp044b", "anchor": 44, "a": "Todo pasa por una razón buena.", "b": "Cada cosa que ocurre tiene un buen propósito.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp044c", "anchor": 44, "a": "Todo pasa por una razón buena.", "b": "No todo lo que pasa es bueno en sí mismo.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp044d", "anchor": 44, "a": "Todo pasa por una razón buena.", "b": "Todo pasa rápido cuando estoy ocupado.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp045b", "anchor": 45, "a": "La oración cambia mi corazón.", "b": "Al orar, mi corazón se transforma.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp045c", "anchor": 45, "a": "La oración cambia mi corazón.", "b": "La oración no cambia nada en mí.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp045d", "anchor": 45, "a": "La oración cambia mi corazón.", "b": "Mi corazón late rápido cuando hablo en público.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp046b", "anchor": 46, "a": "Debo esconder mis pecados para que no me rechacen.", "b": "Si confieso mis pecados, me rechazarán.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp046c", "anchor": 46, "a": "Debo esconder mis pecados para que no me rechacen.", "b": "Confesar mis pecados no hará que me rechacen.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp046d", "anchor": 46, "a": "Debo esconder mis pecados para que no me rechacen.", "b": "Debo confesar mis pecados a Dios cada noche.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp047b", "anchor": 47, "a": "El futuro será peor que el presente.", "b": "Lo que viene será más difícil que lo de ahora.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp047c", "anchor": 47, "a": "El futuro será peor que el presente.", "b": "El futuro puede ser mejor que el presente.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp047d", "anchor": 47, "a": "El futuro será peor que el presente.", "b": "El presente es un regalo para disfrutar con mi familia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp048b", "anchor": 48, "a": "Yo merezco todo lo bueno que tengo.", "b": "Lo bueno que tengo me lo he ganado.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp048c", "anchor": 48, "a": "Yo merezco todo lo bueno que tengo.", "b": "Lo bueno que tengo es gracia, no lo merezco.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp048d", "anchor": 48, "a": "Yo merezco todo lo bueno que tengo.", "b": "Mis hijos merecen tiempo de calidad.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp049b", "anchor": 49, "a": "Dios perdona todos mis pecados cuando me arrepiento.", "b": "Al arrepentirme, Dios borra todas mis faltas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp049c", "anchor": 49, "a": "Dios perdona todos mis pecados cuando me arrepiento.", "b": "Dios no perdona algunos de mis pecados aunque me arrepienta.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp049d", "anchor": 49, "a": "Dios perdona todos mis pecados cuando me arrepiento.", "b": "Perdono a quienes se arrepienten de verdad.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp050b", "anchor": 50, "a": "Si fallo en público, nunca me lo perdonarán.", "b": "Un error delante de otros no se olvida jamás.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp050c", "anchor": 50, "a": "Si fallo en público, nunca me lo perdonarán.", "b": "Si fallo en público, pueden perdonármelo.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp050d", "anchor": 50, "a": "Si fallo en público, nunca me lo perdonarán.", "b": "Si fallo en público, aprendo a ser humilde.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp051b", "anchor": 51, "a": "Dios es fiel a sus promesas.", "b": "Las promesas de Dios siempre se cumplen.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp051c", "anchor": 51, "a": "Dios es fiel a sus promesas.", "b": "Dios no cumple sus promesas.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp051d", "anchor": 51, "a": "Dios es fiel a sus promesas.", "b": "Soy fiel a mis promesas con mis amigos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp052b", "anchor": 52, "a": "Necesito la aprobación de mi jefe para sentirme bien.", "b": "Me siento bien solo si mi jefe me aprueba.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp052c", "anchor": 52, "a": "Necesito la aprobación de mi jefe para sentirme bien.", "b": "No necesito la aprobación de mi jefe para sentirme bien.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp052d", "anchor": 52, "a": "Necesito la aprobación de mi jefe para sentirme bien.", "b": "Mi jefe aprobó mis vacaciones.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp053b", "anchor": 53, "a": "Las cosas malas solo me pasan a mí.", "b": "Soy el único al que le va mal.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp053c", "anchor": 53, "a": "Las cosas malas solo me pasan a mí.", "b": "A todos les pasan cosas malas, no solo a mí.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp053d", "anchor": 53, "a": "Las cosas malas solo me pasan a mí.", "b": "Las cosas buenas me pasan cuando menos lo espero.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp054b", "anchor": 54, "a": "Servir a otros me agota y no vale la pena.", "b": "Ayudar a los demás solo me cansa sin sentido.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp054c", "anchor": 54, "a": "Servir a otros me agota y no vale la pena.", "b": "Servir a otros vale la pena aunque me canse.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp054d", "anchor": 54, "a": "Servir a otros me agota y no vale la pena.", "b": "Servir la comida a mi familia me alegra.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp055b", "anchor": 55, "a": "La Biblia es irrelevante para mi vida diaria.", "b": "Las Escrituras no tienen que ver con mi día a día.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp055c", "anchor": 55, "a": "La Biblia es irrelevante para mi vida diaria.", "b": "La Biblia es relevante para mi vida diaria.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp055d", "anchor": 55, "a": "La Biblia es irrelevante para mi vida diaria.", "b": "Mi vida diaria está llena de rutinas.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp056b", "anchor": 56, "a": "Si me rechazan, es porque no valgo nada.", "b": "El rechazo prueba que no tengo valor.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp056c", "anchor": 56, "a": "Si me rechazan, es porque no valgo nada.", "b": "Aunque me rechacen, sigo teniendo valor.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp056d", "anchor": 56, "a": "Si me rechazan, es porque no valgo nada.", "b": "Si me rechazan una solicitud, la vuelvo a enviar.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp057b", "anchor": 57, "a": "Dios me hizo con un propósito.", "b": "Fui creado para algo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp057c", "anchor": 57, "a": "Dios me hizo con un propósito.", "b": "Mi vida no tiene ningún propósito.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp057d", "anchor": 57, "a": "Dios me hizo con un propósito.", "b": "Hice este mueble con un propósito práctico.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp058b", "anchor": 58, "a": "No puedo estar en paz hasta que todo esté resuelto.", "b": "Mientras haya problemas pendientes, no tendré paz.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp058c", "anchor": 58, "a": "No puedo estar en paz hasta que todo esté resuelto.", "b": "Puedo tener paz aunque no todo esté resuelto.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp058d", "anchor": 58, "a": "No puedo estar en paz hasta que todo esté resuelto.", "b": "No puedo dormir hasta que mis hijos llegan a casa.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp059b", "anchor": 59, "a": "Enojarme me da control sobre la situación.", "b": "Con el enojo domino lo que pasa.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp059c", "anchor": 59, "a": "Enojarme me da control sobre la situación.", "b": "Enojarme me hace perder el control.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp059d", "anchor": 59, "a": "Enojarme me da control sobre la situación.", "b": "Controlar el tráfico es trabajo de la policía.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp060b", "anchor": 60, "a": "Dios usa mis debilidades para mostrar su poder.", "b": "En mi debilidad se ve la fuerza de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp060c", "anchor": 60, "a": "Dios usa mis debilidades para mostrar su poder.", "b": "Mis debilidades impiden que Dios muestre su poder.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp060d", "anchor": 60, "a": "Dios usa mis debilidades para mostrar su poder.", "b": "Mis debilidades físicas aumentan con la edad.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp061b", "anchor": 61, "a": "Siempre tengo que tener la última palabra.", "b": "No puedo dejar que otro termine una discusión.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp061c", "anchor": 61, "a": "Siempre tengo que tener la última palabra.", "b": "No necesito tener la última palabra.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp061d", "anchor": 61, "a": "Siempre tengo que tener la última palabra.", "b": "La última palabra del sermón me impactó.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp062b", "anchor": 62, "a": "Si mi familia está mal, yo tengo la culpa.", "b": "Todo lo malo en mi casa es culpa mía.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp062c", "anchor": 62, "a": "Si mi familia está mal, yo tengo la culpa.", "b": "No todo lo malo en mi familia es culpa mía.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp062d", "anchor": 62, "a": "Si mi familia está mal, yo tengo la culpa.", "b": "Si mi familia está mal, oramos juntos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp063b", "anchor": 63, "a": "Dios me da sabiduría cuando se la pido.", "b": "Al pedirle sabiduría, Dios me la concede.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp063c", "anchor": 63, "a": "Dios me da sabiduría cuando se la pido.", "b": "Dios me niega la sabiduría aunque se la pida.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp063d", "anchor": 63, "a": "Dios me da sabiduría cuando se la pido.", "b": "Le pido consejo a mi abuelo por su sabiduría.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp064b", "anchor": 64, "a": "Ser vulnerable es peligroso.", "b": "Mostrar mis heridas me pone en riesgo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp064c", "anchor": 64, "a": "Ser vulnerable es peligroso.", "b": "Ser vulnerable puede ser seguro con las personas correctas.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp064d", "anchor": 64, "a": "Ser vulnerable es peligroso.", "b": "Los niños son vulnerables y necesitan protección.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp065b", "anchor": 65, "a": "Mi salvación depende de mi esfuerzo.", "b": "Me salvo gracias a lo que yo hago.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp065c", "anchor": 65, "a": "Mi salvación depende de mi esfuerzo.", "b": "Mi salvación depende de la obra de Cristo, no de mi esfuerzo.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp065d", "anchor": 65, "a": "Mi salvación depende de mi esfuerzo.", "b": "Mi esfuerzo en el trabajo depende de mi descanso.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp066b", "anchor": 66, "a": "Nadie me entiende.", "b": "No hay una sola persona que me comprenda.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp066c", "anchor": 66, "a": "Nadie me entiende.", "b": "Algunas personas me entienden.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp066d", "anchor": 66, "a": "Nadie me entiende.", "b": "Nadie entiende este manual de instrucciones.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp067b", "anchor": 67, "a": "Agradecer cambia mi forma de ver las cosas.", "b": "La gratitud transforma mi perspectiva.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp067c", "anchor": 67, "a": "Agradecer cambia mi forma de ver las cosas.", "b": "Agradecer no cambia nada en cómo veo las cosas.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp067d", "anchor": 67, "a": "Agradecer cambia mi forma de ver las cosas.", "b": "Las cosas que veo en redes me cambian el ánimo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp068b", "anchor": 68, "a": "Debo tener miedo de Dios como de un tirano.", "b": "Dios es un amo cruel al que hay que temer.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp068c", "anchor": 68, "a": "Debo tener miedo de Dios como de un tirano.", "b": "Dios es un Padre bueno, no un tirano.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp068d", "anchor": 68, "a": "Debo tener miedo de Dios como de un tirano.", "b": "Debo tener cuidado al manejar de noche.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp069b", "anchor": 69, "a": "Si no tengo éxito, mi vida no sirve.", "b": "Una vida sin éxito es inútil.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp069c", "anchor": 69, "a": "Si no tengo éxito, mi vida no sirve.", "b": "Mi vida sirve aunque no tenga éxito.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp069d", "anchor": 69, "a": "Si no tengo éxito, mi vida no sirve.", "b": "Si no tengo éxito en el examen, lo repito.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp070b", "anchor": 70, "a": "Dios provee para mis necesidades del día.", "b": "Cada día Dios me da lo que necesito.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp070c", "anchor": 70, "a": "Dios provee para mis necesidades del día.", "b": "Yo solo me proveo lo que necesito cada día.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp070d", "anchor": 70, "a": "Dios provee para mis necesidades del día.", "b": "Mis necesidades del día incluyen hacer ejercicio.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp071b", "anchor": 71, "a": "Las personas no cambian.", "b": "Nadie cambia realmente.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp071c", "anchor": 71, "a": "Las personas no cambian.", "b": "Las personas pueden cambiar.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp071d", "anchor": 71, "a": "Las personas no cambian.", "b": "Las personas cambian de casa con frecuencia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp072b", "anchor": 72, "a": "Hablar de mis problemas los empeora.", "b": "Si comparto lo que me pasa, se pone peor.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp072c", "anchor": 72, "a": "Hablar de mis problemas los empeora.", "b": "Hablar de mis problemas me ayuda a sanar.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp072d", "anchor": 72, "a": "Hablar de mis problemas los empeora.", "b": "Hablar con mi hermano me divierte.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp073b", "anchor": 73, "a": "Dios está enojado conmigo.", "b": "Siento la ira de Dios sobre mí.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp073c", "anchor": 73, "a": "Dios está enojado conmigo.", "b": "Dios no está enojado conmigo.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp073d", "anchor": 73, "a": "Dios está enojado conmigo.", "b": "Mi vecino está enojado por el ruido.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp074b", "anchor": 74, "a": "Merezco ser castigado por lo que hice.", "b": "Lo que hice exige que sufra un castigo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp074c", "anchor": 74, "a": "Merezco ser castigado por lo que hice.", "b": "Cristo cargó el castigo que yo merecía.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp074d", "anchor": 74, "a": "Merezco ser castigado por lo que hice.", "b": "Mi hijo merece un premio por su esfuerzo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp075b", "anchor": 75, "a": "Siempre debo estar ocupado para ser útil.", "b": "Solo soy útil si no paro de trabajar.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp075c", "anchor": 75, "a": "Siempre debo estar ocupado para ser útil.", "b": "Puedo ser útil aunque no esté ocupado.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp075d", "anchor": 75, "a": "Siempre debo estar ocupado para ser útil.", "b": "Estar ocupado los lunes es normal en mi trabajo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp076b", "anchor": 76, "a": "El que me hizo daño nunca cambiará.", "b": "Quien me lastimó seguirá igual para siempre.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp076c", "anchor": 76, "a": "El que me hizo daño nunca cambiará.", "b": "El que me hizo daño puede cambiar.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp076d", "anchor": 76, "a": "El que me hizo daño nunca cambiará.", "b": "El que me hizo el pastel es un gran cocinero.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp077b", "anchor": 77, "a": "Dios me sostiene en la tormenta.", "b": "En medio de la crisis, Dios me mantiene firme.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp077c", "anchor": 77, "a": "Dios me sostiene en la tormenta.", "b": "En la tormenta estoy solo, sin sostén.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp077d", "anchor": 77, "a": "Dios me sostiene en la tormenta.", "b": "La tormenta de anoche tumbó un árbol.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp078b", "anchor": 78, "a": "Si confieso que dudo, pierdo mi fe.", "b": "Admitir mis dudas destruye mi fe.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp078c", "anchor": 78, "a": "Si confieso que dudo, pierdo mi fe.", "b": "Confesar mis dudas puede fortalecer mi fe.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp078d", "anchor": 78, "a": "Si confieso que dudo, pierdo mi fe.", "b": "Si dudo de una dirección, uso el mapa.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp079b", "anchor": 79, "a": "Mis logros me hacen digno de amor.", "b": "Merezco amor por lo que he logrado.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp079c", "anchor": 79, "a": "Mis logros me hacen digno de amor.", "b": "Soy digno de amor sin importar mis logros.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp079d", "anchor": 79, "a": "Mis logros me hacen digno de amor.", "b": "Mis logros académicos alegran a mis padres.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp080b", "anchor": 80, "a": "La crítica siempre es un ataque.", "b": "Toda crítica busca herirme.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp080c", "anchor": 80, "a": "La crítica siempre es un ataque.", "b": "Algunas críticas buscan ayudarme.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp080d", "anchor": 80, "a": "La crítica siempre es un ataque.", "b": "La crítica de cine me parece interesante.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp081b", "anchor": 81, "a": "Dios trabaja aun cuando no lo veo.", "b": "Aunque no lo note, Dios está obrando.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp081c", "anchor": 81, "a": "Dios trabaja aun cuando no lo veo.", "b": "Si no lo veo, Dios no está trabajando.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp081d", "anchor": 81, "a": "Dios trabaja aun cuando no lo veo.", "b": "Trabajo aun cuando estoy enfermo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp082b", "anchor": 82, "a": "Tengo que tener todo planeado para estar tranquilo.", "b": "Sin un plan completo, no puedo estar en calma.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp082c", "anchor": 82, "a": "Tengo que tener todo planeado para estar tranquilo.", "b": "Puedo estar tranquilo sin tener todo planeado.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp082d", "anchor": 82, "a": "Tengo que tener todo planeado para estar tranquilo.", "b": "Tengo que planear la fiesta de mi hija.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp083b", "anchor": 83, "a": "Mi enfermedad es un castigo.", "b": "Estoy enfermo porque Dios me está castigando.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp083c", "anchor": 83, "a": "Mi enfermedad es un castigo.", "b": "Mi enfermedad no es un castigo.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp083d", "anchor": 83, "a": "Mi enfermedad es un castigo.", "b": "Mi enfermedad requiere tomar medicinas a diario.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp084b", "anchor": 84, "a": "Perdonar significa olvidar lo que pasó.", "b": "Si perdono, debo hacer como que nada pasó.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp084c", "anchor": 84, "a": "Perdonar significa olvidar lo que pasó.", "b": "Puedo perdonar sin olvidar lo que pasó.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp084d", "anchor": 84, "a": "Perdonar significa olvidar lo que pasó.", "b": "Olvidar las llaves me pasa seguido.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp085b", "anchor": 85, "a": "La alabanza me acerca a Dios.", "b": "Cuando adoro, me siento más cerca de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp085c", "anchor": 85, "a": "La alabanza me acerca a Dios.", "b": "La alabanza me aleja de Dios.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp085d", "anchor": 85, "a": "La alabanza me acerca a Dios.", "b": "La música me acerca a mis amigos.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp086b", "anchor": 86, "a": "Nunca seré suficiente.", "b": "Jamás estaré a la altura.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp086c", "anchor": 86, "a": "Nunca seré suficiente.", "b": "En Cristo soy suficiente.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp086d", "anchor": 86, "a": "Nunca seré suficiente.", "b": "Nunca hay suficiente pan en la cena del domingo.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp087b", "anchor": 87, "a": "Los demás tienen la culpa de mi enojo.", "b": "Me enojo porque otros me provocan.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp087c", "anchor": 87, "a": "Los demás tienen la culpa de mi enojo.", "b": "Yo soy responsable de mi enojo.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp087d", "anchor": 87, "a": "Los demás tienen la culpa de mi enojo.", "b": "Los demás tienen la culpa del tráfico de la ciudad.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp088b", "anchor": 88, "a": "Dios me consuela en el duelo.", "b": "En la pérdida encuentro consuelo en Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp088c", "anchor": 88, "a": "Dios me consuela en el duelo.", "b": "Dios me deja sin consuelo en el duelo.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp088d", "anchor": 88, "a": "Dios me consuela en el duelo.", "b": "Consuelo a mi amiga que perdió a su madre.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp089b", "anchor": 89, "a": "Callar mis opiniones evita conflictos.", "b": "Si no digo lo que pienso, no hay problemas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp089c", "anchor": 89, "a": "Callar mis opiniones evita conflictos.", "b": "Callar mis opiniones no evita los conflictos.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp089d", "anchor": 89, "a": "Callar mis opiniones evita conflictos.", "b": "Mis opiniones sobre fútbol causan risas.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp090b", "anchor": 90, "a": "Es imposible que Dios me perdone esto.", "b": "Lo que hice no tiene perdón de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp090c", "anchor": 90, "a": "Es imposible que Dios me perdone esto.", "b": "Dios puede perdonarme esto.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp090d", "anchor": 90, "a": "Es imposible que Dios me perdone esto.", "b": "Es imposible terminar este proyecto hoy.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp091b", "anchor": 91, "a": "Ayunar me hace más santo que los demás.", "b": "Por ayunar soy mejor que otros.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp091c", "anchor": 91, "a": "Ayunar me hace más santo que los demás.", "b": "Ayunar no me hace más santo que los demás.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp091d", "anchor": 91, "a": "Ayunar me hace más santo que los demás.", "b": "Ayunar me da hambre por la tarde.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp092b", "anchor": 92, "a": "Dios abre caminos donde no los hay.", "b": "Cuando no veo salida, Dios crea una.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp092c", "anchor": 92, "a": "Dios abre caminos donde no los hay.", "b": "Si no hay camino, Dios no puede abrir uno.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp092d", "anchor": 92, "a": "Dios abre caminos donde no los hay.", "b": "Abrimos un camino nuevo hacia la finca.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp093b", "anchor": 93, "a": "Siempre arruino mis relaciones.", "b": "Todas mis relaciones terminan mal por mi culpa.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp093c", "anchor": 93, "a": "Siempre arruino mis relaciones.", "b": "No siempre arruino mis relaciones.", "relation": "opuesto", "category": "cuantificador", "nli": "contradiction"}
+{"id": "mp093d", "anchor": 93, "a": "Siempre arruino mis relaciones.", "b": "Mis relaciones laborales requieren paciencia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp094b", "anchor": 94, "a": "Mi identidad está en ser hijo de Dios.", "b": "Soy, ante todo, hijo de Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp094c", "anchor": 94, "a": "Mi identidad está en ser hijo de Dios.", "b": "Mi identidad está en mi profesión, no en Dios.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp094d", "anchor": 94, "a": "Mi identidad está en ser hijo de Dios.", "b": "Mi hijo tiene una identidad propia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp095b", "anchor": 95, "a": "La tristeza nunca se irá.", "b": "Esta tristeza durará para siempre.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp095c", "anchor": 95, "a": "La tristeza nunca se irá.", "b": "La tristeza pasará.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp095d", "anchor": 95, "a": "La tristeza nunca se irá.", "b": "La tristeza de mi amigo me preocupa.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp096b", "anchor": 96, "a": "Debo vengarme para que se haga justicia.", "b": "La justicia solo llega si yo me vengo.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp096c", "anchor": 96, "a": "Debo vengarme para que se haga justicia.", "b": "Dios hará justicia, no necesito vengarme.", "relation": "opuesto", "category": "agente", "nli": "contradiction"}
+{"id": "mp096d", "anchor": 96, "a": "Debo vengarme para que se haga justicia.", "b": "Debo estudiar para ser abogado de justicia.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp097b", "anchor": 97, "a": "Dios se alegra de mí.", "b": "Soy motivo de gozo para Dios.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp097c", "anchor": 97, "a": "Dios se alegra de mí.", "b": "Dios se avergüenza de mí.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp097d", "anchor": 97, "a": "Dios se alegra de mí.", "b": "Mi madre se alegra de mis visitas.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp098b", "anchor": 98, "a": "Si espero en Dios, renuevo mis fuerzas.", "b": "Esperar en el Señor me da nuevas fuerzas.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp098c", "anchor": 98, "a": "Si espero en Dios, renuevo mis fuerzas.", "b": "Esperar en Dios me deja sin fuerzas.", "relation": "opuesto", "category": "antonimo", "nli": "contradiction"}
+{"id": "mp098d", "anchor": 98, "a": "Si espero en Dios, renuevo mis fuerzas.", "b": "Si espero el autobús, llego tarde.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}
+{"id": "mp099b", "anchor": 99, "a": "Todo depende de mí.", "b": "Nada sale bien si yo no lo hago.", "relation": "misma_cadena", "category": "parafrasis", "nli": "entailment"}
+{"id": "mp099c", "anchor": 99, "a": "Todo depende de mí.", "b": "No todo depende de mí.", "relation": "opuesto", "category": "negacion", "nli": "contradiction"}
+{"id": "mp099d", "anchor": 99, "a": "Todo depende de mí.", "b": "Mi familia depende de mí económicamente.", "relation": "otra_cadena", "category": "mismas_palabras", "nli": "neutral"}

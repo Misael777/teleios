@@ -1,0 +1,9 @@
+.venv/
+out/
+data/raw/
+models/
+__pycache__/
+*.pyc
+
+# Cachés del maestro (regenerables con scripts/teacher_labels.py)
+*.npy

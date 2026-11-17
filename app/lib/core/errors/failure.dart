@@ -25,3 +25,8 @@ final class StorageFailure extends Failure {
 final class UnsupportedPlatformFailure extends Failure {
   const UnsupportedPlatformFailure(super.message);
 }
+
+/// Errores del respaldo cifrado (contraseña incorrecta, archivo dañado, versión no soportada).
+final class BackupFailure extends Failure {
+  const BackupFailure(super.message);
+}

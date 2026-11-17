@@ -1,6 +1,7 @@
 import 'package:sqlite3/sqlite3.dart';
 
 import '../../../core/utils/text_normalizer.dart';
+import '../../../shared/domain/catalogs/bible_books.dart';
 import '../../../shared/domain/entities/passage_ref.dart';
 import '../domain/repositories.dart';
 
@@ -63,6 +64,39 @@ class SqliteBibleRepository implements BibleRepository {
         .map((r) => BibleSearchHit(_toVerse(r), r['snip'] as String))
         .toList();
   }
+
+  @override
+  Future<List<CrossReference>> crossReferences(PassageRef ref, {int limit = 40}) async {
+    final book = BibleBooks.all.indexWhere((b) => b.code == ref.bookCode) + 1;
+    if (book == 0 || !_hasCrossRefs) return const [];
+    final base = book * 1000000 + ref.chapter * 1000;
+    final from = base + (ref.verseStart ?? 0);
+    final to = base + (ref.verseEnd ?? ref.verseStart ?? 999);
+    final rows = _db.select(
+      'SELECT c.dst, c.dst_end, MAX(c.votes) AS votes, v.book, v.chapter, v.verse, e.verse AS verse_end '
+      'FROM crossrefs c JOIN verses v ON v.id = c.dst LEFT JOIN verses e ON e.id = c.dst_end '
+      'WHERE c.src BETWEEN ? AND ? AND NOT (c.dst BETWEEN ? AND ?) '
+      'GROUP BY c.dst, c.dst_end ORDER BY votes DESC LIMIT ?',
+      [from, to, from, to, limit],
+    );
+    return [
+      for (final r in rows)
+        CrossReference(
+          PassageRef(
+            bookCode: r['book'] as String,
+            chapter: r['chapter'] as int,
+            verseStart: r['verse'] as int,
+            verseEnd: (r['dst_end'] as int) != (r['dst'] as int) && (r['dst_end'] as int) ~/ 1000 == (r['dst'] as int) ~/ 1000
+                ? r['verse_end'] as int?
+                : null,
+          ),
+          r['votes'] as int,
+        ),
+    ];
+  }
+
+  /// Assets de esquema 1 no traen la tabla: la app sigue funcionando sin referencias cruzadas.
+  late final bool _hasCrossRefs = _db.select("SELECT 1 FROM sqlite_master WHERE name = 'crossrefs'").isNotEmpty;
 
   /// Convierte texto libre en una consulta FTS5 segura: cada palabra como prefijo, todas requeridas.
   static String? toFtsQuery(String input) {

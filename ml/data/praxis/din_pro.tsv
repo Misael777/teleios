@@ -1,0 +1,84 @@
+# principio	etiqueta	dificultad	contextos	reacción
+generosidad	E	D	amigos	Mi amigo no tenía para el pasaje de vuelta a su pueblo. Le pagué el pasaje y no le pedí que me devolviera.
+generosidad	E	D	iglesia	Este mes estaba justo de plata, pero di mi ofrenda con alegría para la familia que perdió su casa.
+generosidad	E	M	trabajo	Compartí mi almuerzo con el compañero nuevo que no había traído nada.
+generosidad	E	D	familia	Me llegó el bono y le pagué la cuenta del dentista a mi mamá.
+generosidad	E	D	vecinos	la vecina quedó sin trabajo y le llevé una bolsa con mercadería sin que nadie supiera
+generosidad	E	D	dinero	Cobré la herencia y separé una parte para becar a un joven de la iglesia.
+generosidad	C	D	iglesia	Pasaron la ofrenda para una familia necesitada y escondí la billetera.
+generosidad	C	D	amigos	Mi amigo me pidió prestado para un remedio y le dije que no tenía, aunque tenía de sobra.
+generosidad	C	M	familia	Doy regalos solo si sé que me van a devolver uno igual de caro.
+generosidad	C	D	trabajo	Hicieron una colecta para el compañero que tuvo un accidente y puse la moneda más chica que tenía.
+generosidad	C	D	dinero	tengo harta plata guardada y igual le cobro intereses a mi hermano por lo que le presto
+generosidad	N	M	salud	Hoy fui al kinesiólogo por la rodilla.
+generosidad	N	F	estudio	Repasé las tablas de multiplicar con mi hijo.
+contentamiento	E	D	dinero	Me ofrecieron una tarjeta para comprarme el celular último modelo. La rechacé porque el mío todavía funciona.
+contentamiento	E	D	familia	Mi hermano se compró una casa enorme. Me alegré por él y agradecí a Dios por mi departamento chico.
+contentamiento	E	M	trabajo	No me dieron el aumento este año. Agradecí tener trabajo y seguí haciendo lo mejor.
+contentamiento	E	D	redes	vi las fotos de vacaciones de mis amigos en europa y en vez de amargarme di gracias por mi fin de semana en la playa del pueblo
+contentamiento	E	D	pareja	Mi esposa quería cambiar el auto por uno más nuevo. Conversamos y decidimos seguir con el que tenemos y ahorrar.
+contentamiento	C	D	dinero	Me llegó la factura de la luz. Gasté el ahorro en una tele nueva.
+contentamiento	C	D	familia	Mi primo se compró una camioneta y yo saqué un crédito para comprarme una más grande.
+contentamiento	C	M	redes	Paso horas mirando lo que tienen otros y me amargo pensando que mi vida es poca cosa.
+contentamiento	C	D	trabajo	Aunque gano bien, me quejo todo el día de mi sueldo y vivo pidiendo más.
+contentamiento	C	D	dinero	me endeudé en doce cuotas por unas zapatillas de marca para que no me miraran en menos
+contentamiento	N	M	salud	Me hice los exámenes de sangre anuales.
+no_tesoros	E	D	dinero	Me ofrecieron un trabajo que paga el doble pero sin domingos para mi familia ni la iglesia. Lo rechacé.
+no_tesoros	E	D	familia	Vendí la segunda casa que tenía para ayudar a mis hijos a estudiar en vez de acumular.
+no_tesoros	E	M	dinero	Decidí dejar de comprar acciones por ansiedad y dar una parte a las misiones.
+no_tesoros	E	D	trabajo	mi jefe me dijo que si trabajo todos los fines de semana me hago rico y le dije que mi tiempo con Dios y mi familia vale más
+no_tesoros	C	D	dinero	Trabajo dieciséis horas al día para juntar más y más, aunque ya tengo de sobra.
+no_tesoros	C	D	familia	No fui al cumpleaños de mi hijo porque estaba cerrando un negocio millonario.
+no_tesoros	C	M	dinero	Mi mayor alegría es revisar cuánto creció mi cuenta de inversiones cada mañana.
+no_tesoros	C	D	iglesia	Dejé de ir a la iglesia porque los domingos abro la tienda y gano más.
+no_tesoros	C	D	dinero	guardo todo lo que gano debajo del colchón y no gasto ni en mi familia por si acaso
+no_tesoros	N	M	salud	Fui a nadar a la piscina municipal.
+no_deudas	E	D	dinero	Pagué lo que le debía al almacenero aunque me quedé sin salir el fin de semana.
+no_deudas	E	D	familia	Mi hermano me presionó para ser aval de un préstamo enorme. Le dije que no podía arriesgar a mi familia.
+no_deudas	E	M	dinero	Hice una lista de todas mis deudas y empecé a pagar primero la más chica.
+no_deudas	E	D	trabajo	Le pagué al maestro que arregló el techo el mismo día que terminó, aunque me pidió que pagara después.
+no_deudas	E	D	dinero	quería el televisor en cuotas pero esperé a juntar la plata y lo compré al contado
+no_deudas	C	D	dinero	Debo tres meses de arriendo, pero me fui de vacaciones con la tarjeta.
+no_deudas	C	D	familia	Le debo plata a mi tía desde hace años y cuando la veo hago como que me olvidé.
+no_deudas	C	M	dinero	Saqué otro crédito para pagar el crédito anterior.
+no_deudas	C	D	trabajo	no le pagué al jardinero porque total no tiene contrato y no me puede reclamar
+no_deudas	N	F	estudio	Me inscribí en un curso de inglés gratuito.
+ayudar_pobre	E	D	calle	Vi a un hombre durmiendo en la calle con frío. Le llevé una frazada y me quedé a conversar con él.
+ayudar_pobre	E	D	iglesia	Organicé una olla común en la iglesia para las familias del campamento.
+ayudar_pobre	E	M	trabajo	El guardia del edificio gana muy poco. Le conseguí útiles escolares para sus hijos.
+ayudar_pobre	E	D	vecinos	la abuelita de al lado vive sola y sin pensión y le hago las compras cada semana con mi plata
+ayudar_pobre	E	D	dinero	Con el aguinaldo pagué la matrícula de una niña de mi barrio que iba a dejar el colegio.
+ayudar_pobre	C	D	calle	Vi a un mendigo en la calle y crucé para no verlo.
+ayudar_pobre	C	D	calle	Un niño me pidió para comer en el semáforo y subí la ventana sin mirarlo.
+ayudar_pobre	C	M	trabajo	Le pago menos del mínimo a la señora que me limpia porque sé que necesita el trabajo.
+ayudar_pobre	C	D	iglesia	Me pidieron donar ropa para los damnificados y llevé solo lo roto y manchado.
+ayudar_pobre	C	D	vecinos	los del campamento de al lado son puros flojos así que no les doy nada aunque me sobre
+ayudar_pobre	N	M	salud	Hoy me cortaron el pelo.
+hospitalidad	E	D	familia	Mi suegra necesitaba un lugar mientras arreglaban su casa. La recibimos en casa un mes con gusto.
+hospitalidad	E	D	iglesia	Llegó un misionero a la ciudad sin alojamiento. Le preparé el cuarto de mi hijo y le cociné.
+hospitalidad	E	M	amigos	Invité a cenar al compañero extranjero que pasa las fiestas solo.
+hospitalidad	E	D	vecinos	se inundó la casa de los vecinos y los dejamos dormir en el living toda la semana
+hospitalidad	C	D	familia	Mi primo vino a la ciudad por un tratamiento y le dije que no tenía lugar, aunque teníamos un cuarto libre.
+hospitalidad	C	M	iglesia	Ofrecieron mi casa para el grupo de oración y puse excusas para que no vinieran nunca.
+hospitalidad	C	D	amigos	Recibí a mi amiga en casa pero le cobré por cada comida y le hice sentir que molestaba.
+hospitalidad	C	D	vecinos	los vecinos nuevos tocaron para presentarse y no les abrí la puerta
+hospitalidad	N	M	dinero	Comparé precios de seguros para el auto.
+visitar_enfermo	E	D	familia	Mi tío está internado y nadie lo visita. Fui después del trabajo y le leí un salmo.
+visitar_enfermo	E	D	trabajo	Mi compañero tiene depresión y no viene hace semanas. Le escribí y fui a verlo con un café.
+visitar_enfermo	E	M	iglesia	Llevé la santa cena a la hermana que está en cama y oramos con ella.
+visitar_enfermo	E	D	vecinos	el vecino quedó solo después de la operación y le cambio el vendaje y le llevo almuerzo
+visitar_enfermo	C	D	familia	Mi mamá está en el hospital, pero no fui a verla porque había partido.
+visitar_enfermo	C	D	amigos	Mi amigo me escribió que está muy enfermo y solo le puse un emoji y no lo llamé.
+visitar_enfermo	C	M	iglesia	Me tocaba visitar a los enfermos de la congregación y me inventé que estaba ocupado.
+visitar_enfermo	C	D	familia	a mi abuela con alzheimer la dejamos en el hogar y ya ni la vamos a ver porque no nos reconoce
+visitar_enfermo	N	M	estudio	Terminé mi tesis y la entregué.
+defender_debil	E	D	estudio	Unos compañeros se burlaban de un chico por su forma de hablar. Me puse a su lado y les pedí que pararan.
+defender_debil	E	D	trabajo	Vi que el jefe le gritaba y humillaba a la nueva empleada. Lo denuncié a recursos humanos.
+defender_debil	E	D	calle	Un hombre empujaba a una mujer en la parada. Me acerqué, llamé a los carabineros y me quedé con ella.
+defender_debil	E	M	redes	Hicieron memes de un niño con discapacidad. Los reporté y escribí que eso no estaba bien.
+defender_debil	E	D	familia	en la familia todos se reían del primo que es diferente y yo les dije que basta que él merece respeto
+defender_debil	C	D	estudio	Vi cómo golpeaban a un compañero en el baño y me fui para no meterme en problemas.
+defender_debil	C	D	trabajo	Sé que mi jefe acosa a una compañera, pero me quedo callado para no perder mi puesto.
+defender_debil	C	M	redes	Me reí y compartí el video del niño al que le hacían bullying.
+defender_debil	C	D	calle	escuché gritos de una mujer en el departamento de al lado y subí el volumen de la tele
+defender_debil	N	M	dinero	Pagué la patente del auto.

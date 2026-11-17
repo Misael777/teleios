@@ -40,7 +40,8 @@ class DriftDevotionalRepository implements DevotionalRepository {
   /// Un "query centinela" de Drift observa las tres tablas desde la suscripción,
   /// así no se pierden cambios; `asyncMap` serializa las recargas en orden.
   Stream<T> _watchTables<T>(Future<T> Function() load) => _db
-      .customSelect('SELECT 1', readsFrom: {_db.devotionals, _db.devotionalTopics, _db.topics})
+      // SQL único por repositorio: Drift comparte streams con el mismo SQL e ignora readsFrom.
+      .customSelect('SELECT 1 AS devotional_watch', readsFrom: {_db.devotionals, _db.devotionalTopics, _db.topics})
       .watch()
       .asyncMap((_) => load());
 
@@ -58,6 +59,8 @@ class DriftDevotionalRepository implements DevotionalRepository {
     required String content,
     required HistoricalContext context,
     required List<TopicLink> topics,
+    String? title,
+    PassageRef? keyVerse,
   }) => _db.transaction(() async {
     final now = DateTime.now();
     final existing = await (_db.select(_db.devotionals)..where((d) => d.id.equals(id))).getSingleOrNull();
@@ -72,6 +75,8 @@ class DriftDevotionalRepository implements DevotionalRepository {
             verseStart: Value(passage.verseStart),
             verseEnd: Value(passage.verseEnd),
             content: content,
+            title: Value(title),
+            keyVerse: Value(keyVerse?.encode()),
             periodId: Value(context.periodId),
             empireId: Value(context.empireId),
             regionId: Value(context.regionId),
@@ -116,6 +121,8 @@ class DriftDevotionalRepository implements DevotionalRepository {
             verseEnd: row.verseEnd,
           ),
           content: row.content,
+          title: row.title,
+          keyVerse: row.keyVerse == null ? null : PassageRef.decode(row.keyVerse!),
           context: HistoricalContext(
             periodId: row.periodId,
             empireId: row.empireId,

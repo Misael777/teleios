@@ -10,6 +10,7 @@ import '../../../shared/domain/catalogs/bible_books.dart';
 import '../../../shared/domain/entities/dimension.dart';
 import '../../../shared/widgets/common_widgets.dart';
 import '../domain/devotional.dart';
+import '../domain/guided_reflection.dart';
 import 'estudio_providers.dart';
 
 class DevotionalListScreen extends ConsumerWidget {
@@ -50,6 +51,7 @@ class DevotionalListScreen extends ConsumerWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: 'fab-estudio',
         key: const Key('new-devotional'),
         onPressed: () => context.push(Routes.nuevoDevocional),
         icon: const Icon(Icons.add),
@@ -149,12 +151,24 @@ class _DevotionalCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Expanded(child: Text(entry.passage.label, style: theme.textTheme.titleMedium)),
+                  Expanded(
+                    child: Text(
+                      entry.title ?? entry.passage.label,
+                      style: theme.textTheme.titleMedium,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
                   Text(Formatters.shortDate(entry.date), style: theme.textTheme.bodySmall),
                 ],
               ),
+              if (entry.title != null)
+                Text(
+                  entry.passage.label,
+                  style: theme.textTheme.labelMedium?.copyWith(color: theme.colorScheme.primary),
+                ),
               const SizedBox(height: 6),
-              Text(entry.content, maxLines: 3, overflow: TextOverflow.ellipsis),
+              Text(GuidedReflection.parse(entry.content).plainText, maxLines: 3, overflow: TextOverflow.ellipsis),
               if (entry.topics.isNotEmpty) ...[
                 const SizedBox(height: 10),
                 Wrap(

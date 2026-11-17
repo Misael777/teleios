@@ -1,0 +1,83 @@
+# principio	etiqueta	dificultad	contextos	reacción
+no_afanarse	E	D	trabajo	Me dijeron que podrían despedir gente. Esa noche dejé el tema en manos de Dios y dormí tranquilo.
+no_afanarse	E	D	dinero	No sé cómo voy a pagar la matrícula de marzo. Hice lo que pude, oré y decidí no darle vueltas toda la noche.
+no_afanarse	E	D	salud	Me salió un resultado raro en los exámenes. En vez de buscar en internet mil enfermedades, esperé tranquilo al médico.
+no_afanarse	E	M	familia	Mi hijo viajó solo por primera vez. Lo encomendé a Dios y no lo llamé cada cinco minutos.
+no_afanarse	E	D	estudio	mañana tengo el examen final y en vez de estresarme estudié lo que pude y me acosté temprano confiando en Dios
+no_afanarse	C	D	trabajo	Tenía miedo de perder el trabajo y no dormí en toda la noche.
+no_afanarse	C	D	dinero	Paso todo el día haciendo cuentas de lo que podría faltar el próximo año y no disfruto nada.
+no_afanarse	C	D	salud	Me duele la cabeza y ya estoy seguro de que tengo un tumor; llevo tres días sin comer de la angustia.
+no_afanarse	C	M	familia	Revisé el celular de mi hija veinte veces en la noche por si le pasaba algo.
+no_afanarse	C	D	estudio	llevo una semana sin dormir pensando que voy a reprobar y que mi vida se arruina
+no_afanarse	N	M	vecinos	Ayudé al vecino a bajar unas cajas.
+orar_en_angustia	E	D	salud	Me diagnosticaron diabetes. Antes de llamar a nadie, me arrodillé y le conté a Dios todo lo que sentía.
+orar_en_angustia	E	D	familia	Mi hijo no llegaba a casa y no contestaba. Mientras lo buscaba, oraba entregándolo a Dios.
+orar_en_angustia	E	D	trabajo	Antes de la entrevista estaba temblando. Me encerré en el baño, oré y salí con paz.
+orar_en_angustia	E	M	pareja	Con mi esposa pasamos por una crisis y empezamos a orar juntos cada noche.
+orar_en_angustia	E	D	dinero	me cortaron la luz por no pagar y lo primero que hice fue orar con mis hijos y pedirle a Dios provisión
+orar_en_angustia	C	D	salud	Me dieron una mala noticia médica y me encerré a tomar hasta quedarme dormido.
+orar_en_angustia	C	D	familia	Cuando mi papá se puso grave, me alejé de Dios y dejé de orar por rabia.
+orar_en_angustia	C	M	trabajo	Cuando me estreso me la paso quejándome con todos, pero ni se me ocurre orar.
+orar_en_angustia	C	D	dinero	cuando me llegan las deudas me pongo a apostar en el casino online a ver si salgo
+orar_en_angustia	N	F	estudio	Ordené mi escritorio.
+no_temer	E	D	trabajo	Tenía miedo de hablar en la reunión, pero confié en Dios y presenté mi propuesta.
+no_temer	E	D	iglesia	Me daba pánico predicar por primera vez. Me agarré de la promesa de que Dios está conmigo y lo hice.
+no_temer	E	D	salud	Me tenían que operar y estaba asustado. Le dije a mi esposa que estaba en las manos de Dios y entré tranquilo.
+no_temer	E	M	estudio	Aunque me daba vergüenza, levanté la mano para preguntar lo que no entendí.
+no_temer	E	D	calle	me dio miedo pero le hablé de Jesús al compañero de asiento en el avión
+no_temer	C	D	trabajo	Me ofrecieron liderar un proyecto y lo rechacé solo por miedo a fracasar.
+no_temer	C	D	familia	Mi hijo quiere ir de misionero y no lo dejo porque tengo terror de que le pase algo.
+no_temer	C	M	iglesia	Me pidieron orar en voz alta y me inventé una excusa porque me moría de miedo al qué dirán.
+no_temer	C	D	salud	tengo un bulto hace meses pero no voy al médico por miedo a lo que me digan
+no_temer	N	M	dinero	Hoy transferí el pago de la tarjeta.
+esperar_en_dios	E	D	pareja	Tengo treinta y cinco años y sigo soltera. Rechacé salir con un hombre casado y decidí esperar lo que Dios tiene para mí.
+esperar_en_dios	E	D	trabajo	Llevo meses buscando empleo. Me ofrecieron uno turbio y lo rechacé para seguir esperando con paciencia.
+esperar_en_dios	E	D	familia	Oro por la conversión de mi papá hace veinte años. Hoy seguí orando sin desanimarme.
+esperar_en_dios	E	M	salud	La recuperación va lenta, pero sigo el tratamiento sin desesperarme.
+esperar_en_dios	E	D	iglesia	me prometieron el ministerio y se lo dieron a otro y en vez de pelearlo esperé en silencio
+esperar_en_dios	C	D	pareja	Como Dios no me daba pareja, me metí con el primero que me hizo caso aunque no es creyente.
+esperar_en_dios	C	D	trabajo	Me cansé de esperar el ascenso y falsifiqué un certificado para conseguirlo.
+esperar_en_dios	C	M	familia	Mi hijo no cambia, así que dejé de orar por él y le dije que lo doy por perdido.
+esperar_en_dios	C	D	dinero	como no salía el negocio me metí en una pirámide para ganar rápido
+esperar_en_dios	N	F	vecinos	Barrí la vereda de mi casa.
+gratitud	E	D	salud	Me rompí el brazo. Di gracias porque no fue peor y porque tengo quien me cuide.
+gratitud	E	D	dinero	Este mes no alcanzó para darnos gustos, pero en la mesa agradecimos a Dios por la comida.
+gratitud	E	M	trabajo	Le agradecí a mi jefe por la oportunidad aunque el trabajo es duro.
+gratitud	E	D	familia	mi viejo murió pero di gracias a Dios por los años que lo tuve y por su fe
+gratitud	E	D	estudio	Reprobé el ramo, pero agradecí a Dios por lo que aprendí y por poder intentarlo otra vez.
+gratitud	C	D	familia	Mis hijos me organizaron una cena y me quejé toda la noche de la comida.
+gratitud	C	D	salud	Salí bien de la operación y lo único que hice fue reclamar por el hospital.
+gratitud	C	M	trabajo	Me dieron un bono y dije que era una miseria.
+gratitud	C	D	iglesia	en la iglesia me ayudaron con la mudanza y ni gracias les di porque para eso están
+gratitud	N	M	estudio	Hoy aprendí a usar una planilla de cálculo.
+humildad	E	D	trabajo	Mi idea salvó el proyecto, pero en la reunión le di el crédito al equipo.
+humildad	E	D	iglesia	Me pidieron limpiar los baños de la iglesia y lo hice con gusto aunque soy anciano de la congregación.
+humildad	E	D	estudio	Un compañero menor me corrigió un error. Le agradecí y lo reconocí delante de la clase.
+humildad	E	M	familia	Mi hijo de quince años me enseñó a usar el celular y le pedí más clases sin vergüenza.
+humildad	E	D	redes	gané el concurso y no lo publiqué en ningún lado solo se lo conté a mi familia
+humildad	C	D	trabajo	Presenté como mía la idea que me dio la practicante.
+humildad	C	D	iglesia	No acepto que nadie me corrija porque llevo treinta años en la iglesia.
+humildad	C	M	redes	Publico todo lo que dono para que vean lo generoso que soy.
+humildad	C	D	familia	En las reuniones familiares solo hablo de mis logros y me burlo de los que no estudiaron.
+humildad	C	D	calle	le dije al mozo que no sabía con quién estaba hablando y que yo soy profesional
+humildad	N	M	salud	Me puse los lentes nuevos.
+servir	E	D	iglesia	Nadie quería quedarse a lavar la loza del almuerzo. Me quedé hasta el final y lo hice.
+servir	E	D	familia	Mi esposa está agotada. Cociné, bañé a los niños y la dejé dormir.
+servir	E	D	trabajo	Soy gerente, pero me quedé a ayudar a los de bodega a descargar el camión.
+servir	E	M	vecinos	Le corté el pasto al vecino anciano sin que me lo pidiera.
+servir	E	D	amigos	mi amigo se cambió de casa y le armé todos los muebles un sábado entero sin cobrarle
+servir	C	D	familia	Mi mamá estaba enferma y le pedí que igual me planchara la camisa.
+servir	C	D	iglesia	Solo acepto servir en la iglesia si me ponen adelante, donde me vean.
+servir	C	M	trabajo	Le dije al practicante que hiciera mi parte porque yo no hago ese tipo de trabajo.
+servir	C	D	pareja	llego del trabajo y me tiro al sillón y le exijo a mi señora que me sirva aunque ella también trabajó todo el día
+servir	N	F	estudio	Me compré un cuaderno nuevo.
+confesar_error	E	D	trabajo	Por mi culpa se cayó el sistema. En la reunión dije que fue mi error y propuse cómo arreglarlo.
+confesar_error	E	D	pareja	Le hablé mal a mi esposa. Al rato le pedí perdón sin poner excusas.
+confesar_error	E	D	hijos	Le grité injustamente a mi hijo. Después me agaché a su altura y le pedí perdón.
+confesar_error	E	M	iglesia	Le confesé a mi pastor que tengo un problema con la pornografía y le pedí que orara conmigo.
+confesar_error	E	D	amigos	la embarré con mi amigo y le dije sabes qué tenías razón fui yo perdóname
+confesar_error	C	D	trabajo	Cometí un error con la factura y le eché la culpa al compañero nuevo.
+confesar_error	C	D	pareja	Sé que me equivoqué, pero no pienso pedir perdón porque se va a creer que tiene razón.
+confesar_error	C	M	hijos	Rompí el juguete de mi hija y le dije que había sido el perro.
+confesar_error	C	D	iglesia	todos saben que la regué con la plata del grupo pero yo digo que fue un error del banco
+confesar_error	N	M	dinero	Renové el seguro de la casa.

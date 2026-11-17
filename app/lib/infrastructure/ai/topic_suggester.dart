@@ -48,6 +48,7 @@ class TopicSuggester {
     List<Topic> userTopics = const [],
     List<Topic> bookHistory = const [],
     String? bookName,
+    String? historyReason,
     Set<String> exclude = const {},
     int perDimension = 3,
   }) {
@@ -80,7 +81,7 @@ class TopicSuggester {
           name: topic.name,
           dimensionId: topic.dimensionId,
           confidence: historyConfidence,
-          reasons: [if (bookName != null) 'usado antes en $bookName' else 'usado antes en este libro'],
+          reasons: [historyReason ?? (bookName != null ? 'usado antes en $bookName' : 'usado antes en este libro')],
           source: SuggestionSource.history,
           existingTopicId: topic.id,
         ),

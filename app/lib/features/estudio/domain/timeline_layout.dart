@@ -58,7 +58,7 @@ class PlacedItem<T> {
 }
 
 abstract final class TimelineLayout {
-  static const defaultMinYear = -2200;
+  static const defaultMinYear = -4100;
   static const defaultMaxYear = 110;
 
   /// Año a ubicar: el año aproximado del usuario o, si no hay, la mitad del período.

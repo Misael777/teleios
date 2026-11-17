@@ -80,11 +80,11 @@ app/
 | DB local | **Drift 2.34** + `sqlite3` 3.x con `source: sqlite3mc` | Reemplaza a Isar (ADR-001). Cifrado verificado por test |
 | Llaves | `flutter_secure_storage` (Keychain / Keystore) | |
 | Biblia | Reina-Valera 1909 (dominio público) en SQLite + FTS5 | |
-| Gráficos | `fl_chart` + `CustomPainter` | |
-| Grafo | `graphview` (Fruchterman-Reingold) | |
+| Gráficos | `fl_chart` 1.3 + `CustomPainter` (heatmap, aluvión, línea de tiempo) | |
+| Grafo | Fruchterman-Reingold propio, determinista, en otro isolate | Reemplaza a `graphview` |
 | Voz | `speech_to_text` en modo on-device | |
 | IA | Léxico local → ONNX embeddings → Ollama (desktop) | ADR-002 |
-| Backup | `google_sign_in` + `googleapis` (Drive `appDataFolder`) + `cryptography` | ADR-004 |
+| Backup | `cryptography` (AES-GCM, Argon2id, HKDF) + `archive` + `google_sign_in` 7 + `googleapis` | ADR-004 (revisado) |
 | Backend comunitario | Supabase (Auth, Postgres + RLS + `ltree`, Storage, Edge Functions) | |
 | Imágenes overflow | Cloudflare R2 | |
 | CI/CD | GitHub Actions + Codemagic (iOS) | |

@@ -3,6 +3,7 @@ import '../../../core/utils/ids.dart';
 import '../entities/dimension.dart';
 import '../entities/passage_ref.dart';
 import '../entities/topic.dart';
+import '../entities/topic_draft.dart';
 import '../repositories/topic_repository.dart';
 
 typedef Clock = DateTime Function();
@@ -100,3 +101,43 @@ class ReopenTopic {
 
 Future<Topic> _require(TopicRepository repo, String id) async =>
     await repo.findById(id) ?? (throw NotFoundFailure('Tópico no encontrado: $id'));
+
+/// Convierte un [TopicDraft] en un tópico persistido: reutiliza el existente o crea uno nuevo.
+///
+/// [statusForNew] depende del contexto: en un devocional (anclado a un pasaje) nace
+/// `validado`; en la bitácora o el altar, sin pasaje, nace `incubacion`.
+class ResolveTopicDraft {
+  ResolveTopicDraft(this._topics, {Clock? clock}) : _create = CreateTopic(_topics, clock: clock);
+
+  final TopicRepository _topics;
+  final CreateTopic _create;
+
+  Future<Topic> call(TopicDraft draft, {TopicStatus statusForNew = TopicStatus.validado}) async {
+    if (draft.existingId != null) {
+      final existing = await _topics.findById(draft.existingId!);
+      if (existing != null && existing.dimensionId == draft.dimensionId) return existing;
+    }
+    return _create(
+      name: draft.name,
+      dimensionId: draft.dimensionId,
+      status: statusForNew,
+      origin: draft.origin,
+      confidence: draft.confidence,
+    );
+  }
+}
+
+/// incubación → sombra (falla recurrente sin estudio). Lo propone la analítica; lo confirma el usuario.
+class MarkTopicAsShadow {
+  MarkTopicAsShadow(this._topics, {Clock? clock}) : _now = clock ?? DateTime.now;
+
+  final TopicRepository _topics;
+  final Clock _now;
+
+  Future<Topic> call(String topicId) async {
+    final topic = await _require(_topics, topicId);
+    final shadow = topic.markShadow(at: _now());
+    await _topics.update(shadow);
+    return shadow;
+  }
+}

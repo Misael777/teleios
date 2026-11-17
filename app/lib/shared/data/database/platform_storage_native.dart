@@ -11,10 +11,11 @@ import 'package:sqlite3/sqlite3.dart';
 import '../../../core/errors/failure.dart';
 import '../../../features/estudio/data/sqlite_bible_repository.dart';
 import '../../../features/estudio/domain/repositories.dart';
+import '../../domain/repositories/attachment_store.dart';
 import 'app_database.dart';
 
 /// Debe cambiar si se regenera el asset con otro esquema (ver tool/build_bible_db.py).
-const _bibleFileName = 'rv1909_v1.sqlite';
+const _bibleFileName = 'rv1909_v2.sqlite';
 
 Future<AppDatabase> openAppDatabase({required String hexKey, required String fileName}) async {
   if (!RegExp(r'^[0-9a-f]{64}$').hasMatch(hexKey)) {
@@ -67,4 +68,57 @@ Future<BibleRepository> openBibleRepository(Future<ByteData> Function() loadAsse
     await tmp.rename(file.path);
   }
   return SqliteBibleRepository(sqlite3.open(file.path, mode: OpenMode.readOnly));
+}
+
+/// Carpeta privada de adjuntos (los archivos se escriben ya cifrados, ver EncryptedAttachmentStore).
+Future<AttachmentStore> openRawAttachmentStore() async {
+  final dir = Directory(p.join((await getApplicationSupportDirectory()).path, 'attachments'));
+  await dir.create(recursive: true);
+  return FileAttachmentStore(dir);
+}
+
+class FileAttachmentStore implements AttachmentStore {
+  FileAttachmentStore(this.dir);
+
+  final Directory dir;
+
+  File _file(String fileName) {
+    // Defensa contra rutas: solo nombres simples.
+    if (fileName.contains('/') || fileName.contains(r'\') || fileName.contains('..')) {
+      throw ArgumentError.value(fileName, 'fileName');
+    }
+    return File(p.join(dir.path, fileName));
+  }
+
+  @override
+  Future<void> write(String fileName, Uint8List bytes) async {
+    final tmp = File('${_file(fileName).path}.tmp');
+    await tmp.writeAsBytes(bytes, flush: true);
+    await tmp.rename(_file(fileName).path);
+  }
+
+  @override
+  Future<Uint8List?> read(String fileName) async {
+    final f = _file(fileName);
+    return await f.exists() ? f.readAsBytes() : null;
+  }
+
+  @override
+  Future<void> delete(String fileName) async {
+    final f = _file(fileName);
+    if (await f.exists()) await f.delete();
+  }
+
+  @override
+  Future<List<String>> listFileNames() async => [
+    await for (final e in dir.list())
+      if (e is File && !e.path.endsWith('.tmp')) p.basename(e.path),
+  ];
+
+  @override
+  Future<void> deleteAll() async {
+    for (final name in await listFileNames()) {
+      await delete(name);
+    }
+  }
 }
